@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Projects\Games\global-game-jam-2020" t="IncludeRecursive">
@@ -231,8 +231,11 @@
           <e p="Construct.cs" t="Include" />
           <e p="Creature.cs" t="Include" />
           <e p="Events" t="Include">
+            <e p="ConstructRepairedEvent.cs" t="Include" />
             <e p="EntityBrokeEvent.cs" t="Include" />
+            <e p="ObjectBrokeEvent.cs" t="Include" />
             <e p="ScrapObjectDiedEvent.cs" t="Include" />
+            <e p="ScrapObjectSpawnedEvent.cs" t="Include" />
           </e>
           <e p="Faction.cs" t="Include" />
           <e p="MainThemesAudio.cs" t="Include" />
@@ -253,9 +256,12 @@
           <e p="Tower.cs" t="Include" />
           <e p="UsableBuilding.cs" t="Include" />
           <e p="UserInterface" t="Include">
+            <e p="GUIBehaviour.cs" t="Include" />
             <e p="HealthBar.cs" t="Include" />
             <e p="HealthGUI.cs" t="Include" />
             <e p="InteractionGUI.cs" t="Include" />
+            <e p="PlayerGUI.cs" t="Include" />
+            <e p="RepairGUI.cs" t="Include" />
           </e>
         </e>
         <e p="TODO.txt" t="Include" />

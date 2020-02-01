@@ -140,7 +140,7 @@ public class Creature : Construct {
 
 	private void Move(Vector2 direction) {
 		
-		if (direction.sqrMagnitude > MovementSpeed * 0.2f) {
+		if (direction.sqrMagnitude > MovementSpeed * 0.1f) {
 			_sprite.flipX = _rigidbody.velocity.x < 0.0f;
 			_animator.SetBool("Moving", true);
 		}

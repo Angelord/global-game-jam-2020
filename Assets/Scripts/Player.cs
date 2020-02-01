@@ -14,8 +14,7 @@ public class Player : ScrapBehaviour {
 	public string RecallButton = "Recall_1";
     public Camera PlayerCamera;
 
-
-	public event Action<PlayerCommand> OnCommand;
+    public event Action<PlayerCommand> OnCommand;
 
 	private float _scrap;
 	private Rigidbody2D _rigidbody;
@@ -23,6 +22,8 @@ public class Player : ScrapBehaviour {
 	private SpriteRenderer _renderer;
 	private PlayerSenses _senses;
 	private float _lastRecall;
+
+	public PlayerSenses Senses => _senses;
 
 	public float Scrap => _scrap;
 
