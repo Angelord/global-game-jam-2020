@@ -2,5 +2,5 @@
 
 public class ScrapPile : Construct {
 	
-	public override bool Salvageable => true;
+	public override bool Salvageable => !isDead;
 }

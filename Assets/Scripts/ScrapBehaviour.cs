@@ -6,6 +6,8 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 
 	private float _curHealth;
 
+	public bool isDead = false;
+
 	public abstract Faction Faction { get; }
 
 	public virtual bool Attackable => false;
@@ -23,6 +25,11 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 	}
 
 	protected void Die() {
+		isDead = true;
+
+		// TODO die better death
+		Destroy(gameObject, 0.1f);
+
 		OnDie();
 	}
 

@@ -12,9 +12,11 @@ public class Player : ScrapBehaviour {
 	public string RepairButton = "Repair_1";
 	public string UseButton = "Use_1";
 	public string RecallButton = "Recall_1";
-	
+
+	public float scrap;
+
 	public event Action<PlayerCommand> OnCommand;
-	
+
 	private Rigidbody2D _rigidbody;
 	private SpriteRenderer _renderer;
 	private PlayerSenses _senses;
@@ -30,14 +32,17 @@ public class Player : ScrapBehaviour {
 	}
 
 	private void Update() {
-		
+
 		if (Input.GetButtonDown(RepairButton)) {
 			ScrapBehaviour repairable = _senses.GetRepairTarget();
 			if (repairable != null) { Repair(repairable); }
 		}
 		else if (Input.GetButtonDown(SalvageButton)) {
-			ScrapBehaviour salvage = _senses.GetSalvageTarget();
-			if (salvage != null) { Salvage(salvage); }
+			Construct salvage = _senses.GetSalvageTarget();
+			if (salvage != null)
+			{
+				Salvage(salvage);
+      }
 		}
 		else if (Input.GetButtonDown(UseButton)) {
 			ScrapBehaviour usable = _senses.GetUseTarget();
@@ -53,8 +58,11 @@ public class Player : ScrapBehaviour {
 		Debug.Log("REPAIR");
 	}
 
-	private void Salvage(ScrapBehaviour target) {
-		Debug.Log("SALVAGE");
+	private void Salvage(Construct target) {
+		float salvageAmount = target.Salvage();
+		scrap += salvageAmount;
+		Debug.Log("SALVAGED " + salvageAmount);
+
 	}
 
 	private void Use(ScrapBehaviour target) {
@@ -62,7 +70,7 @@ public class Player : ScrapBehaviour {
 	}
 
 	private void FixedUpdate() {
-		
+
 		Vector2 moveDir = Vector2.zero;
 		moveDir.x = Input.GetAxis(HorizontalAxis);
 		moveDir.y = -Input.GetAxis(VerticalAxis);
@@ -71,7 +79,7 @@ public class Player : ScrapBehaviour {
 			moveDir.Normalize();
 			_renderer.flipX = moveDir.x > 0.0f;
 		}
-		
+
 		_rigidbody.AddForce(moveDir * Stats.MovementSpeed - _rigidbody.velocity * 0.9f, ForceMode2D.Impulse);
 	}
 
