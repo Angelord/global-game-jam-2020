@@ -1,5 +1,7 @@
 ﻿// Creatures, Buildings etc...
 
+using UnityEngine;
+
 public abstract class Construct : ScrapBehaviour {
 	
 	private const float BREAK_PERCENTAGE = 0.3f;
@@ -21,6 +23,7 @@ public abstract class Construct : ScrapBehaviour {
 			CurHealth = MaxHealth * BREAK_PERCENTAGE;
 			OnBreak();
 		}
+		OnStart();
 	}
 
 	public virtual void Use() { }
@@ -43,6 +46,8 @@ public abstract class Construct : ScrapBehaviour {
 		
 		return CurHealth;
 	}
+
+	protected virtual void OnStart() { }
 
 	protected override void OnTakeDamage() {
 		if (CurHealth <= MaxHealth * BREAK_PERCENTAGE) {

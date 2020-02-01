@@ -5,15 +5,18 @@ public class Tower : Building {
 	
 	private RangedAttacker _attacker;
 
-	private void Start() {
-		_attacker = GetComponent<RangedAttacker>();
+	public RangedAttacker Attacker {
+		get {
+			if (_attacker == null) _attacker = GetComponent<RangedAttacker>();
+			return _attacker;
+		}
 	}
 
 	protected override void OnRepair() {
-		_attacker.enabled = true;
+		Attacker.enabled = true;
 	}
 
 	protected override void OnBreak() {
-		_attacker.enabled = false;
+		Attacker.enabled = false;
 	}
 }

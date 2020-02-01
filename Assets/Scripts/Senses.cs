@@ -16,11 +16,11 @@ public class Senses : MonoBehaviour {
 	}
 
 	private void OnEnable() {
-		EventManager.AddListener<ScrapObjectDiedEvent>(HandleScrapObjectDiedEvent);
+//		EventManager.AddListener<ScrapObjectDiedEvent>(HandleScrapObjectDiedEvent);
 	}
 
 	private void OnDisable() {
-		EventManager.RemoveListener<ScrapObjectDiedEvent>(HandleScrapObjectDiedEvent);
+//		EventManager.RemoveListener<ScrapObjectDiedEvent>(HandleScrapObjectDiedEvent);
 	}
 
 	public ScrapBehaviour GetClosestMatch(Predicate<ScrapBehaviour> criteriaCheck) {

@@ -20,11 +20,6 @@ public class RangedAttacker : MonoBehaviour {
 		_senses.OnObjectExit += OnObjectExit;
 	}
 
-	private void OnDestroy() {
-		_senses.OnObjectEnter -= OnObjectEnter;
-		_senses.OnObjectExit -= OnObjectExit;
-	}
-
 	private void OnObjectEnter(ScrapBehaviour obj) {
 		if (_currentTarget == null) {
 			_currentTarget = _senses.GetAttackTarget(_construct.Faction);
