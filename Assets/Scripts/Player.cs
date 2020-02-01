@@ -12,6 +12,7 @@ public class Player : ScrapBehaviour {
 	public string RepairButton = "Repair_1";
 	public string UseButton = "Use_1";
 	public string RecallButton = "Recall_1";
+    public Camera PlayerCamera;
 
 	public float scrap;
 
@@ -63,7 +64,18 @@ public class Player : ScrapBehaviour {
 		Debug.Log("REPAIR");
 	}
 
-	private void Salvage(Construct target) {
+
+    protected override void OnTakeDamage() {
+        Debug.Log("SHAKE CAMERA");
+        if(PlayerCamera == null)
+        {
+            Debug.Log("NO CAMERA DETECTED");
+        }
+        PlayerCamera.GetComponent<PerlinShake>().PlayShake();
+    }
+
+
+    private void Salvage(Construct target) {
 		float salvageAmount = target.Salvage();
 		scrap += salvageAmount;
 		Debug.Log("SALVAGED " + salvageAmount);
