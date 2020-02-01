@@ -65,6 +65,13 @@ public class Player : ScrapBehaviour {
 
 	private void Repair(ScrapBehaviour target) {
 		Debug.Log("REPAIR");
+        if(scrap < target.RepairCost)
+        {
+            // TODO add beep sound
+            return;
+        }
+        // TODO add repair sound
+        scrap -= target.RepairCost;
 	}
 
     protected override void OnTakeDamage() {
