@@ -140,11 +140,15 @@ public class Creature : Construct {
 
 	private void Move(Vector2 direction) {
 		
-		_rigidbody.AddForce(direction - _rigidbody.velocity, ForceMode2D.Force);
-
-		if (_rigidbody.velocity.sqrMagnitude > MovementSpeed * 0.2f) {
+		if (direction.sqrMagnitude > MovementSpeed * 0.2f) {
 			_sprite.flipX = _rigidbody.velocity.x < 0.0f;
+			_animator.SetBool("Moving", true);
 		}
+		else {
+			_animator.SetBool("Moving", false);
+		}
+		
+		_rigidbody.AddForce(direction - _rigidbody.velocity, ForceMode2D.Force);
 	}
 
 	protected override void OnOwnerCommand(PlayerCommand command) {
