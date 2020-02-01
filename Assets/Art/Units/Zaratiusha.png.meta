@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: 122de04fe904c094fb7cdb77f1b3ebb2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7441027978608637932
+    second: Spritesheet 5Wrlod 1_0
+  - first:
+      213: -8188693732791927645
+    second: Spritesheet 5Wrlod 1_1
+  - first:
+      213: -4613751541214972596
+    second: Spritesheet 5Wrlod 1_2
+  - first:
+      213: -7557932511365312041
+    second: Spritesheet 5Wrlod 1_3
+  - first:
+      213: -5703156828097787147
+    second: Spritesheet 5Wrlod 1_4
+  - first:
+      213: -7956557576515482257
+    second: Spritesheet 5Wrlod 1_5
+  - first:
+      213: -204824530219841229
+    second: War_Attack_1
+  - first:
+      213: -6610896867474784747
+    second: War_Attack_2
+  - first:
+      213: -1533814375524572249
+    second: War_Attack_3
+  - first:
+      213: 7738757168117856692
+    second: War_Attack_4
+  - first:
+      213: 8446813852068580096
+    second: War_Attack_5
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheet 5Wrlod 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 42
+        height: 47
+      alignment: 9
+      pivot: {x: 0.57459897, y: 0.06446871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7f5b4b587d34760800000000000000
+      internalID: 7441027978608637932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet 5Wrlod 1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 51
+        height: 51
+      alignment: 9
+      pivot: {x: 0.57372147, y: 0.09862802}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac38728f6aeb5e80800000000000000
+      internalID: -8188693732791927645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet 5Wrlod 1_2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 46
+        width: 51
+        height: 51
+      alignment: 9
+      pivot: {x: 0.55324316, y: 0.17234944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4578fffa69a8ffb0800000000000000
+      internalID: -4613751541214972596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet 5Wrlod 1_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 46
+        width: 51
+        height: 51
+      alignment: 9
+      pivot: {x: 0.54914767, y: 0.09043675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1d1bfac64dc1790800000000000000
+      internalID: -7557932511365312041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet 5Wrlod 1_4
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 46
+        width: 51
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5409564, y: 0.08634111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa43ead4115ad0b0800000000000000
+      internalID: -5703156828097787147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet 5Wrlod 1_5
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 46
+        width: 51
+        height: 51
+      alignment: 9
+      pivot: {x: 0.59010404, y: 0.09862802}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d0ad03a01a49190800000000000000
+      internalID: -7956557576515482257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: War_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 56
+        height: 46
+      alignment: 9
+      pivot: {x: 0.578329, y: 0.06408219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339c5facc21582df0800000000000000
+      internalID: -204824530219841229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: War_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 56
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5932489, y: 0.07770462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e3c6733506144a0800000000000000
+      internalID: -6610896867474784747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: War_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 56
+        height: 46
+      alignment: 9
+      pivot: {x: 0.6081687, y: 0.08224543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a36873b3fbc6bae0800000000000000
+      internalID: -1533814375524572249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: War_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 56
+        height: 46
+      alignment: 9
+      pivot: {x: 0.61562866, y: 0.08224543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b93ca884a6956b60800000000000000
+      internalID: 7738757168117856692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: War_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 56
+        height: 46
+      alignment: 9
+      pivot: {x: 0.53356963, y: 0.07316381}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b8560027c193570800000000000000
+      internalID: 8446813852068580096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
