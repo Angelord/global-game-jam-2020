@@ -32,6 +32,8 @@ public class Creature : Construct {
 
 	private Vector2 _accumForce;
 
+	private Animator _animator;
+
 	public override bool Salvageable => Broken;
 
 	public override bool Repairable => Broken;
@@ -58,6 +60,7 @@ public class Creature : Construct {
 		_footCollider = GetComponent<CircleCollider2D>();
 		_sprite = GetComponentInChildren<SpriteRenderer>();
 		_senses = GetComponentInChildren<Senses>();
+		_animator = GetComponent<Animator>();
 	}
 
 	private void Update() {

@@ -14,15 +14,17 @@ public class Player : ScrapBehaviour {
 	public string RecallButton = "Recall_1";
     public Camera PlayerCamera;
 
-	public float scrap;
 
 	public event Action<PlayerCommand> OnCommand;
 
+	private float _scrap;
 	private Rigidbody2D _rigidbody;
 	private CircleCollider2D _footCollider;
 	private SpriteRenderer _renderer;
 	private PlayerSenses _senses;
 	private float _lastRecall;
+
+	public float Scrap => _scrap;
 
 	public override Faction Faction => _faction;
 
@@ -76,7 +78,7 @@ public class Player : ScrapBehaviour {
 
     private void Salvage(Construct target) {
 		float salvageAmount = target.Salvage();
-		scrap += salvageAmount;
+		_scrap += salvageAmount;
 		Debug.Log("SALVAGED " + salvageAmount);
 	}
 
