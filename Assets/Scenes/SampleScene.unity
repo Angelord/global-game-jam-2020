@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 205854732}
   - component: {fileID: 205854731}
   - component: {fileID: 205854730}
+  - component: {fileID: 205854734}
   m_Layer: 0
   m_Name: Player_2
   m_TagString: Untagged
@@ -212,7 +213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 040ed3340cc7a8742b9400ee9d70596d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 0
+  MaxHealth: 100
+  isDead: 0
   _faction: {fileID: 11400000, guid: 99969bd06bfea474da2ce8006138cc21, type: 2}
   Stats: {fileID: 11400000, guid: aa005770e63f7c744afc9d7892e8a0ce, type: 2}
   HorizontalAxis: Horizontal_2
@@ -221,6 +223,7 @@ MonoBehaviour:
   RepairButton: Repair_2
   UseButton: Use_2
   RecallButton: Recall_2
+  scrap: 0
 --- !u!50 &205854731
 Rigidbody2D:
   serializedVersion: 4
@@ -307,6 +310,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &205854734
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205854729}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,6 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 100
+  isDead: 0
   _faction: {fileID: 11400000, guid: 7d0070d7a5c5d7f45930a9bec314e69f, type: 2}
   Stats: {fileID: 11400000, guid: aa005770e63f7c744afc9d7892e8a0ce, type: 2}
   HorizontalAxis: Horizontal_1
@@ -449,6 +469,7 @@ MonoBehaviour:
   RepairButton: Repair_1
   UseButton: Use_1
   RecallButton: Recall_1
+  scrap: 0
 --- !u!50 &708907061
 Rigidbody2D:
   serializedVersion: 4
@@ -743,7 +764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1237371281
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -868,6 +889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 10
+  isDead: 0
   Owner: {fileID: 0}
   Broken: 0
 --- !u!1 &1425578463
@@ -881,6 +903,7 @@ GameObject:
   - component: {fileID: 1425578466}
   - component: {fileID: 1425578465}
   - component: {fileID: 1425578464}
+  - component: {fileID: 1425578467}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -903,7 +926,7 @@ MonoBehaviour:
   AttackRate: 0.5
   Damage: 1
   Range: 0
-  Projectile: {fileID: 7830425388499362709, guid: 04504dd4ab9ff4a44a6975b69f8ecb9b,
+  Projectile: {fileID: 7830425388499362709, guid: 6a754a2e33d7f7c44969154dbb7501d9,
     type: 3}
 --- !u!114 &1425578465
 MonoBehaviour:
@@ -918,8 +941,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 100
+  isDead: 0
   Owner: {fileID: 205854730}
-  Broken: 1
+  Broken: 0
 --- !u!4 &1425578466
 Transform:
   m_ObjectHideFlags: 0
@@ -936,6 +960,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1425578467
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425578463}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.3
 --- !u!1 &1500455816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,25 +1317,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 197083155824485735, guid: da89db4e5a734b0428544fda78770170,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2435486191390415332, guid: da89db4e5a734b0428544fda78770170,
         type: 3}
-      propertyPath: m_Mass
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4645967725002731312, guid: da89db4e5a734b0428544fda78770170,
-        type: 3}
-      propertyPath: Range
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4645967725002731313, guid: da89db4e5a734b0428544fda78770170,
-        type: 3}
-      propertyPath: MovementSpeed
-      value: 2
+      propertyPath: m_LinearDrag
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4645967725002731313, guid: da89db4e5a734b0428544fda78770170,
         type: 3}
@@ -1304,15 +1329,9 @@ PrefabInstance:
       objectReference: {fileID: 708907060}
     - target: {fileID: 4645967725002731313, guid: da89db4e5a734b0428544fda78770170,
         type: 3}
-      propertyPath: Broken
-      value: 0
+      propertyPath: MovementSpeed
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4645967725002731313, guid: da89db4e5a734b0428544fda78770170,
-        type: 3}
-      propertyPath: _steering
-      value: 
-      objectReference: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7,
-        type: 2}
     - target: {fileID: 4645967725002731315, guid: da89db4e5a734b0428544fda78770170,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1372,16 +1391,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gunner
-      objectReference: {fileID: 0}
-    - target: {fileID: 7244061497726846623, guid: da89db4e5a734b0428544fda78770170,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.248
-      objectReference: {fileID: 0}
-    - target: {fileID: 7244061497726846623, guid: da89db4e5a734b0428544fda78770170,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.018
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da89db4e5a734b0428544fda78770170, type: 3}

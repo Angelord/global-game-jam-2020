@@ -15,6 +15,11 @@ public abstract class Attacker : MonoBehaviour {
 
 	public ScrapBehaviour CurrentTarget => _currentTarget;
 
+	public bool TargetIsInRange() {
+		if (_currentTarget == null) return false;
+		return Vector2.Distance(_currentTarget.transform.position, transform.position) <= Range;
+	}
+
 	private void Start() {
 		_construct = GetComponent<Construct>();
 		_senses = GetComponentInChildren<Senses>();
@@ -37,7 +42,7 @@ public abstract class Attacker : MonoBehaviour {
 	private void Update() {
 		if (_currentTarget == null) { return; }
 
-		if (Vector2.Distance(_currentTarget.transform.position, transform.position) > Range) {
+		if (!TargetIsInRange()) {
 
 			_currentTarget = _senses.GetAttackTarget(_construct.Faction);
 				

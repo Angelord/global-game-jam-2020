@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: PlayerStats
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   MovementSpeed: 2
-  SalvageRate: 0
+  RecallFrequency: 1
+  RecallDuration: 3

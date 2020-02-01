@@ -4,5 +4,6 @@
 public class PlayerStats : ScriptableObject {
 	
 	public float MovementSpeed;
-	public float RecallDuration = 3.0f;
+	public float RecallFrequency = 4.0f;
+	public float RecallDuration = 1.5f;
 }

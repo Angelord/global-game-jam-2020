@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Steering
   m_EditorClassIdentifier: 
   Cohesion: 1
-  Separation: 0.8
-  SeekTarget: 2.49
+  Separation: 1
+  Follow: 2
+  FollowDistance: 0.7

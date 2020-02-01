@@ -21,12 +21,15 @@ public class Player : ScrapBehaviour {
 	private CircleCollider2D _footCollider;
 	private SpriteRenderer _renderer;
 	private PlayerSenses _senses;
+	private float _lastRecall;
 
 	public override Faction Faction => _faction;
 
 	public override bool Attackable => true;
 
 	public CircleCollider2D FootCollider => _footCollider;
+
+	public bool Recalling { get { return Time.time - _lastRecall <= Stats.RecallDuration; } }
 
 	private void Start() {
 		_rigidbody = GetComponent<Rigidbody2D>();
@@ -43,18 +46,16 @@ public class Player : ScrapBehaviour {
 		}
 		else if (Input.GetButtonDown(SalvageButton)) {
 			Construct salvage = _senses.GetSalvageTarget();
-			if (salvage != null)
-			{
+			if (salvage != null) {
 				Salvage(salvage);
-      }
+			}
 		}
 		else if (Input.GetButtonDown(UseButton)) {
 			ScrapBehaviour usable = _senses.GetUseTarget();
 			if (usable != null) { Use(usable); }
 		}
 		else if (Input.GetButtonDown(RecallButton)) {
-			Debug.Log("RECALL");
-			OnCommand?.Invoke(new RecallCommand());
+			Recall();
 		}
 	}
 
@@ -66,11 +67,20 @@ public class Player : ScrapBehaviour {
 		float salvageAmount = target.Salvage();
 		scrap += salvageAmount;
 		Debug.Log("SALVAGED " + salvageAmount);
-
 	}
 
 	private void Use(ScrapBehaviour target) {
 		Debug.Log("USING");
+	}
+
+	private void Recall() {
+		Debug.Log("RECALL");
+		
+		if (Time.time - _lastRecall < Stats.RecallFrequency) { return; }
+
+		_lastRecall = Time.time;
+		
+		OnCommand?.Invoke(new RecallCommand());
 	}
 
 	private void FixedUpdate() {

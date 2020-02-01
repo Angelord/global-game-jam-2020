@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Claw;
 using UnityEditorInternal;
 using UnityEngine;
@@ -49,6 +50,7 @@ public class Creature : Construct {
 
 	public void Recall() {
 		_state = UnitState.Following;
+		Debug.Log("Recalling here");
 	}
 
 	protected override void OnStart() {
@@ -58,7 +60,22 @@ public class Creature : Construct {
 		_sprite = GetComponentInChildren<SpriteRenderer>();
 		_senses = GetComponentInChildren<Senses>();
 	}
-	
+
+	private void Update() {
+		if(Broken) return;
+		
+		if (_state == UnitState.Following) {
+			if (_attacker.CurrentTarget == null) { return; }
+
+			if (Owner.Recalling) { return; }
+
+			if (!_attacker.TargetIsInRange()) {
+
+				_state = UnitState.Attacking;
+			}
+		}
+	}
+
 	private void FixedUpdate() {
 		if(Owner == null) return;
 		if(Broken) return;
@@ -111,19 +128,20 @@ public class Creature : Construct {
 			return Follow();
 		}
 
-		return Seek(_attacker.CurrentTarget.transform.position) * _steering.Follow;
+		float minDistance = Attacker.Range * 0.9f;
+		return Arrive(_attacker.CurrentTarget.transform.position, minDistance, _steering.FollowDistance) * _steering.Follow;
 	}
 
 	private void Move(Vector2 direction) {
 		
-		_rigidbody.AddForce(direction, ForceMode2D.Force);
+		_rigidbody.AddForce(direction - _rigidbody.velocity * 0.9f, ForceMode2D.Force);
 
 		if (_rigidbody.velocity.sqrMagnitude > MovementSpeed * 0.2f) {
 			_sprite.flipX = _rigidbody.velocity.x > 0.0f;
 		}
 	}
 
-	private void OnCommand(PlayerCommand command) {
+	protected override void OnOwnerCommand(PlayerCommand command) {
 		command.Execute(this);
 	}
 
@@ -141,7 +159,7 @@ public class Creature : Construct {
 		
 		Vector2 desiredVel = (target - (Vector2)transform.position).normalized * MovementSpeed;
 
-		return desiredVel - _rigidbody.velocity;
+		return desiredVel;
 	}
 
 	private Vector2 Arrive(Vector2 target, float minDistance, float decceleration) {
@@ -152,13 +170,17 @@ public class Creature : Construct {
 
 		if (distance > 0.0f) {
 
-			float speed = Mathf.Clamp(distance - minDistance, 0.0f, distance) / decceleration;
+			float speed = (distance - minDistance) / decceleration;
+
+			if (speed <= 0.0f) {
+				return Vector2.zero;
+			}
 
 			speed = Mathf.Min(speed, MovementSpeed);
 
 			Vector2 desiredVel = (toTarget / distance) * speed;
 
-			return desiredVel - _rigidbody.velocity;
+			return desiredVel;
 		}
 
 		return Vector2.zero;
@@ -166,7 +188,6 @@ public class Creature : Construct {
 
 	private Vector2 Cohesion() {
 		Vector2 centerOfMass = Vector2.zero;
-		Vector2 steeringForce = Vector2.zero;
 
 		int count = 0;
 		foreach (var neigh in _senses.ObjectsInRange) {
@@ -180,11 +201,6 @@ public class Creature : Construct {
 		}
 
 		centerOfMass /= count;
-
-//		Vector2 force = centerOfMass - (Vector2) transform.position;
-//		if (force.sqrMagnitude > 1.0f) {
-//			force.Normalize();
-//		}
 
 		return Seek(centerOfMass);
 	}

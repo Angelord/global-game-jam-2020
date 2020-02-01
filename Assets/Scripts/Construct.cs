@@ -23,6 +23,10 @@ public abstract class Construct : ScrapBehaviour {
 			CurHealth = MaxHealth * BREAK_PERCENTAGE;
 			OnBreak();
 		}
+		else if(Owner != null) {
+			Owner.OnCommand += OnOwnerCommand;
+		}
+		
 		OnStart();
 	}
 
