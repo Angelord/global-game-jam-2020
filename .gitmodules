@@ -1,0 +1,6 @@
+[submodule "Assets/Claw/unity-claw-core"]
+	path = Assets/Claw/unity-claw-core
+	url = https://github.com/Angelord/unity-claw-core.git
+[submodule "Assets/Claw/unity-claw-camera"]
+	path = Assets/Claw/unity-claw-camera
+	url = https://github.com/Angelord/unity-claw-camera.git
