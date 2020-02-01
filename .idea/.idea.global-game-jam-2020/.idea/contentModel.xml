@@ -97,6 +97,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Attacker.cs" t="Include" />
           <e p="Building.cs" t="Include" />
           <e p="CameraShake" t="Include">
             <e p="PeriodicShake.cs" t="Include" />
