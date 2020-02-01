@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Projects\Games\global-game-jam-2020" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Building.cs" t="Include" />
+          <e p="Creature.cs" t="Include" />
+          <e p="CreatureStats.cs" t="Include" />
+          <e p="IRepairable.cs" t="Include" />
+          <e p="ISalvageable.cs" t="Include" />
+          <e p="IUsable.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="PlayerCommand.cs" t="Include" />
+          <e p="PlayerSenses.cs" t="Include" />
+          <e p="PlayerStats.cs" t="Include" />
+          <e p="RecallCommand.cs" t="Include" />
+          <e p="ScrapBehaviour.cs" t="Include" />
+          <e p="ScrapPile.cs" t="Include" />
+        </e>
+      </e>
+      <e p="global-game-jam-2020.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\Angel\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Angel\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_global-game-jam-2020.-1139773448.00" t="ExcludeRecursive" />
+  </component>
+</project>
