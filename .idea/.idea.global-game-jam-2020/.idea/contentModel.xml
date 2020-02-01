@@ -19,7 +19,52 @@
           <e p="ScrapBehaviour.cs" t="Include" />
           <e p="ScrapPile.cs" t="Include" />
         </e>
+        <e p="Vendor" t="Include">
+          <e p="Fullscreen" t="Include">
+            <e p="Editor" t="Include">
+              <e p="After.cs" t="Include" />
+              <e p="Cmd.cs" t="Include" />
+              <e p="DisableSceneView.cs" t="Include" />
+              <e p="Displays" t="Include">
+                <e p="DisplayInfo.windows.cs" t="Include" />
+              </e>
+              <e p="Disposables.cs" t="Include" />
+              <e p="Fullscreen.cs" t="Include" />
+              <e p="FullscreenCallbacks.cs" t="Include" />
+              <e p="FullscreenContainer.cs" t="Include" />
+              <e p="FullscreenContainerInternal.cs" t="Include" />
+              <e p="FullscreenOnPlay.cs" t="Include" />
+              <e p="FullscreenPreferences.cs" t="Include" />
+              <e p="FullscreenRects.cs" t="Include" />
+              <e p="FullscreenUtility.cs" t="Include" />
+              <e p="FullscreenView.cs" t="Include" />
+              <e p="FullscreenWindow.cs" t="Include" />
+              <e p="Integration.cs" t="Include" />
+              <e p="InternalTypes.cs" t="Include" />
+              <e p="KeepFullscreenBelow.cs" t="Include" />
+              <e p="Linux" t="Include">
+                <e p="NativeFullscreenHook.cs" t="Include" />
+                <e p="wmctrl.cs" t="Include" />
+              </e>
+              <e p="Logger.cs" t="Include" />
+              <e p="MenuItems.cs" t="Include" />
+              <e p="Patcher.cs" t="Include" />
+              <e p="PlaceholderWindow.cs" t="Include" />
+              <e p="PrefItem.cs" t="Include" />
+              <e p="ReflectionUtility.cs" t="Include" />
+              <e p="Shortcut.cs" t="Include" />
+              <e p="ViewPyramid.cs" t="Include" />
+              <e p="Windows" t="Include">
+                <e p="GDI32.cs" t="Include" />
+                <e p="ShCore.cs" t="Include" />
+                <e p="Structs.cs" t="Include" />
+                <e p="User32.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
       </e>
+      <e p="FullscreenEditor.csproj" t="IncludeRecursive" />
       <e p="global-game-jam-2020.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

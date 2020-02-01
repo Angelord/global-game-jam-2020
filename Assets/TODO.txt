@@ -1,0 +1,19 @@
+﻿
+Highlighting 
+
+Team Color Shader
+
+Other Inputs
+
+Repairing
+
+Towers
+
+Creature Behaviour 
+    Following
+    Attacking 
+        Melee 
+        Ranged
+        
+Buildings
+

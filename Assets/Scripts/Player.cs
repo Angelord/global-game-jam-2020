@@ -3,7 +3,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour {
-	
+
+	public Color TeamColor;
 	public PlayerStats Stats;
 	public string HorizontalAxis = "Horizontal_1";
 	public string VerticalAxis = "Vertical_1";
@@ -71,7 +72,6 @@ public class Player : MonoBehaviour {
 		_rigidbody.AddForce(moveDir * Stats.MovementSpeed - _rigidbody.velocity * 0.9f, ForceMode2D.Impulse);
 	}
 }
-
 
 
 
