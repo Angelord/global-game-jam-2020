@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1284730679844951215}
   - component: {fileID: 1284730679844951208}
   - component: {fileID: 1284730679844951209}
-  - component: {fileID: 1284730679844951214}
+  - component: {fileID: 435926520232919433}
   m_Layer: 0
   m_Name: Scrap_Large
   m_TagString: Untagged
@@ -51,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -99,8 +99,8 @@ MonoBehaviour:
   isDead: 0
   Owner: {fileID: 0}
   Broken: 1
---- !u!58 &1284730679844951214
-CircleCollider2D:
+--- !u!70 &435926520232919433
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -112,6 +112,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.06
+  m_Offset: {x: -0.000000014084293, y: 0.13185243}
+  m_Size: {x: 0.50473166, y: 0.17124133}
+  m_Direction: 1

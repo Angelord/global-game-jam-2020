@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4617322223903176157}
   - component: {fileID: 4617322223903176154}
   - component: {fileID: 4617322223903176155}
-  - component: {fileID: 4617322223903176156}
   - component: {fileID: 4394680019516862071}
+  - component: {fileID: 7170297816869773598}
   m_Layer: 0
   m_Name: Scrap_Small
   m_TagString: Untagged
@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100,22 +100,6 @@ MonoBehaviour:
   isDead: 0
   Owner: {fileID: 0}
   Broken: 1
---- !u!58 &4617322223903176156
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4617322223903176152}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.03
 --- !u!114 &4394680019516862071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,3 +116,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e2b6aecd441ad4c78bcaadba12b01a96, type: 3}
   - {fileID: 21300000, guid: c6094d10e452f43f8961d11b34357d00, type: 3}
   - {fileID: 21300000, guid: e8475c5c5479444c0b224cc17daef2d4, type: 3}
+--- !u!70 &7170297816869773598
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617322223903176152}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.008914752, y: 0.02689037}
+  m_Size: {x: 0.1310413, y: 0.053781476}
+  m_Direction: 1
