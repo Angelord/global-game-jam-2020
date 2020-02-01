@@ -137,8 +137,8 @@ InputManager:
     m_Name: Vertical_2
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: s
-    positiveButton: w
+    negativeButton: w
+    positiveButton: s
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -471,6 +471,22 @@ InputManager:
     joyNum: 2
   - serializedVersion: 3
     m_Name: Recall_1
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick button 3
+    altNegativeButton: 
+    altPositiveButton: '[6]'
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: Recall_2
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
