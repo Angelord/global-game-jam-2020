@@ -1317,21 +1317,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2435486191390415332, guid: da89db4e5a734b0428544fda78770170,
-        type: 3}
-      propertyPath: m_LinearDrag
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4645967725002731313, guid: da89db4e5a734b0428544fda78770170,
         type: 3}
       propertyPath: Owner
       value: 
       objectReference: {fileID: 708907060}
-    - target: {fileID: 4645967725002731313, guid: da89db4e5a734b0428544fda78770170,
-        type: 3}
-      propertyPath: MovementSpeed
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4645967725002731315, guid: da89db4e5a734b0428544fda78770170,
         type: 3}
       propertyPath: m_LocalPosition.x
