@@ -16,8 +16,11 @@ public abstract class Attacker : MonoBehaviour {
 	private ScrapBehaviour _currentTarget;
 	private float _lastAttack;
 	private Animator _animator;
+	private bool _attacking;
 
 	public ScrapBehaviour CurrentTarget => _currentTarget;
+
+	public bool Attacking => _attacking;
 
 	public bool TargetIsInRange() {
 		if (_currentTarget == null) return false;
@@ -57,11 +60,18 @@ public abstract class Attacker : MonoBehaviour {
 		if (Time.time - _lastAttack >= AttackRate) {
 			
 			Attack(_currentTarget);
-			
-			_animator.SetTrigger(AttackTrigger);
-			
+
+			if (HasAttackAnimation) {
+				_animator.SetTrigger(AttackTrigger);
+				_attacking = true;
+			}
+
 			_lastAttack = Time.time;
 		}
+	}
+
+	public void OnAttackAnimationOver() {
+		_attacking = false;
 	}
 
 	protected abstract void Attack(ScrapBehaviour target);

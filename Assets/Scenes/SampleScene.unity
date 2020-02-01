@@ -425,7 +425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205854729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.79, y: -0.28, z: -0.044922113}
+  m_LocalPosition: {x: 9.73, y: -0.17, z: -0.044922113}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 169345540}
@@ -2111,12 +2111,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistario
       objectReference: {fileID: 0}
-    - target: {fileID: 3409352085180414956, guid: 4db76b9a179c7874aa3849fcd30371ec,
-        type: 3}
-      propertyPath: Projectile
-      value: 
-      objectReference: {fileID: 7830425388499362709, guid: 5da78dc9fde43f344bd66806c2fb169d,
-        type: 3}
     - target: {fileID: 3409352085180414957, guid: 4db76b9a179c7874aa3849fcd30371ec,
         type: 3}
       propertyPath: Owner
@@ -2186,11 +2180,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2435486191390415332, guid: da89db4e5a734b0428544fda78770170,
-        type: 3}
-      propertyPath: m_LinearDrag
-      value: 0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 4645967725002731313, guid: da89db4e5a734b0428544fda78770170,
         type: 3}
       propertyPath: Owner

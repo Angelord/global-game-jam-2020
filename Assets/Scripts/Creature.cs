@@ -82,10 +82,15 @@ public class Creature : Construct {
 		if(Owner == null) return;
 		if(Broken) return;
 
+		if (Attacker.Attacking) {
+			_rigidbody.velocity = Vector2.zero;
+			return;
+		}
+
 		_accumForce = Vector2.zero;
-		
+
 		CalculateSteeringForce();
-		
+
 		Move(_accumForce);
 	}
 
