@@ -84,6 +84,10 @@ public class Creature : Construct {
 
 		if (Attacker.Attacking) {
 			_rigidbody.velocity = Vector2.zero;
+			if (Attacker.CurrentTarget != null) {
+				_sprite.flipX = transform.position.x - Attacker.CurrentTarget.transform.position.x > 0.0f;
+			}
+
 			return;
 		}
 
