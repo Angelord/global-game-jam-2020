@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1284730679844951208}
   - component: {fileID: 1284730679844951209}
   - component: {fileID: 435926520232919433}
+  - component: {fileID: -101288245397946952}
   m_Layer: 0
   m_Name: Scrap_Large
   m_TagString: Untagged
@@ -115,3 +116,20 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000014084293, y: 0.13185243}
   m_Size: {x: 0.50473166, y: 0.17124133}
   m_Direction: 1
+--- !u!114 &-101288245397946952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284730679844951210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad30199f372842218acb93b3b647c78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: a56c3c5def87cf047beb832bf5257b63, type: 2}
+  activateOnStart: 1
+  _matIndex: 0
+  _duration: 0
