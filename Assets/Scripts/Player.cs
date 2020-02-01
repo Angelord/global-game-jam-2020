@@ -17,12 +17,12 @@ public class Player : MonoBehaviour {
 	
 	private Rigidbody2D _rigidbody;
 	private SpriteRenderer _renderer;
-	private PlayerSenses _senses;
+	private Senses _senses;
 
 	private void Start() {
 		_rigidbody = GetComponent<Rigidbody2D>();
 		_renderer = GetComponentInChildren<SpriteRenderer>();
-		_senses = GetComponentInChildren<PlayerSenses>();
+		_senses = GetComponentInChildren<Senses>();
 	}
 
 	private void Update() {

@@ -10,11 +10,16 @@
           <e p="CreatureStats.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerCommand.cs" t="Include" />
-          <e p="PlayerSenses.cs" t="Include" />
           <e p="PlayerStats.cs" t="Include" />
           <e p="RecallCommand.cs" t="Include" />
           <e p="ScrapBehaviour.cs" t="Include" />
           <e p="ScrapPile.cs" t="Include" />
+          <e p="Senses.cs" t="Include" />
+          <e p="Tower.cs" t="Include" />
+          <e p="UsableBuilding.cs" t="Include" />
+          <e p="UserInterface" t="Include">
+            <e p="InteractionGUI.cs" t="Include" />
+          </e>
         </e>
         <e p="TODO.txt" t="Include" />
         <e p="Vendor" t="Include">

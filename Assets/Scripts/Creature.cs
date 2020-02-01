@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class Creature : MonoBehaviour {
+﻿public class Creature : ScrapBehaviour {
 
 	public CreatureStats Stats;
 	public bool Broken;
@@ -8,25 +6,30 @@ public class Creature : MonoBehaviour {
 	private Player _owner;
 	private float _integrity;
 
-	public void Resurrect(Player newOwner) {
-		SetOwner(newOwner);
-		_integrity = Stats.MaxIntegrity;
-	}
+	public override bool Salvageable => Broken;
+
+	public override bool Repairable => Broken;
 
 	public void TakeDamage(float amount) {
 		_integrity -= amount;
-		if (_integrity <= 0.0f) {
-			Die();		
+		if (_integrity <= Stats.MaxIntegrity * 0.3f) {
+			Break();
 		}
 	}
 
-	public float Salvage(float amount) {
+	public override void Repair(Player repairer) {
+		SetOwner(repairer);
+		_integrity = Stats.MaxIntegrity;
+	}
+
+	public override float Salvage(float amount) {
 
 		float salvage = amount;
 
 		_integrity -= amount;
 		if (_integrity <= 0.0f) {
 			salvage += _integrity;
+			Destroy(this.gameObject);
 			// TODO : Play destroy animation / Spawn some particles
 		}
 
@@ -37,7 +40,7 @@ public class Creature : MonoBehaviour {
 		command.Execute(this);
 	}
 
-	private void Die() {
+	private void Break() {
 
 		UnsetOwner();
 

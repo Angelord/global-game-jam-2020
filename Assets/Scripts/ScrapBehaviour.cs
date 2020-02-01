@@ -1,7 +1,15 @@
 ﻿using UnityEngine;
 
+public enum Fraction {
+	Neutral = 0,
+	Player1 = 1,
+	Player2 = 2
+}
+
 public abstract class ScrapBehaviour : MonoBehaviour {
 
+	public Fraction Fraction;
+	
 	public virtual bool Usable { get { return false; } }
 
 	public virtual bool Salvageable { get { return false; } }
@@ -14,5 +22,5 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 
 	public virtual void Use() { }
 
-	public virtual void Repair() { }
+	public virtual void Repair(Player repairer) { }
 }
