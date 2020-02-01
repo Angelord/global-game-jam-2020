@@ -64,7 +64,6 @@ public class Player : ScrapBehaviour {
 		Debug.Log("REPAIR");
 	}
 
-
     protected override void OnTakeDamage() {
         Debug.Log("SHAKE CAMERA");
         if(PlayerCamera == null)
