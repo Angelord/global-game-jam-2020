@@ -18,6 +18,7 @@ public class Player : ScrapBehaviour {
 	public event Action<PlayerCommand> OnCommand;
 
 	private Rigidbody2D _rigidbody;
+	private CircleCollider2D _footCollider;
 	private SpriteRenderer _renderer;
 	private PlayerSenses _senses;
 
@@ -25,8 +26,11 @@ public class Player : ScrapBehaviour {
 
 	public override bool Attackable => true;
 
+	public CircleCollider2D FootCollider => _footCollider;
+
 	private void Start() {
 		_rigidbody = GetComponent<Rigidbody2D>();
+		_footCollider = GetComponent<CircleCollider2D>();
 		_renderer = GetComponentInChildren<SpriteRenderer>();
 		_senses = GetComponentInChildren<PlayerSenses>();
 	}

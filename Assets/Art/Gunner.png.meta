@@ -1,0 +1,370 @@
+fileFormatVersion: 2
+guid: cb949e31b5c4b644d8e2b23f9719502d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5693930522163591640
+    second: Gunner_0
+  - first:
+      213: -7572007666788980571
+    second: Gunner_1
+  - first:
+      213: -7915212616666519991
+    second: Gunner_2
+  - first:
+      213: -6261367208969216911
+    second: Gunner_3
+  - first:
+      213: 5804877015934375190
+    second: Gunner_4
+  - first:
+      213: 6766952121001084959
+    second: Gunner_5
+  - first:
+      213: -6377141242092774302
+    second: Gunner_6
+  - first:
+      213: -2253298922891795659
+    second: Gunner_7
+  - first:
+      213: 6017438708502596945
+    second: Gunner_8
+  - first:
+      213: -1317752060538432968
+    second: Gunner_9
+  - first:
+      213: -7933449486187953486
+    second: Gunner_10
+  - first:
+      213: 4465515343220627934
+    second: Gunner_Attack_1
+  - first:
+      213: 1790079624169847734
+    second: Gunner_Attack_2
+  - first:
+      213: -1805669416926572269
+    second: Gunner_Attack_3
+  - first:
+      213: -1427851816842466061
+    second: Gunner_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gunner_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38
+        width: 15
+        height: 17
+      alignment: 9
+      pivot: {x: 0.28902957, y: 0.018615274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8264faa9b581bf0b0800000000000000
+      internalID: -5693930522163591640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.34177214, y: 0.04964032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f188858e91b09ed50800000000000000
+      internalID: 6766952121001084959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 20
+        width: 15
+        height: 18
+      alignment: 9
+      pivot: {x: 0.3945147, y: 0.10548549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c119ee3d7df77a0800000000000000
+      internalID: -6377141242092774302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 20
+        width: 15
+        height: 18
+      alignment: 9
+      pivot: {x: 0.45077386, y: 0.070323944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533a340719caab0e0800000000000000
+      internalID: -2253298922891795659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_8
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 20
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0.4623266, y: 0.052742746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d8bf5af9c328350800000000000000
+      internalID: 6017438708502596945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_9
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 19
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0.49246597, y: 0.099624954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83251919b7766bde0800000000000000
+      internalID: -1317752060538432968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 19
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0.4321883, y: 0.07032352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2034cb9b9b6e190800000000000000
+      internalID: -7933449486187953486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.28902963, y: 0.012410262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9d8bb9b82b8fd30800000000000000
+      internalID: 4465515343220627934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2
+        width: 13
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbfe461fe3a7d810800000000000000
+      internalID: 1790079624169847734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunner_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2
+        width: 15
+        height: 17
+      alignment: 9
+      pivot: {x: 0.40154725, y: 0.00620525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3111e4e6b39f0f6e0800000000000000
+      internalID: -1805669416926572269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

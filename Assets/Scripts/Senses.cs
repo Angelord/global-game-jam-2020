@@ -10,7 +10,9 @@ public class Senses : MonoBehaviour {
 
 	public event Action<ScrapBehaviour> OnObjectEnter;
 	public event Action<ScrapBehaviour> OnObjectExit;
-	
+
+	public List<ScrapBehaviour> ObjectsInRange => _objectsInRange;
+
 	public ScrapBehaviour GetAttackTarget(Faction faction) {
 		return GetClosestMatch((scrap) => faction.IsEnemy(scrap.Faction));
 	}

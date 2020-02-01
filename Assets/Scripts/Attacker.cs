@@ -1,16 +1,20 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof(Construct))]
 public abstract class Attacker : MonoBehaviour {
 	
 	public float AttackRate;
 	public float Damage;
-
+	public float Range;
+	
 	private Construct _construct;
 	private Senses _senses;
 	private ScrapBehaviour _currentTarget;
 	private float _lastAttack;
-	
+
+	public ScrapBehaviour CurrentTarget => _currentTarget;
+
 	private void Start() {
 		_construct = GetComponent<Construct>();
 		_senses = GetComponentInChildren<Senses>();
@@ -32,7 +36,14 @@ public abstract class Attacker : MonoBehaviour {
 
 	private void Update() {
 		if (_currentTarget == null) { return; }
-		
+
+		if (Vector2.Distance(_currentTarget.transform.position, transform.position) > Range) {
+
+			_currentTarget = _senses.GetAttackTarget(_construct.Faction);
+				
+			return;
+		}
+
 		if (Time.time - _lastAttack >= AttackRate) {
 			Attack(_currentTarget);
 			
@@ -43,4 +54,11 @@ public abstract class Attacker : MonoBehaviour {
 	}
 
 	protected abstract void Attack(ScrapBehaviour target);
+
+	private void OnDrawGizmosSelected() {
+		
+		Gizmos.color = Color.red;
+		
+		Gizmos.DrawWireSphere(transform.position, Range);
+	}
 }

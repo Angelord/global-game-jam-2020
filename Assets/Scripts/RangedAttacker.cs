@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Construct))]
 public class RangedAttacker : Attacker {
 	
 	public GameObject Projectile;
@@ -9,7 +8,7 @@ public class RangedAttacker : Attacker {
 		Projectile proj = GameObject.Instantiate(Projectile, transform.position, Quaternion.identity).GetComponent<Projectile>();
 		
 		proj.Initialize(target.transform, () => {
-			if (target == null || target.Attackable) { return; }
+			if (target == null || !target.Attackable) { return; }
 			target.TakeDamage(Damage);
 		});
 	}
