@@ -85,7 +85,7 @@ return OUT;
 
 float4 ShinyFX(float4 txt, float2 uv, float pos, float size, float smooth, float intensity, float speed)
 {
-pos = pos + 0.5+sin(_Time*20*speed)*0.5;
+pos = pos + (_Time*20*speed % 1);
 uv = uv - float2(pos, 0.5);
 float a = atan2(uv.x, uv.y) + 1.4, r = 3.1415;
 float d = cos(floor(0.5 + a / r) * r - a) * length(uv);
