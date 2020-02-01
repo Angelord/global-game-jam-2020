@@ -25,16 +25,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _ColorMask: 15
-    - _Sharpness_Angle_1: 0.25
-    - _Sharpness_Distance_1: 2.66
-    - _Sharpness_Fade_1: 1
-    - _Sharpness_Intensity_1: 0.19
-    - _Sharpness_original_1: 1
-    - _ShinyFX_Intensity_1: 1
-    - _ShinyFX_Pos_1: 0
-    - _ShinyFX_Size_1: -0.1
-    - _ShinyFX_Smooth_1: 0.25
-    - _ShinyFX_Speed_1: 1
+    - _ShinyFX_Intensity_1: 1.43
+    - _ShinyFX_Pos_1: 0.003
+    - _ShinyFX_Size_1: -0.119
+    - _ShinyFX_Smooth_1: 0.284
+    - _ShinyFX_Speed_1: 1.81
     - _SpriteFade: 1
     - _Stencil: 0
     - _StencilComp: 8

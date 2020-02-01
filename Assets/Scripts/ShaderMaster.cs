@@ -7,15 +7,16 @@ public class ShaderMaster : MonoBehaviour
     public List<Material> materials;
     Material originalMat;
 
-    private int _matIndex;
-    private float _pause;
-    private float _duration;
+    public int _matIndex;
+    public float _pause;
+    public float _duration;
    
 
     void Start()
     {
         originalMat = GetComponent<SpriteRenderer>().material;
-        SetShader(0, 1, 1);
+        SetShader(0, _pause, _duration);
+   
         
     }
 

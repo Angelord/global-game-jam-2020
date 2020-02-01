@@ -85,13 +85,20 @@ return OUT;
 
 float4 ShinyFX(float4 txt, float2 uv, float pos, float size, float smooth, float intensity, float speed)
 {
+
+float skip = _Time*20*speed % 6 < 5;
+if(skip) {
+    return txt; 
+} else {
 pos = pos + (_Time*20*speed % 1);
+
 uv = uv - float2(pos, 0.5);
 float a = atan2(uv.x, uv.y) + 1.4, r = 3.1415;
 float d = cos(floor(0.5 + a / r) * r - a) * length(uv);
 float dist = 1.0 - smoothstep(size, size + smooth, d);
 txt.rgb += dist*intensity;
 return txt;
+}
 }
 float4 frag (v2f i) : COLOR
 {
