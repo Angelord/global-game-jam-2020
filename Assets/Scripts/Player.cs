@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : ScrapBehaviour {
 
-	[SerializeField] private Fraction _fraction;
+	[SerializeField] private Faction _faction;
 	public PlayerStats Stats;
 	public string HorizontalAxis = "Horizontal_1";
 	public string VerticalAxis = "Vertical_1";
@@ -19,7 +19,7 @@ public class Player : ScrapBehaviour {
 	private SpriteRenderer _renderer;
 	private PlayerSenses _senses;
 
-	public override Fraction Fraction => _fraction;
+	public override Faction Faction => _faction;
 
 	public override bool Attackable => true;
 
@@ -41,9 +41,10 @@ public class Player : ScrapBehaviour {
 		}
 		else if (Input.GetButtonDown(UseButton)) {
 			ScrapBehaviour usable = _senses.GetUseTarget();
-			if (usable == null) { Use(usable); }
+			if (usable != null) { Use(usable); }
 		}
 		else if (Input.GetButtonDown(RecallButton)) {
+			Debug.Log("RECALL");
 			OnCommand?.Invoke(new RecallCommand());
 		}
 	}

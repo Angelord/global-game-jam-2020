@@ -102,12 +102,16 @@
           <e p="Creature.cs" t="Include" />
           <e p="Events" t="Include">
             <e p="EntityBrokeEvent.cs" t="Include" />
+            <e p="ScrapObjectBrokeEvent.cs" t="Include" />
+            <e p="ScrapObjectDiedEvent.cs" t="Include" />
           </e>
-          <e p="Fraction.cs" t="Include" />
+          <e p="Faction.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerCommand.cs" t="Include" />
           <e p="PlayerSenses.cs" t="Include" />
           <e p="PlayerStats.cs" t="Include" />
+          <e p="Projectile.cs" t="Include" />
+          <e p="RangedAttacker.cs" t="Include" />
           <e p="RecallCommand.cs" t="Include" />
           <e p="ScrapBehaviour.cs" t="Include" />
           <e p="ScrapPile.cs" t="Include" />

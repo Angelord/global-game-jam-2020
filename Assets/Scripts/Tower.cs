@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+[RequireComponent(typeof(RangedAttacker))]
 public class Tower : Building {
-//
-//	private List<Creature> _inRange = new List<Creature>();
-//
-//	private void OnTriggerEnter2D(Collider2D other) {
-//		Creature creature = other.GetComponent<Creature>();
-//		if (creature == null) { return; }
-//		
-//		_inRange.Add(creature);
-//	}
-//
-//	private void OnTriggerExit2D(Collider2D other) {
-//		Creature creature = other.GetComponent<Creature>();
-//		if (creature == null) { return; }
-//	
-//		_inRange.Remove(creature);
-//	}
+	
+	private RangedAttacker _attacker;
+
+	private void Start() {
+		_attacker = GetComponent<RangedAttacker>();
+	}
+
+	protected override void OnRepair() {
+		_attacker.enabled = true;
+	}
+
+	protected override void OnBreak() {
+		_attacker.enabled = false;
+	}
 }

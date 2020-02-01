@@ -1,11 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using Claw;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 public class Senses : MonoBehaviour {
 
 	private readonly List<ScrapBehaviour> _objectsInRange = new List<ScrapBehaviour>();
+
+	public event Action<ScrapBehaviour> OnObjectEnter;
+	public event Action<ScrapBehaviour> OnObjectExit;
+	
+	public ScrapBehaviour GetAttackTarget(Faction faction) {
+		return GetClosestMatch((scrap) => faction.IsEnemy(scrap.Faction));
+	}
+
+	private void OnEnable() {
+		EventManager.AddListener<ScrapObjectDiedEvent>(HandleScrapObjectDiedEvent);
+	}
+
+	private void OnDisable() {
+		EventManager.RemoveListener<ScrapObjectDiedEvent>(HandleScrapObjectDiedEvent);
+	}
 
 	public ScrapBehaviour GetClosestMatch(Predicate<ScrapBehaviour> criteriaCheck) {
 
@@ -17,6 +33,7 @@ public class Senses : MonoBehaviour {
 
 			float distance = Vector2.Distance(transform.position, scrapBehaviour.transform.position);
 			if (distance < curClosest) {
+				Debug.Log("Match");
 				closestMatch = scrapBehaviour;
 				curClosest = distance;
 			}
@@ -30,7 +47,9 @@ public class Senses : MonoBehaviour {
 		ScrapBehaviour scrap = other.GetComponent<ScrapBehaviour>();
 		if (scrap != null) {
 			_objectsInRange.Add(scrap);
-			OnScrapObjectEnter(scrap);
+			if (OnObjectEnter != null) {
+				OnObjectEnter(scrap);
+			}
 		}
 	}
 
@@ -38,16 +57,16 @@ public class Senses : MonoBehaviour {
 
 		ScrapBehaviour scrap = other.GetComponent<ScrapBehaviour>();
 		if (scrap != null) {
-			_objectsInRange.Remove(scrap);	
-			OnScrapObjectExit(scrap);
+			_objectsInRange.Remove(scrap);
+			if (OnObjectExit != null) {
+				OnObjectExit(scrap);
+			}
 		}
 	}
-
-	protected virtual void OnScrapObjectEnter(ScrapBehaviour scrapBehaviour) {
-		
-	}
-
-	protected virtual void OnScrapObjectExit(ScrapBehaviour scrapBehaviour) {
-		
+	
+	private void HandleScrapObjectDiedEvent(ScrapObjectDiedEvent gameEvent) {
+		if (_objectsInRange.Contains(gameEvent.ScrapObject)) {
+			_objectsInRange.Remove(gameEvent.ScrapObject);
+		}
 	}
 }

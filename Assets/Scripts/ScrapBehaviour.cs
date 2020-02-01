@@ -6,7 +6,7 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 
 	private float _curHealth;
 
-	public abstract Fraction Fraction { get; }
+	public abstract Faction Faction { get; }
 
 	public virtual bool Attackable => false;
 	

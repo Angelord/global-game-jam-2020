@@ -1,30 +1,32 @@
-﻿
-// Creatures, Buildings etc...
+﻿// Creatures, Buildings etc...
 public abstract class Construct : ScrapBehaviour {
 	
 	private const float BREAK_PERCENTAGE = 0.3f;
 
-	private bool _broken;
+	public Player Owner;
 
-	private Player _owner;
+	public bool Broken = true;
 	
 	public virtual bool Usable => false;
 
 	public virtual bool Salvageable => false;
 
 	public virtual bool Repairable => false;
-
-	protected bool Broken => _broken;
-
-	protected Player Owner => _owner;
-
-	public override Fraction Fraction { get { return _owner == null ? Fraction.Neutral : _owner.Fraction; } }
 	
+	public override Faction Faction { get { return Owner == null ? Faction.Neutral : Owner.Faction; } }
+
+	private void Start() {
+		if (Broken) {
+			CurHealth = MaxHealth * BREAK_PERCENTAGE;
+			OnBreak();
+		}
+	}
+
 	public virtual void Use() { }
 
 	public void Repair(Player repairer) {
-		if (_owner != repairer) {
-			if (_owner != null) { _owner.OnCommand -= OnOwnerCommand; }
+		if (Owner != repairer) {
+			if (Owner != null) { Owner.OnCommand -= OnOwnerCommand; }
 			repairer.OnCommand += OnOwnerCommand;
 		}
 
@@ -44,9 +46,9 @@ public abstract class Construct : ScrapBehaviour {
 	protected override void OnTakeDamage() {
 		if (CurHealth <= MaxHealth * BREAK_PERCENTAGE) {
 			CurHealth = MaxHealth * BREAK_PERCENTAGE;
-			_broken = true;
-			_owner.OnCommand -= OnOwnerCommand;
-			_owner = null;
+			Broken = true;
+			Owner.OnCommand -= OnOwnerCommand;
+			Owner = null;
 			OnBreak();
 		}
 	}
