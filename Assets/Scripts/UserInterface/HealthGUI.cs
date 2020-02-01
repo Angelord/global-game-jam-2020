@@ -4,11 +4,9 @@ using Boo.Lang;
 using Claw;
 using UnityEngine;
 
-public class HealthGUI : MonoBehaviour {
-
-
+public class HealthGUI : GUIBehaviour {
+	
 	public GameObject BarPrefab;
-	public Camera Camera;
 	private readonly List<HealthBar> _bars = new List<HealthBar>();
 
 	private void Awake() {
@@ -26,11 +24,15 @@ public class HealthGUI : MonoBehaviour {
 		HealthBar newBar = Instantiate(BarPrefab, transform).GetComponent<HealthBar>();
 		
 		newBar.Initialize(Camera, objectSpawnedEvent.ScrapObject);
+
+		_bars.Add(newBar);
 	}
 
 	private void HandleObjDiedEvent(ScrapObjectDiedEvent objectDiedEvent) {
 		
 		_bars.Find((bar) => bar.Target == objectDiedEvent.ScrapObject, out HealthBar targetBar);
+
+		if (targetBar == null) return;
 		
 		Destroy(targetBar.gameObject);
 	}
