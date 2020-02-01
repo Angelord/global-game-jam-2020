@@ -35,6 +35,9 @@ public abstract class Attacker : MonoBehaviour {
 		
 		if (Time.time - _lastAttack >= AttackRate) {
 			Attack(_currentTarget);
+			
+			// TODO : Play attack animation.
+			
 			_lastAttack = Time.time;
 		}
 	}

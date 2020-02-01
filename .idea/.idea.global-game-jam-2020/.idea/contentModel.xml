@@ -119,6 +119,7 @@
           <e p="PlayerSenses.cs" t="Include" />
           <e p="PlayerStats.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
+          <e p="RangedAttack.cs" t="Include" />
           <e p="RangedAttacker.cs" t="Include" />
           <e p="RecallCommand.cs" t="Include" />
           <e p="ScrapBehaviour.cs" t="Include" />
