@@ -7,6 +7,9 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 	
 	public float MaxHealth;
 
+    [Range(0, 100)]
+	public float armorPercent = 0;
+
 	private float _curHealth;
 
 	public bool isDead = false;
@@ -28,7 +31,7 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 	}
 	
 	public void TakeDamage(float amount) {
-		_curHealth -= amount;
+		_curHealth -= amount * (1 - armorPercent/100);
 		OnTakeDamage();
 		if (_curHealth <= 0.0f) {
 			Die();
