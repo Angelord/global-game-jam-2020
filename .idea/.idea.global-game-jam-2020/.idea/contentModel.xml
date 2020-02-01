@@ -250,6 +250,7 @@
           <e p="ScrapBehaviour.cs" t="Include" />
           <e p="ScrapPile.cs" t="Include" />
           <e p="Senses.cs" t="Include" />
+          <e p="ShaderMaster.cs" t="Include" />
           <e p="Sound.cs" t="Include" />
           <e p="SpriteChooser.cs" t="Include" />
           <e p="SteeringStats.cs" t="Include" />
