@@ -1,5 +1,6 @@
 ﻿using System;
 using Claw;
+using Claw.Chrono;
 using UnityEngine;
 
 public abstract class ScrapBehaviour : MonoBehaviour {
@@ -20,7 +21,10 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 	
 	private void Awake() {
 		_curHealth = MaxHealth;
-		EventManager.TriggerEvent(new ScrapObjectSpawnedEvent(this));
+		
+		CustomCoroutine.WaitThenExecute(0.01f, () => {
+			EventManager.TriggerEvent(new ScrapObjectSpawnedEvent(this));
+		});
 	}
 	
 	public void TakeDamage(float amount) {
