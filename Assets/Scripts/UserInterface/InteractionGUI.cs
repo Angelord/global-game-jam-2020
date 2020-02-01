@@ -3,7 +3,7 @@
 namespace UserInterface {
 	public class InteractionGUI : MonoBehaviour {
 
-		public Senses Player;
+		public PlayerSenses Player;
 
 		private void OnDrawGizmos() {
 			if(Player == null) return;

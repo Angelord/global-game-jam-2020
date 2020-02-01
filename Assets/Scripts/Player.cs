@@ -2,9 +2,9 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Player : MonoBehaviour {
+public class Player : ScrapBehaviour {
 
-	public Color TeamColor;
+	[SerializeField] private Fraction _fraction;
 	public PlayerStats Stats;
 	public string HorizontalAxis = "Horizontal_1";
 	public string VerticalAxis = "Vertical_1";
@@ -17,17 +17,19 @@ public class Player : MonoBehaviour {
 	
 	private Rigidbody2D _rigidbody;
 	private SpriteRenderer _renderer;
-	private Senses _senses;
+	private PlayerSenses _senses;
+
+	public override Fraction Fraction => _fraction;
+
+	public override bool Attackable => true;
 
 	private void Start() {
 		_rigidbody = GetComponent<Rigidbody2D>();
 		_renderer = GetComponentInChildren<SpriteRenderer>();
-		_senses = GetComponentInChildren<Senses>();
+		_senses = GetComponentInChildren<PlayerSenses>();
 	}
 
 	private void Update() {
-		
-		return;
 		
 		if (Input.GetButtonDown(RepairButton)) {
 			ScrapBehaviour repairable = _senses.GetRepairTarget();
@@ -71,6 +73,7 @@ public class Player : MonoBehaviour {
 		
 		_rigidbody.AddForce(moveDir * Stats.MovementSpeed - _rigidbody.velocity * 0.9f, ForceMode2D.Impulse);
 	}
+
 }
 
 

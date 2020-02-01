@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
@@ -7,35 +7,30 @@ public class Senses : MonoBehaviour {
 
 	private readonly List<ScrapBehaviour> _objectsInRange = new List<ScrapBehaviour>();
 
-	public ScrapBehaviour GetSalvageTarget() {
-		foreach (var obj in _objectsInRange) {
-			if (obj.Salvageable) return obj;
+	public ScrapBehaviour GetClosestMatch(Predicate<ScrapBehaviour> criteriaCheck) {
+
+		ScrapBehaviour closestMatch = null;
+		float curClosest = float.MaxValue;
+
+		foreach (ScrapBehaviour scrapBehaviour in _objectsInRange) {
+			if (!criteriaCheck(scrapBehaviour)) { continue; }
+
+			float distance = Vector2.Distance(transform.position, scrapBehaviour.transform.position);
+			if (distance < curClosest) {
+				closestMatch = scrapBehaviour;
+				curClosest = distance;
+			}
 		}
 
-		return null;
+		return closestMatch;
 	}
 	
-	public ScrapBehaviour GetRepairTarget() {
-		foreach (var obj in _objectsInRange) {
-			if (obj.Repairable) return obj;
-		}
-
-		return null;
-	}
-
-	public ScrapBehaviour GetUseTarget() {
-		foreach (var obj in _objectsInRange) {
-			if (obj.Usable) return obj;
-		}
-
-		return null;
-	}
-
 	private void OnTriggerEnter2D(Collider2D other) {
 
 		ScrapBehaviour scrap = other.GetComponent<ScrapBehaviour>();
 		if (scrap != null) {
 			_objectsInRange.Add(scrap);
+			OnScrapObjectEnter(scrap);
 		}
 	}
 
@@ -43,7 +38,16 @@ public class Senses : MonoBehaviour {
 
 		ScrapBehaviour scrap = other.GetComponent<ScrapBehaviour>();
 		if (scrap != null) {
-			_objectsInRange.Add(scrap);	
+			_objectsInRange.Remove(scrap);	
+			OnScrapObjectExit(scrap);
 		}
+	}
+
+	protected virtual void OnScrapObjectEnter(ScrapBehaviour scrapBehaviour) {
+		
+	}
+
+	protected virtual void OnScrapObjectExit(ScrapBehaviour scrapBehaviour) {
+		
 	}
 }

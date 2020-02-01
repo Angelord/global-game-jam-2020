@@ -1,26 +1,32 @@
 ﻿using UnityEngine;
 
-public enum Fraction {
-	Neutral = 0,
-	Player1 = 1,
-	Player2 = 2
-}
-
 public abstract class ScrapBehaviour : MonoBehaviour {
-
-	public Fraction Fraction;
 	
-	public virtual bool Usable { get { return false; } }
+	public float MaxHealth;
 
-	public virtual bool Salvageable { get { return false; } }
+	private float _curHealth;
 
-	public virtual bool Repairable { get { return false; } }
+	public abstract Fraction Fraction { get; }
 
-	public virtual float RepairCost { get { return 0.0f; } }
+	public virtual bool Attackable => false;
+	
+	public virtual float RepairCost => MaxHealth - _curHealth;
 
-	public virtual float Salvage(float amount) { return 0.0f; }
+	public float CurHealth { get => _curHealth; set => _curHealth = value; }
 
-	public virtual void Use() { }
+	public void TakeDamage(float amount) {
+		_curHealth -= amount;
+		OnTakeDamage();
+		if (_curHealth <= 0.0f) {
+			Die();
+		}
+	}
 
-	public virtual void Repair(Player repairer) { }
+	protected void Die() {
+		OnDie();
+	}
+
+	protected virtual void OnTakeDamage() { }
+
+	protected virtual void OnDie() { }
 }

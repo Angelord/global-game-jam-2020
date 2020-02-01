@@ -4,12 +4,109 @@
     <e p="C:\Projects\Games\global-game-jam-2020" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Claw" t="Include">
+          <e p="unity-claw-camera" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CameraBehaviour.cs" t="Include" />
+              <e p="CameraConstraints.cs" t="Include" />
+              <e p="PanCamera.cs" t="Include" />
+              <e p="SmoothFollowCamera.cs" t="Include" />
+              <e p="ZoomOrthographicCamera.cs" t="Include" />
+              <e p="ZoomToFitCamera.cs" t="Include" />
+            </e>
+            <e p="TODO.txt" t="Include" />
+          </e>
+          <e p="unity-claw-core" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="AI" t="Include">
+                <e p="Pathfinding" t="Include">
+                  <e p="Area.cs" t="Include" />
+                  <e p="AStar.cs" t="Include" />
+                  <e p="ITraverser.cs" t="Include" />
+                  <e p="Path.cs" t="Include" />
+                  <e p="Pathfinder.cs" t="Include" />
+                  <e p="PathfindingNode.cs" t="Include" />
+                  <e p="SimpleFill.cs" t="Include" />
+                </e>
+                <e p="Steering" t="Include">
+                  <e p="Alignment.cs" t="Include" />
+                  <e p="Arrive.cs" t="Include" />
+                  <e p="Cohesion.cs" t="Include" />
+                  <e p="Evade.cs" t="Include" />
+                  <e p="Flee.cs" t="Include" />
+                  <e p="FollowPath.cs" t="Include" />
+                  <e p="Hide.cs" t="Include" />
+                  <e p="NeighbourAwareness.cs" t="Include" />
+                  <e p="ObstacleAvoidance.cs" t="Include" />
+                  <e p="OffsetPursuit.cs" t="Include" />
+                  <e p="Pursuit.cs" t="Include" />
+                  <e p="Seek.cs" t="Include" />
+                  <e p="Separation.cs" t="Include" />
+                  <e p="SteeringBehaviour.cs" t="Include" />
+                  <e p="SteeringController.cs" t="Include" />
+                  <e p="Wander.cs" t="Include" />
+                </e>
+                <e p="VectorPath2D.cs" t="Include" />
+              </e>
+              <e p="Animation" t="Include">
+                <e p="Jitterer.cs" t="Include" />
+                <e p="LerpAlpha.cs" t="Include" />
+                <e p="MatchPosition.cs" t="Include" />
+                <e p="Shaker.cs" t="Include" />
+              </e>
+              <e p="Audio" t="Include">
+                <e p="AudioManager.cs" t="Include" />
+              </e>
+              <e p="Chrono" t="Include">
+                <e p="CustomCoroutine.cs" t="Include" />
+                <e p="TimedBehaviour.cs" t="Include" />
+              </e>
+              <e p="Controls" t="Include">
+                <e p="ButtonSequenceDetector.cs" t="Include" />
+                <e p="Sequence.cs" t="Include" />
+                <e p="SequenceCompletedEvent.cs" t="Include" />
+              </e>
+              <e p="Events" t="Include">
+                <e p="EventManager.cs" t="Include" />
+              </e>
+              <e p="Objects" t="Include">
+                <e p="RandomlyEnabled.cs" t="Include" />
+                <e p="TemporaryObject.cs" t="Include" />
+                <e p="WorldBounds2D.cs" t="Include" />
+                <e p="WorldWrap2D.cs" t="Include" />
+              </e>
+              <e p="Physics" t="Include">
+                <e p="CollisionIgnorer.cs" t="Include" />
+              </e>
+              <e p="Rendering" t="Include">
+                <e p="Materials" t="Include">
+                  <e p="MaterialProperty.cs" t="Include" />
+                  <e p="MaterialPropertyBool.cs" t="Include" />
+                  <e p="MaterialPropertyColor.cs" t="Include" />
+                  <e p="MaterialPropertyFloat.cs" t="Include" />
+                  <e p="MaterialPropertyTemplate.cs" t="Include" />
+                  <e p="MaterialPropertyTexture.cs" t="Include" />
+                  <e p="MaterialPropertyVector.cs" t="Include" />
+                  <e p="PerRendererMaterialOptions.cs" t="Include" />
+                </e>
+                <e p="RecursiveRendererSort.cs" t="Include" />
+                <e p="ScreenEffects.cs" t="Include" />
+                <e p="ZSpriteSorter.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Building.cs" t="Include" />
+          <e p="Construct.cs" t="Include" />
           <e p="Creature.cs" t="Include" />
-          <e p="CreatureStats.cs" t="Include" />
+          <e p="Events" t="Include">
+            <e p="EntityBrokeEvent.cs" t="Include" />
+          </e>
+          <e p="Fraction.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerCommand.cs" t="Include" />
+          <e p="PlayerSenses.cs" t="Include" />
           <e p="PlayerStats.cs" t="Include" />
           <e p="RecallCommand.cs" t="Include" />
           <e p="ScrapBehaviour.cs" t="Include" />

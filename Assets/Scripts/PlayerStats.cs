@@ -4,5 +4,4 @@
 public class PlayerStats : ScriptableObject {
 	
 	public float MovementSpeed;
-	public float SalvageRate; 	// How much scrap is salvaged per second
 }

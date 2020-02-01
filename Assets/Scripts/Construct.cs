@@ -1,4 +1,6 @@
-﻿public abstract class Construct : ScrapBehaviour {
+﻿
+// Creatures, Buildings etc...
+public abstract class Construct : ScrapBehaviour {
 	
 	private const float BREAK_PERCENTAGE = 0.3f;
 
