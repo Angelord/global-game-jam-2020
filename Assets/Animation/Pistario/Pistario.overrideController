@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pistario
+  m_Controller: {fileID: 9100000, guid: ad178fe9e4e7b074baa35adccae99f93, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: cf0f327c5da988a45bb007361c0ab22a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7aacce314619886419008333794f4f15, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: fdd4cc926b00dc745bc96813a2a691aa, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8238291f72caa3d4b9ddd8e891e80224, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: cae34a054ab1dc843aa5e2c43ff10f00, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0f156f218add1ca4697f1033228c020f, type: 2}
