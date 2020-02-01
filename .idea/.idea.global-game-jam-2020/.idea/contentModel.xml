@@ -8,9 +8,6 @@
           <e p="Building.cs" t="Include" />
           <e p="Creature.cs" t="Include" />
           <e p="CreatureStats.cs" t="Include" />
-          <e p="IRepairable.cs" t="Include" />
-          <e p="ISalvageable.cs" t="Include" />
-          <e p="IUsable.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerCommand.cs" t="Include" />
           <e p="PlayerSenses.cs" t="Include" />
@@ -19,6 +16,7 @@
           <e p="ScrapBehaviour.cs" t="Include" />
           <e p="ScrapPile.cs" t="Include" />
         </e>
+        <e p="TODO.txt" t="Include" />
         <e p="Vendor" t="Include">
           <e p="Fullscreen" t="Include">
             <e p="Editor" t="Include">
