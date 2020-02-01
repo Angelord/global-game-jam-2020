@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof(Construct))]
 public class RangedAttacker : MonoBehaviour {
@@ -19,8 +20,12 @@ public class RangedAttacker : MonoBehaviour {
 		_senses.OnObjectExit += OnObjectExit;
 	}
 
+	private void OnDestroy() {
+		_senses.OnObjectEnter -= OnObjectEnter;
+		_senses.OnObjectExit -= OnObjectExit;
+	}
+
 	private void OnObjectEnter(ScrapBehaviour obj) {
-		Debug.Log("OBJECT ENTER");
 		if (_currentTarget == null) {
 			_currentTarget = _senses.GetAttackTarget(_construct.Faction);
 		}
@@ -29,16 +34,13 @@ public class RangedAttacker : MonoBehaviour {
 	private void OnObjectExit(ScrapBehaviour obj) {
 		if (_currentTarget == obj) {
 			_currentTarget = _senses.GetAttackTarget(_construct.Faction);
-			Debug.Log("Unsetting object");
 		}
 	}
 
 	private void Update() {
-		if (_currentTarget == null) { Debug.Log("No current target"); return; }
+		if (_currentTarget == null) { return; }
 		
 		if (Time.time - _lastAttack >= AttackRate) {
-			Debug.Log("Attacking");
-
 			FireProjectile();
 			_lastAttack = Time.time;
 		}

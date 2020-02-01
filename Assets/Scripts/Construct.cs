@@ -1,8 +1,9 @@
 ﻿// Creatures, Buildings etc...
+
 public abstract class Construct : ScrapBehaviour {
 	
 	private const float BREAK_PERCENTAGE = 0.3f;
-
+	
 	public Player Owner;
 
 	public bool Broken = true;

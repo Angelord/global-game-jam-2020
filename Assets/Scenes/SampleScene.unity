@@ -215,12 +215,12 @@ MonoBehaviour:
   MaxHealth: 0
   _faction: {fileID: 11400000, guid: 99969bd06bfea474da2ce8006138cc21, type: 2}
   Stats: {fileID: 11400000, guid: aa005770e63f7c744afc9d7892e8a0ce, type: 2}
-  HorizontalAxis: Horizontal_1
-  VerticalAxis: Vertical_1
-  SalvageButton: Salvage_1
-  RepairButton: Repair_1
-  UseButton: Use_1
-  RecallButton: Recall_1
+  HorizontalAxis: Horizontal_2
+  VerticalAxis: Vertical_2
+  SalvageButton: Salvage_2
+  RepairButton: Repair_2
+  UseButton: Use_2
+  RecallButton: Recall_2
 --- !u!50 &205854731
 Rigidbody2D:
   serializedVersion: 4
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 040ed3340cc7a8742b9400ee9d70596d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 0
+  MaxHealth: 100
   _faction: {fileID: 11400000, guid: 7d0070d7a5c5d7f45930a9bec314e69f, type: 2}
   Stats: {fileID: 11400000, guid: aa005770e63f7c744afc9d7892e8a0ce, type: 2}
   HorizontalAxis: Horizontal_1
@@ -808,7 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ef7da145a27094ca5cf0372bc68090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackRate: 3
+  AttackRate: 0.5
   Damage: 10
   Projectile: {fileID: 7830425388499362709, guid: 04504dd4ab9ff4a44a6975b69f8ecb9b,
     type: 3}
@@ -826,7 +826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   Owner: {fileID: 205854730}
-  Broken: 0
+  Broken: 1
 --- !u!4 &1425578466
 Transform:
   m_ObjectHideFlags: 0

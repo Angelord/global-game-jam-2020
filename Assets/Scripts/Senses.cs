@@ -33,7 +33,6 @@ public class Senses : MonoBehaviour {
 
 			float distance = Vector2.Distance(transform.position, scrapBehaviour.transform.position);
 			if (distance < curClosest) {
-				Debug.Log("Match");
 				closestMatch = scrapBehaviour;
 				curClosest = distance;
 			}
