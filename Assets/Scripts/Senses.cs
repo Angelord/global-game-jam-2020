@@ -14,7 +14,7 @@ public class Senses : MonoBehaviour {
 	public List<ScrapBehaviour> ObjectsInRange => _objectsInRange;
 
 	public ScrapBehaviour GetAttackTarget(Faction faction) {
-		return GetClosestMatch((scrap) => faction.IsEnemy(scrap.Faction));
+		return GetClosestMatch((scrap) => faction.IsEnemy(scrap.Faction) && scrap.Attackable);
 	}
 
 	private void OnEnable() {
@@ -66,6 +66,7 @@ public class Senses : MonoBehaviour {
 	}
 	
 	private void HandleScrapObjectDiedEvent(ScrapObjectDiedEvent gameEvent) {
+		Debug.Log("Object died");
 		if (_objectsInRange.Contains(gameEvent.ScrapObject)) {
 			_objectsInRange.Remove(gameEvent.ScrapObject);
 		}

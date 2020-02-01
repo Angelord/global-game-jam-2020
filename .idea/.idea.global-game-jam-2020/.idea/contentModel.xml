@@ -232,7 +232,6 @@
           <e p="Creature.cs" t="Include" />
           <e p="Events" t="Include">
             <e p="EntityBrokeEvent.cs" t="Include" />
-            <e p="ScrapObjectBrokeEvent.cs" t="Include" />
             <e p="ScrapObjectDiedEvent.cs" t="Include" />
           </e>
           <e p="Faction.cs" t="Include" />
@@ -254,6 +253,8 @@
           <e p="Tower.cs" t="Include" />
           <e p="UsableBuilding.cs" t="Include" />
           <e p="UserInterface" t="Include">
+            <e p="HealthBar.cs" t="Include" />
+            <e p="HealthGUI.cs" t="Include" />
             <e p="InteractionGUI.cs" t="Include" />
           </e>
         </e>

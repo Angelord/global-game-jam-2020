@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Steering
   m_EditorClassIdentifier: 
   Cohesion: 0.7
-  Separation: 0.5
+  Separation: 1
   Follow: 1
   MinFillowDistance: 1
   FollowDecceleration: 0.1

@@ -42,7 +42,7 @@ public abstract class Attacker : MonoBehaviour {
 	private void Update() {
 		if (_currentTarget == null) { return; }
 
-		if (!TargetIsInRange()) {
+		if (!_currentTarget.Attackable || !TargetIsInRange()) {
 
 			_currentTarget = _senses.GetAttackTarget(_construct.Faction);
 				
@@ -50,6 +50,7 @@ public abstract class Attacker : MonoBehaviour {
 		}
 
 		if (Time.time - _lastAttack >= AttackRate) {
+			
 			Attack(_currentTarget);
 			
 			// TODO : Play attack animation.

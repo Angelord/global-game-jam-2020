@@ -18,7 +18,7 @@ public class Creature : Construct {
 
 	public float MovementSpeed = 1.0f;
 	
-	private UnitState _state = UnitState.Following;
+	[SerializeField] private UnitState _state = UnitState.Following;
 	
 	private SpriteRenderer _sprite;
 	
@@ -50,7 +50,6 @@ public class Creature : Construct {
 
 	public void Recall() {
 		_state = UnitState.Following;
-		Debug.Log("Recalling here");
 	}
 
 	protected override void OnStart() {
