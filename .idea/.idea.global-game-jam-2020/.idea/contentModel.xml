@@ -5,6 +5,122 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="2DShaderCollection" t="Include">
+          <e p="Demo" t="Include">
+            <e p="_2DC_ArrowSelection.cs" t="Include" />
+            <e p="_2DC_ShaderLerpDemo.cs" t="Include" />
+          </e>
+          <e p="license.txt.txt" t="Include" />
+          <e p="Material" t="Include">
+            <e p="txt.txt" t="Include" />
+          </e>
+          <e p="Shader" t="Include">
+            <e p="Additive.shader" t="Include" />
+            <e p="AlphaIntensity.shader" t="Include" />
+            <e p="Animated_Movement.shader" t="Include" />
+            <e p="Animated_Offset.shader" t="Include" />
+            <e p="Animated_PingPong.shader" t="Include" />
+            <e p="Animated_PingPong_Rotation.shader" t="Include" />
+            <e p="Animated_Twist.shader" t="Include" />
+            <e p="Animated_Zoom.shader" t="Include" />
+            <e p="AnimatedBurn.shader" t="Include" />
+            <e p="Automatic2spritesLerp.shader" t="Include" />
+            <e p="Blur.shader" t="Include" />
+            <e p="BlurHQ.shader" t="Include" />
+            <e p="BlurHQPlus.shader" t="Include" />
+            <e p="BreakingGlass.shader" t="Include" />
+            <e p="BreakingGlassFull.shader" t="Include" />
+            <e p="BreakingMirror.shader" t="Include" />
+            <e p="Burn.shader" t="Include" />
+            <e p="BurnPixel.shader" t="Include" />
+            <e p="CircleFade.shader" t="Include" />
+            <e p="CircleHole.shader" t="Include" />
+            <e p="ColorBrightness.shader" t="Include" />
+            <e p="ColorDarkness.shader" t="Include" />
+            <e p="ColorGrayScale.shader" t="Include" />
+            <e p="ColorHDR_Creation.shader" t="Include" />
+            <e p="ColorHSV.shader" t="Include" />
+            <e p="ColorNegative.shader" t="Include" />
+            <e p="ColorOnly.shader" t="Include" />
+            <e p="ColorRGB.shader" t="Include" />
+            <e p="ColorTint.shader" t="Include" />
+            <e p="CompressionTintAdditive.shader" t="Include" />
+            <e p="DesintegrationPixel.shader" t="Include" />
+            <e p="DisolveHDR.shader" t="Include" />
+            <e p="DisolvePixel.shader" t="Include" />
+            <e p="Distortion.shader" t="Include" />
+            <e p="DoodleDraw.shader" t="Include" />
+            <e p="Emboss.shader" t="Include" />
+            <e p="EmbossFull.shader" t="Include" />
+            <e p="Explode.shader" t="Include" />
+            <e p="FishEye.shader" t="Include" />
+            <e p="Fluo.shader" t="Include" />
+            <e p="Fusion2Sprites.shader" t="Include" />
+            <e p="Fusion2SpritesAdditive.shader" t="Include" />
+            <e p="Fusion3Sprites.shader" t="Include" />
+            <e p="GhostClipping.shader" t="Include" />
+            <e p="Glitch.shader" t="Include" />
+            <e p="HologramParasite.shader" t="Include" />
+            <e p="HologramParasiteAdditive.shader" t="Include" />
+            <e p="HologramParasiteTint.shader" t="Include" />
+            <e p="HologramParasiteTintAdditive.shader" t="Include" />
+            <e p="HologramScanLine.shader" t="Include" />
+            <e p="HologramScanLineAdditive.shader" t="Include" />
+            <e p="Holographic.shader" t="Include" />
+            <e p="HolographicTint.shader" t="Include" />
+            <e p="HolographicTintAdditive.shader" t="Include" />
+            <e p="InfiniteZoom.shader" t="Include" />
+            <e p="InnerGlow.shader" t="Include" />
+            <e p="InsideDistortion.shader" t="Include" />
+            <e p="JpegCompressionStyle.shader" t="Include" />
+            <e p="Kaleidoscope.shader" t="Include" />
+            <e p="Lerp2sprites.shader" t="Include" />
+            <e p="LightGlow.shader" t="Include" />
+            <e p="LiquidWave.shader" t="Include" />
+            <e p="MotionBlurFast.shader" t="Include" />
+            <e p="NightVision.shader" t="Include" />
+            <e p="NoiseBlur_Horizontal.shader" t="Include" />
+            <e p="NoiseBlur_Vertical.shader" t="Include" />
+            <e p="Offset.shader" t="Include" />
+            <e p="Outline.shader" t="Include" />
+            <e p="OutlineEmpty.shader" t="Include" />
+            <e p="Perspective3D.shader" t="Include" />
+            <e p="Pinch.shader" t="Include" />
+            <e p="PixelExplosion.shader" t="Include" />
+            <e p="PixelGravityDie.shader" t="Include" />
+            <e p="Pixelisation.shader" t="Include" />
+            <e p="PixelisationXY.shader" t="Include" />
+            <e p="Plasma.shader" t="Include" />
+            <e p="Repeat.shader" t="Include" />
+            <e p="RetroC64.shader" t="Include" />
+            <e p="RetroCGA.shader" t="Include" />
+            <e p="RetroCGA2.shader" t="Include" />
+            <e p="RetroEGA.shader" t="Include" />
+            <e p="RetroGB.shader" t="Include" />
+            <e p="RoarDistortion.shader" t="Include" />
+            <e p="Shake.shader" t="Include" />
+            <e p="Sharpness.shader" t="Include" />
+            <e p="ShinyFX.shader" t="Include" />
+            <e p="ShinyPixel.shader" t="Include" />
+            <e p="SymbioseDistortion.shader" t="Include" />
+            <e p="SymbioseDistortionFix.shader" t="Include" />
+            <e p="Threshold.shader" t="Include" />
+            <e p="ThresholdSmooth.shader" t="Include" />
+            <e p="Tilt_Down.shader" t="Include" />
+            <e p="Tilt_Left.shader" t="Include" />
+            <e p="Tilt_Right.shader" t="Include" />
+            <e p="TurnFire.shader" t="Include" />
+            <e p="TurnFirePixel.shader" t="Include" />
+            <e p="TurnGold.shader" t="Include" />
+            <e p="TurnLiquid.shader" t="Include" />
+            <e p="TurnMetal.shader" t="Include" />
+            <e p="TurnToInfinite.shader" t="Include" />
+            <e p="TurnTransparent.shader" t="Include" />
+            <e p="Twist.shader" t="Include" />
+            <e p="Vintage.shader" t="Include" />
+            <e p="Zoom.shader" t="Include" />
+          </e>
+        </e>
         <e p="Claw" t="Include">
           <e p="unity-claw-camera" t="Include">
             <e p="Scripts" t="Include">

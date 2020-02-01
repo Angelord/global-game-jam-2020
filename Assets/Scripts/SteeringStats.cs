@@ -6,5 +6,6 @@ public class SteeringStats : ScriptableObject {
 	[Range(0.0f, 10.0f)] public float Cohesion;
 	[Range(0.0f, 10.0f)] public float Separation;
 	[Range(0.0f, 10.0f)] public float Follow;
-	public float FollowDistance;
+	public float MinFillowDistance = 0.5f;
+	public float FollowDecceleration;
 }

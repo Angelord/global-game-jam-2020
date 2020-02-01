@@ -118,8 +118,8 @@ public class Creature : Construct {
     }
 
 	private Vector2 Follow() {
-		float minDistance = Owner.FootCollider.radius + _footCollider.radius;
-		return Arrive(Owner.transform.position, minDistance, _steering.FollowDistance) * _steering.Follow;
+		float minDistance = Owner.FootCollider.radius + _footCollider.radius + _steering.MinFillowDistance;
+		return Arrive(Owner.transform.position, minDistance, _steering.FollowDecceleration) * _steering.Follow;
 	}
 
 	private Vector2 Attack() {
@@ -128,13 +128,17 @@ public class Creature : Construct {
 			return Follow();
 		}
 
-		float minDistance = Attacker.Range * 0.9f;
-		return Arrive(_attacker.CurrentTarget.transform.position, minDistance, _steering.FollowDistance) * _steering.Follow;
+		if (Attacker.TargetIsInRange()) {
+			return Vector2.zero;
+		}
+
+		float minDistance = Attacker.Range;
+		return Arrive(Attacker.CurrentTarget.transform.position, minDistance, _steering.FollowDecceleration) * _steering.Follow;
 	}
 
 	private void Move(Vector2 direction) {
 		
-		_rigidbody.AddForce(direction - _rigidbody.velocity * 0.9f, ForceMode2D.Force);
+		_rigidbody.AddForce(direction - _rigidbody.velocity, ForceMode2D.Force);
 
 		if (_rigidbody.velocity.sqrMagnitude > MovementSpeed * 0.2f) {
 			_sprite.flipX = _rigidbody.velocity.x > 0.0f;
@@ -148,6 +152,7 @@ public class Creature : Construct {
 	protected override void OnBreak() {
 		_scrapEffect.SetActive(true);
 		Attacker.enabled = false;
+		_rigidbody.velocity = Vector2.zero;
 	}
 
 	protected override void OnRepair() {
