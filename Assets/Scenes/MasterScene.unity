@@ -1277,6 +1277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 100
+  armorPercent: 0
   isDead: 0
   _faction: {fileID: 11400000, guid: 99969bd06bfea474da2ce8006138cc21, type: 2}
   Stats: {fileID: 11400000, guid: aa005770e63f7c744afc9d7892e8a0ce, type: 2}
@@ -1286,7 +1287,7 @@ MonoBehaviour:
   RepairButton: Repair_2
   UseButton: Use_2
   RecallButton: Recall_2
-  PlayerCamera: {fileID: 0}
+  PlayerCamera: {fileID: 1112256219}
 --- !u!50 &205854731
 Rigidbody2D:
   serializedVersion: 4
@@ -3370,6 +3371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 100
+  armorPercent: 0
   isDead: 0
   _faction: {fileID: 11400000, guid: 7d0070d7a5c5d7f45930a9bec314e69f, type: 2}
   Stats: {fileID: 11400000, guid: aa005770e63f7c744afc9d7892e8a0ce, type: 2}
@@ -3379,7 +3381,7 @@ MonoBehaviour:
   RepairButton: Repair_1
   UseButton: Use_1
   RecallButton: Recall_1
-  PlayerCamera: {fileID: 0}
+  PlayerCamera: {fileID: 519420031}
 --- !u!50 &708907061
 Rigidbody2D:
   serializedVersion: 4
@@ -6829,6 +6831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 10
+  armorPercent: 0
   isDead: 0
   Owner: {fileID: 0}
   Broken: 0
@@ -7802,6 +7805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 100
+  armorPercent: 0
   isDead: 0
   Owner: {fileID: 205854730}
   Broken: 0
