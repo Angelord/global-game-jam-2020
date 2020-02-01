@@ -140,7 +140,7 @@ public class Creature : Construct {
 		_rigidbody.AddForce(direction - _rigidbody.velocity, ForceMode2D.Force);
 
 		if (_rigidbody.velocity.sqrMagnitude > MovementSpeed * 0.2f) {
-			_sprite.flipX = _rigidbody.velocity.x > 0.0f;
+			_sprite.flipX = _rigidbody.velocity.x < 0.0f;
 		}
 	}
 

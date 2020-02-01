@@ -977,6 +977,7 @@ MonoBehaviour:
   AttackRate: 0.5
   Damage: 1
   Range: 0
+  HasAttackAnimation: 0
   Projectile: {fileID: 7830425388499362709, guid: 6a754a2e33d7f7c44969154dbb7501d9,
     type: 3}
 --- !u!114 &1425578465
@@ -1369,11 +1370,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4645967725002731312, guid: da89db4e5a734b0428544fda78770170,
-        type: 3}
-      propertyPath: Range
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4645967725002731313, guid: da89db4e5a734b0428544fda78770170,
         type: 3}
       propertyPath: Owner

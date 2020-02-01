@@ -4,14 +4,18 @@ using UnityEngine;
 [RequireComponent(typeof(Construct))]
 public abstract class Attacker : MonoBehaviour {
 	
+	private static readonly int AttackTrigger = Animator.StringToHash("Attack");
+
 	public float AttackRate;
 	public float Damage;
 	public float Range;
+	public bool HasAttackAnimation;
 	
 	private Construct _construct;
 	private Senses _senses;
 	private ScrapBehaviour _currentTarget;
 	private float _lastAttack;
+	private Animator _animator;
 
 	public ScrapBehaviour CurrentTarget => _currentTarget;
 
@@ -25,6 +29,7 @@ public abstract class Attacker : MonoBehaviour {
 		_senses = GetComponentInChildren<Senses>();
 		_senses.OnObjectEnter += OnObjectEnter;
 		_senses.OnObjectExit += OnObjectExit;
+		_animator = GetComponent<Animator>();
 	}
 
 	private void OnObjectEnter(ScrapBehaviour obj) {
@@ -53,7 +58,7 @@ public abstract class Attacker : MonoBehaviour {
 			
 			Attack(_currentTarget);
 			
-			// TODO : Play attack animation.
+			_animator.SetTrigger(AttackTrigger);
 			
 			_lastAttack = Time.time;
 		}
