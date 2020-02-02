@@ -98,7 +98,7 @@ Material:
     - Glass_Seed: 1.067
     - Glass_Size: 13.6
     - Inside_Distance: 0.095
-    - Inside_Fade: 0.998816
+    - Inside_Fade: 0.4940465
     - Inside_Rotation: -0.85
     - Parasite_Angle: -0.241
     - Parasite_Distance: -0.247
