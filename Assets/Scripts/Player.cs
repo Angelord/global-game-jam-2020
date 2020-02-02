@@ -40,6 +40,8 @@ public class Player : ScrapBehaviour {
 		_footCollider = GetComponent<CircleCollider2D>();
 		_renderer = GetComponentInChildren<SpriteRenderer>();
 		_senses = GetComponentInChildren<PlayerSenses>();
+
+		_renderer.material = Faction.UnitMat;
 	}
 
 	private void Update() {
