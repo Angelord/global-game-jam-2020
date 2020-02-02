@@ -36,4 +36,10 @@ public class GameMaster : MonoBehaviour {
 			Time.timeScale = 0.5f;
 		});
 	}
+
+	private void Update() {
+		if(Input.GetKeyDown(KeyCode.Escape)) {
+			Application.Quit();
+		}
+	}
 }

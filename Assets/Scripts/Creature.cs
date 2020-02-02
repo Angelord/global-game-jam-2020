@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Claw;
-using Claw.Chrono;
-using UnityEditorInternal;
+﻿using Claw.Chrono;
 using UnityEngine;
 
 public enum UnitState {

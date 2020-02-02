@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using Boo.Lang;
+﻿using System.Collections.Generic;
 using Claw;
 using UnityEngine;
 
@@ -34,7 +32,7 @@ public class HealthGUI : GUIBehaviour {
 
 	private void HandleObjDiedEvent(ScrapObjectDiedEvent objectDiedEvent) {
 		
-		_bars.Find((bar) => bar.Target == objectDiedEvent.ScrapObject, out HealthBar targetBar);
+		HealthBar targetBar = _bars.Find((bar) => bar.Target == objectDiedEvent.ScrapObject);
 
 		if (targetBar == null) return;
 		
