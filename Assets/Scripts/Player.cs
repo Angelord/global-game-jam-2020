@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -13,16 +14,18 @@ public class Player : ScrapBehaviour {
 	public string UseButton = "Use_1";
 	public string RecallButton = "Recall_1";
     public Camera PlayerCamera;
-
+    public SpriteRenderer Sparks;
+    public SpriteRenderer Body;
+    
     public event Action<PlayerCommand> OnCommand;
 
 	private float _scrap;
 	private Rigidbody2D _rigidbody;
 	private CircleCollider2D _footCollider;
-	private SpriteRenderer _renderer;
 	private PlayerSenses _senses;
 	private float _lastRecall;
-
+	private Animator _animator;
+	
 	public PlayerSenses Senses => _senses;
 
 	public float Scrap => _scrap;
@@ -38,19 +41,38 @@ public class Player : ScrapBehaviour {
 	private void Start() {
 		_rigidbody = GetComponent<Rigidbody2D>();
 		_footCollider = GetComponent<CircleCollider2D>();
-		_renderer = GetComponentInChildren<SpriteRenderer>();
 		_senses = GetComponentInChildren<PlayerSenses>();
-
-		_renderer.material = Faction.UnitMat;
+		_animator = GetComponent<Animator>();
+		
+		Body.material = Faction.UnitMat;
 	}
 
 	private void Update() {
+
+		if (Input.GetButton(RepairButton)) {
+			_animator.SetBool("Working", true);
+			Sparks.color = Stats.SparkColorRepair;
+		}
+		else if (Input.GetButton(SalvageButton)) {
+			_animator.SetBool("Working", true);
+			Sparks.color = Stats.SparkColorSalvage;
+		}
+		else if (Input.GetButton(UseButton)) {
+			_animator.SetBool("Working", true);
+			Sparks.color = Stats.SparkColorUse;
+		}
+		else {
+			_animator.SetBool("Working", false);
+			Sparks.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
+		}
 
 		if (Input.GetButtonDown(RepairButton)) {
 			ScrapBehaviour repairable = _senses.GetRepairTarget();
 			if (repairable != null) { Repair(repairable as Construct); }
 		}
 		else if (Input.GetButtonDown(SalvageButton)) {
+			_animator.SetBool("Working", true);
+			Sparks.color = Stats.SparkColorRepair;
 			Construct salvage = _senses.GetSalvageTarget();
 			if (salvage != null) {
 				Salvage(salvage);
@@ -115,12 +137,15 @@ public class Player : ScrapBehaviour {
 
 		if (moveDir.magnitude > 0.1f) {
 			moveDir.Normalize();
-			_renderer.flipX = moveDir.x > 0.0f;
+			_animator.SetBool("Moving", true);
+			Body.transform.localScale = moveDir.x > 0.0f ? new Vector3(1.0f, 1.0f, 1.0f) : new Vector3(-1.0f, 1.0f, 1.0f);
+		}
+		else {
+			_animator.SetBool("Moving", false);
 		}
 
 		_rigidbody.AddForce(moveDir * Stats.MovementSpeed - _rigidbody.velocity * 0.9f, ForceMode2D.Impulse);
 	}
-
 }
 
 
