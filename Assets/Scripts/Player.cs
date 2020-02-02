@@ -26,9 +26,8 @@ public class Player : ScrapBehaviour {
 	private PlayerSenses _senses;
 	private float _lastRecall;
 	private Animator _animator;
-	private int _winCount;
 
-	public int WinCount { get => _winCount; }
+	public int WinCount { get => _faction.wins; }
 
 	public PlayerSenses Senses => _senses;
 
@@ -160,7 +159,7 @@ public class Player : ScrapBehaviour {
 
 	private void HandlePlayerDiedEvent(PlayerDiedEvent diedEvent) {
 		if (diedEvent.Player != this) {
-			_winCount++;
+			_faction.wins++;
 		}
 	}
 

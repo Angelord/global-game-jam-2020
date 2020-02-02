@@ -4,6 +4,8 @@
 public class Faction : ScriptableObject {
 	public Color Color;
 	public Material UnitMat;
+
+	public int wins = 0;
 	
 	private static Faction _neutral;
 
