@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameOverGUI : GUIBehaviour {
 
+	public ScrapLerpAlpha AlphaLerper;
+	
 	public void OnRestartClick() {
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
@@ -19,7 +21,9 @@ public class GameOverGUI : GUIBehaviour {
 
 	private void HandlePlayerDiedEvent(PlayerDiedEvent playerDiedEvent) {
 		if (playerDiedEvent.Player == Player) {
-			this.gameObject.SetActive(true);
+			AlphaLerper.SetAlpha(0.0f);
+			AlphaLerper.IntendedAlpha = 0.8f;
+			gameObject.SetActive(true);
 		}
 	}
 }

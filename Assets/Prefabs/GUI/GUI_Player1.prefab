@@ -291,8 +291,8 @@ GameObject:
   - component: {fileID: 1150847767}
   - component: {fileID: 1150847770}
   - component: {fileID: 1150847769}
-  - component: {fileID: 1150847768}
   - component: {fileID: 1150847771}
+  - component: {fileID: 3229647173528079056}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -357,19 +357,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1150847768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150847766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59bbf73301d87ed4ab54e068dfe6f3d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2.2
 --- !u!114 &1150847771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +369,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e3acb2b7e6c3747be2ecc517c18f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AlphaLerper: {fileID: 3229647173528079056}
+--- !u!114 &3229647173528079056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150847766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9fe9086ecac4cfb84a10d9c49048355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 2.5
+  Image: {fileID: 1150847769}
+  IntendedAlpha: 0
 --- !u!1 &1256894321
 GameObject:
   m_ObjectHideFlags: 0
