@@ -172,7 +172,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3409352085180414953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9, y: -2.52, z: 0}
+  m_LocalPosition: {x: 0, y: -2.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3409352083943148367}
@@ -216,7 +216,7 @@ MonoBehaviour:
   armorPercent: 0
   isDead: 0
   Owner: {fileID: 0}
-  Broken: 0
+  Broken: 1
   breakFx: {fileID: 7300804457808948310, guid: 170f9288243614fb48169bdc57ac6f9a, type: 3}
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 7896383245795488187}
