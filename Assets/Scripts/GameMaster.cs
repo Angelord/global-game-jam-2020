@@ -1,27 +1,24 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class GameMaster : MonoBehaviour
-{
-    public enum GameState
-    {
-        RUNNING,
-        PAUSED,
-        OVER
-    }
+public class GameMaster : MonoBehaviour {
+	
+	public enum GameState {
+		RUNNING,
+		PAUSED,
+		OVER
+	}
 
-    public static GameState state = GameState.RUNNING;
+	public static GameState state = GameState.RUNNING;
 
-    public static void ChangeState(GameState newState)
-    {
-        GameMaster.state = newState;
-        if (GameMaster.state == GameState.PAUSED || GameMaster.state == GameState.OVER)
-        {
-            Time.timeScale = 0f;
-        } else
-        {
-            Time.timeScale = 1f;
-        }
-    }
+	public static GameMaster Find() {
+		return GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
+	}
 
+	private void Awake() {
+		Time.timeScale = 0.0f;
+	}
+
+	public void StartGame() {
+		Time.timeScale = 1.0f;
+	}
 }
