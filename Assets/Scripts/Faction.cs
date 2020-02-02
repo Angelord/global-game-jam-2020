@@ -8,8 +8,9 @@ public class Faction : ScriptableObject {
 	public int wins = 0;
 	
 	private static Faction _neutral;
+    public GameObject repairFx;
 
-	public static Faction Neutral {
+    public static Faction Neutral {
 		get {
 			if (_neutral == null) {
 				_neutral = ScriptableObject.CreateInstance<Faction>();
