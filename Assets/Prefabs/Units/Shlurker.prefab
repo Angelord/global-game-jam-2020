@@ -239,6 +239,7 @@ MonoBehaviour:
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 2460905028729672229}
   MovementSpeed: 4.8
+  race: 4
 --- !u!114 &6981424964179171446
 MonoBehaviour:
   m_ObjectHideFlags: 0
