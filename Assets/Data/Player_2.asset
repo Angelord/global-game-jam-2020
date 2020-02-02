@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Player_2
   m_EditorClassIdentifier: 
   Color: {r: 0.6320754, g: 0.020870427, b: 0.020870427, a: 1}
+  UnitMat: {fileID: 2100000, guid: 5ca0f17309584c2418b9a56be8bddbc4, type: 2}
