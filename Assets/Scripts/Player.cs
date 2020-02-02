@@ -43,7 +43,6 @@ public class Player : ScrapBehaviour {
 	public bool Recalling { get { return Time.time - _lastRecall <= Stats.RecallDuration; } }
 
 	protected override void OnDie() {
-		EventManager.RemoveListener<PlayerDiedEvent>(HandlePlayerDiedEvent);
 		EventManager.TriggerEvent(new PlayerDiedEvent(this));
 		gameObject.SetActive(false);
 	}
@@ -58,6 +57,10 @@ public class Player : ScrapBehaviour {
 		Body.material = Faction.UnitMat;
 		
 		EventManager.AddListener<PlayerDiedEvent>(HandlePlayerDiedEvent);
+	}
+
+	private void OnDestroy() {
+		EventManager.RemoveListener<PlayerDiedEvent>(HandlePlayerDiedEvent);
 	}
 
 	private void Update() {
