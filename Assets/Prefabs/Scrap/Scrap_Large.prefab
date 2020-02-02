@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1284730679844951209}
   - component: {fileID: 435926520232919433}
   - component: {fileID: -101288245397946952}
+  - component: {fileID: -2532978031602538199}
   m_Layer: 0
   m_Name: Scrap_Large
   m_TagString: Scrap
@@ -99,6 +100,7 @@ MonoBehaviour:
   MaxHealth: 21
   armorPercent: 0
   isDead: 0
+  DestroyOnDeath: 1
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 0}
@@ -135,3 +137,19 @@ MonoBehaviour:
   activateOnStart: 1
   _matIndex: 0
   _duration: 0
+--- !u!114 &-2532978031602538199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284730679844951210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d7f65fb596044e9981650f8de182cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllSprites:
+  - {fileID: 21300000, guid: 73032b6d6b742442eb65f134cdca899e, type: 3}
+  - {fileID: 21300000, guid: e4c071c698a67fb47984de0110a4fb04, type: 3}
+  - {fileID: 21300000, guid: c2db6e4be58af2043a7559197ee1492c, type: 3}
