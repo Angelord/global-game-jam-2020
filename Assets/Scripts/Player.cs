@@ -46,7 +46,7 @@ public class Player : ScrapBehaviour {
 
 		if (Input.GetButtonDown(RepairButton)) {
 			ScrapBehaviour repairable = _senses.GetRepairTarget();
-			if (repairable != null) { Repair(repairable); }
+			if (repairable != null) { Repair(repairable as Construct); }
 		}
 		else if (Input.GetButtonDown(SalvageButton)) {
 			Construct salvage = _senses.GetSalvageTarget();
@@ -63,7 +63,7 @@ public class Player : ScrapBehaviour {
 		}
 	}
 
-	private void Repair(ScrapBehaviour target) {
+	private void Repair(Construct target) {
 		Debug.Log("REPAIR");
         if(_scrap < target.RepairCost)
         {
@@ -72,6 +72,7 @@ public class Player : ScrapBehaviour {
         }
         // TODO add repair sound
         _scrap -= target.RepairCost;
+		    target.Repair(this);
 	}
 
     protected override void OnTakeDamage() {
@@ -96,11 +97,11 @@ public class Player : ScrapBehaviour {
 
 	private void Recall() {
 		Debug.Log("RECALL");
-		
+
 		if (Time.time - _lastRecall < Stats.RecallFrequency) { return; }
 
 		_lastRecall = Time.time;
-		
+
 		OnCommand?.Invoke(new RecallCommand());
 	}
 

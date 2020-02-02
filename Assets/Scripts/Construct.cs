@@ -34,11 +34,13 @@ public abstract class Construct : ScrapBehaviour {
 
 	public void Repair(Player repairer) {
 		if (Owner != repairer) {
+			Owner = repairer;
 			if (Owner != null) { Owner.OnCommand -= OnOwnerCommand; }
 			repairer.OnCommand += OnOwnerCommand;
 		}
 
 		CurHealth = MaxHealth;
+		Broken = false;
 		OnRepair();
 	}
 
