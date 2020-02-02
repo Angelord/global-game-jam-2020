@@ -20,6 +20,10 @@ public class HealthGUI : GUIBehaviour {
 	}
 	
 	private void HandleObjSpawnedEvent(ScrapObjectSpawnedEvent objectSpawnedEvent) {
+        if(objectSpawnedEvent.ScrapObject as ScrapPile)
+        {
+			return;
+        }
 
 		HealthBar newBar = Instantiate(BarPrefab, transform).GetComponent<HealthBar>();
 		
