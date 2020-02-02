@@ -54,6 +54,12 @@ public abstract class Attacker : MonoBehaviour {
 	private void Update() {
 		if (_currentTarget == null) { return; }
 
+        if(_currentTarget.Faction == _construct.Faction)
+        {
+			_currentTarget = null;
+			return;
+        }
+
 		if (!_currentTarget.Attackable || !TargetIsInRange()) {
 
 			_currentTarget = _senses.GetAttackTarget(_construct.Faction);
