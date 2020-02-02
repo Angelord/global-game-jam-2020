@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8560089173979157538
+--- !u!1 &3794246903757548655
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,36 +8,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8560089173979157536}
-  - component: {fileID: 8560089173979157537}
+  - component: {fileID: 3794246903757548653}
+  - component: {fileID: 3794246903757548652}
   m_Layer: 0
-  m_Name: UnitSpawner
+  m_Name: UnitSpawner-LIGHT
   m_TagString: Untagged
-  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8560089173979157536
+--- !u!4 &3794246903757548653
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8560089173979157538}
+  m_GameObject: {fileID: 3794246903757548655}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.31, y: 0.64, z: 0}
+  m_LocalPosition: {x: -14.251, y: -3.819, z: -3.194289}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8560089173979157537
+--- !u!114 &3794246903757548652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8560089173979157538}
+  m_GameObject: {fileID: 3794246903757548655}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cb8bb6d9340f4bfbaf0541239741f87, type: 3}
@@ -47,12 +47,6 @@ MonoBehaviour:
   - {fileID: 4645967725002731317, guid: da89db4e5a734b0428544fda78770170, type: 3}
   - {fileID: 4645967725002731317, guid: da89db4e5a734b0428544fda78770170, type: 3}
   - {fileID: 4645967725002731317, guid: da89db4e5a734b0428544fda78770170, type: 3}
-  - {fileID: 1600468165064748893, guid: 1e03cc260d73b3d49ae8e58e40a43e06, type: 3}
-  - {fileID: 3409352085180414953, guid: 4db76b9a179c7874aa3849fcd30371ec, type: 3}
-  - {fileID: 3409352085180414953, guid: 4db76b9a179c7874aa3849fcd30371ec, type: 3}
   - {fileID: 5116334779426088294, guid: e014386962f1d6b4e897a5f4e42eb81a, type: 3}
-  - {fileID: 5116334779426088294, guid: e014386962f1d6b4e897a5f4e42eb81a, type: 3}
-  - {fileID: 6981424964179171447, guid: c1f998c255d1336499e01dc2ff14c828, type: 3}
-  - {fileID: 6981424964179171447, guid: c1f998c255d1336499e01dc2ff14c828, type: 3}
-  - {fileID: 1287505989827681090, guid: 2dccded9bd52325479bd975c5ccedae3, type: 3}
+  - {fileID: 3409352085180414953, guid: 4db76b9a179c7874aa3849fcd30371ec, type: 3}
   spawnChance: 0.8
