@@ -35,11 +35,11 @@ public class Tower : Building {
 		FlipSprite.GetComponent<SpriteRenderer>().material = Faction.UnitMat;
 	}
 
-    void Start()
-    {
-        _audioManager = FindObjectOfType<AudioManager>();
-    }
-
+	protected override void OnStart() {
+		base.OnStart();
+		_audioManager = FindObjectOfType<AudioManager>();
+	}
+	
     private void Update() {
 		
 		if(Broken) return;
