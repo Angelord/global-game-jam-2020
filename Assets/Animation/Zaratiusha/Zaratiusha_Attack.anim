@@ -70,6 +70,9 @@ AnimationClip:
     - time: 2.1333334
       value: {fileID: -3802857291502061137, guid: 122de04fe904c094fb7cdb77f1b3ebb2,
         type: 3}
+    - time: 2.2666667
+      value: {fileID: -4427313421195731488, guid: 122de04fe904c094fb7cdb77f1b3ebb2,
+        type: 3}
     attribute: m_Sprite
     path: Sprite
     classID: 212
@@ -106,12 +109,13 @@ AnimationClip:
     - {fileID: -3368444639860588460, guid: 122de04fe904c094fb7cdb77f1b3ebb2, type: 3}
     - {fileID: -202023464098759469, guid: 122de04fe904c094fb7cdb77f1b3ebb2, type: 3}
     - {fileID: -3802857291502061137, guid: 122de04fe904c094fb7cdb77f1b3ebb2, type: 3}
+    - {fileID: -4427313421195731488, guid: 122de04fe904c094fb7cdb77f1b3ebb2, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.15
+    m_StopTime: 2.2833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -131,7 +135,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 2.1166666
+  - time: 2.2666667
     functionName: OnAttackAnimationOver
     data: 
     objectReferenceParameter: {fileID: 0}
