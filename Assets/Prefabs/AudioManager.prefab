@@ -122,6 +122,7 @@ MonoBehaviour:
   - name: repair_sound
     clips:
     - {fileID: 8300000, guid: e9f098eb53d095d46bc990d1da805a18, type: 3}
+    - {fileID: 8300000, guid: 6cd15a6046833d146a3349e45c13a46e, type: 3}
     volume: 1
     pitch_variation: 0
     loop: 0
