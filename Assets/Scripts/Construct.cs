@@ -1,5 +1,6 @@
 ﻿// Creatures, Buildings etc...
 
+using System;
 using Claw;
 using UnityEngine;
 
@@ -24,16 +25,28 @@ public abstract class Construct : ScrapBehaviour {
 	private void Start() {
 		OnStart();
 		if (Broken) {
-			CurHealth = MaxHealth * BREAK_PERCENTAGE;
+			Break();
 			OnBreak();
 		}
 		else if(Owner != null) {
 			Owner.OnCommand += OnOwnerCommand;
 		}
+		
+		EventManager.AddListener<PlayerDiedEvent>(HandlePlayerDiedEvent);
+	}
+
+	private void OnDestroy() {
+		EventManager.RemoveListener<PlayerDiedEvent>(HandlePlayerDiedEvent);
 	}
 
 	public virtual void Use() { }
-
+	
+	private void HandlePlayerDiedEvent(PlayerDiedEvent playerDiedEvent) {
+		if (playerDiedEvent.Player == Owner) {
+			Break();
+		}
+	}
+	
 	public void Repair(Player repairer) {
 		if (Owner != repairer) {
 			Owner = repairer;
@@ -61,12 +74,19 @@ public abstract class Construct : ScrapBehaviour {
 
 	protected override void OnTakeDamage() {
 		if (CurHealth <= MaxHealth * BREAK_PERCENTAGE) {
-			CurHealth = MaxHealth * BREAK_PERCENTAGE;
-			Broken = true;
-			Owner.OnCommand -= OnOwnerCommand;
-			Owner = null;
+			Break();
 			OnBreak();
 		}
+	}
+
+	private void Break() {
+		CurHealth = MaxHealth * BREAK_PERCENTAGE;
+		Broken = true;
+
+		if (Owner != null) {
+			Owner.OnCommand -= OnOwnerCommand;
+		}
+		Owner = null;
 	}
 
 	protected virtual void OnSalvage() {
