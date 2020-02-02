@@ -219,6 +219,9 @@
         <e p="Scripts" t="Include">
           <e p="AnimationAutoDestroy.cs" t="Include" />
           <e p="Attacker.cs" t="Include" />
+          <e p="Audio" t="Include">
+            <e p="AudioData.cs" t="Include" />
+          </e>
           <e p="AudioManager.cs" t="Include" />
           <e p="Building.cs" t="Include" />
           <e p="CameraShake" t="Include">

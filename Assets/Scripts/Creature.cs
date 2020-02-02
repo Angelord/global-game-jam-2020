@@ -41,17 +41,6 @@ public class Creature : Construct {
 
 	public override bool Attackable => !Broken;
 
-    public enum creature_type
-    {
-        gunner,
-        hentairoi,
-        pistario,
-        rakabat,
-        shlurker,
-        zaratiusha
-    }
-    public creature_type race;
-
 	public Attacker Attacker {
 		get {
 			if (_attacker == null) {

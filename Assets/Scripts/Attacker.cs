@@ -11,6 +11,7 @@ public abstract class Attacker : MonoBehaviour {
 	public float Range;
 	public bool HasAttackAnimation;
 	public bool AttackOnAnimationTrigger = false;
+	public AudioData AudioData;
 	
 	private Construct _construct;
 	private Senses _senses;
