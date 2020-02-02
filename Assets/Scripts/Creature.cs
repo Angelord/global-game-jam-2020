@@ -133,7 +133,8 @@ public class Creature : Construct {
 
 	private Vector2 Follow() {
 		float minDistance = Owner.FootCollider.radius + _footCollider.radius + _steering.MinFillowDistance;
-		return Arrive(Owner.transform.position, minDistance, _steering.FollowDecceleration) * _steering.Follow;
+		float multiplierBonus = _steering.Follow + (Owner.Recalling ? _steering.RecallBonus : 0.0f);
+		return Arrive(Owner.transform.position, minDistance, _steering.FollowDecceleration) * multiplierBonus;
 	}
 
 	private Vector2 Attack() {
