@@ -250,6 +250,7 @@
           <e p="RecallCommand.cs" t="Include" />
           <e p="ScrapBehaviour.cs" t="Include" />
           <e p="ScrapPile.cs" t="Include" />
+          <e p="ScrapSpawner.cs" t="Include" />
           <e p="Senses.cs" t="Include" />
           <e p="ShaderMaster.cs" t="Include" />
           <e p="Sound.cs" t="Include" />

@@ -29,7 +29,7 @@ public class RepairGUI : GUIBehaviour {
 		PriceText.color = affordable ? CanAffordColor : CantAffordColor;
 		PriceText.text = cost.ToString();
 
-		Vector2 screenPoss = Camera.WorldToScreenPoint(target.transform.position) + new Vector3(0.0f, YOffset, 0.0f);
+		Vector2 screenPoss = WorldToScreen(target.transform.position, Camera, YOffset);
 
 		_rectTransform.anchoredPosition = screenPoss;
 	}

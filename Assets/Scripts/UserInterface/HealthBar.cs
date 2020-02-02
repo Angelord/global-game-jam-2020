@@ -26,9 +26,9 @@ public class HealthBar : MonoBehaviour {
 	private void Update() {
 		if(_target == null) return;
 
-		Vector2 pos = (Vector2)_camera.WorldToScreenPoint(_target.transform.position) + new Vector2(0.0f, YOffset);
-
-		GetComponent<RectTransform>().anchoredPosition = pos;
+		Vector2 screenPos = GUIBehaviour.WorldToScreen(_target.transform.position, _camera, YOffset);
+		
+		GetComponent<RectTransform>().anchoredPosition = screenPos;
 
 		Bar.value = _target.CurHealth / _target.MaxHealth;
 
