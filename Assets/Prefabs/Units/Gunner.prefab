@@ -152,13 +152,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 50
+  armorPercent: 0
   isDead: 0
   Owner: {fileID: 0}
-  Broken: 0
+  Broken: 1
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 197083155824485735}
   MovementSpeed: 4
-  _state: 0
 --- !u!114 &4645967725002731312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,15 +281,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4645967725002731315}
     m_Modifications:
+    - target: {fileID: 2271309115724834798, guid: 878614c216970f640923b2e9414262f8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2662146946038616503, guid: 878614c216970f640923b2e9414262f8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.018
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2662146946038616503, guid: 878614c216970f640923b2e9414262f8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.248
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 2662146946038616503, guid: 878614c216970f640923b2e9414262f8,
         type: 3}
