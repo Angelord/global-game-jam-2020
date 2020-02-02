@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour {
 
 	private static readonly Color DefaultColor = new Color(0.24f, 0.78f, 0.42f);
+	private static readonly Color EnemyColor = new Color(0.77f, 0.16f, 0.16f);
 	private static readonly Color BrokenColor = new Color(0.63f, 0.5f, 0.4f);
 
 	public float YOffset = 100.0f;
@@ -12,13 +13,16 @@ public class HealthBar : MonoBehaviour {
 	public Image BarFill;
 
 	private ScrapBehaviour _target;
+	private Player _player;
 	private Camera _camera;
 
 	public ScrapBehaviour Target => _target;
 
-	public void Initialize(Camera camera, ScrapBehaviour scrapBehaviour) {
+	public void Initialize(Camera camera, Player player, ScrapBehaviour scrapBehaviour) {
 	
 		_camera = camera;
+
+		_player = player;
 		
 		_target = scrapBehaviour;
 	}
@@ -34,7 +38,15 @@ public class HealthBar : MonoBehaviour {
 
 		if (_target is Construct) {
 			Construct target = _target as Construct;
-			BarFill.color = target.Broken ? BrokenColor : DefaultColor;
+			if (target.Broken) {
+				BarFill.color = BrokenColor;
+			}
+			else if (_player.Faction.IsEnemy(_target.Faction)) {
+				BarFill.color = EnemyColor;
+			}
+			else {
+				BarFill.color = DefaultColor;
+			}
 		}
 		else {
 			BarFill.color = BrokenColor;

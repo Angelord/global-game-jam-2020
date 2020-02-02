@@ -23,7 +23,7 @@ public class HealthGUI : GUIBehaviour {
 
 		HealthBar newBar = Instantiate(BarPrefab, transform).GetComponent<HealthBar>();
 		
-		newBar.Initialize(Camera, objectSpawnedEvent.ScrapObject);
+		newBar.Initialize(Camera, Player, objectSpawnedEvent.ScrapObject);
 
 		_bars.Add(newBar);
 	}
