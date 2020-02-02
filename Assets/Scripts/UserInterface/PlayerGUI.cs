@@ -11,11 +11,11 @@ public class PlayerGUI : MonoBehaviour {
 	protected Camera Camera => _camera;
 
 	private Camera _camera;
-	
+
 	private void Start() {
 
 		_camera = GetComponent<Canvas>().worldCamera;
-		
+
 		GUIBehaviour[] behaviours = GetComponentsInChildren<GUIBehaviour>(true);
 
 		foreach (GUIBehaviour guiBehaviour in behaviours) {
@@ -24,6 +24,6 @@ public class PlayerGUI : MonoBehaviour {
 	}
 
 	private void Update() {
-		ScrapText.text = Player.Scrap.ToString("0");
+		ScrapText.text = Player.Scrap.ToString("F1");
 	}
 }
