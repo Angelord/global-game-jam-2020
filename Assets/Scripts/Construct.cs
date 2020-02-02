@@ -1,5 +1,6 @@
 ﻿// Creatures, Buildings etc...
 
+using Claw;
 using UnityEngine;
 
 public abstract class Construct : ScrapBehaviour {
@@ -47,9 +48,11 @@ public abstract class Construct : ScrapBehaviour {
 	public float Salvage() {
 		
 		OnSalvage();
+
+		EventManager.TriggerEvent(new ConstructSalvagedEvent(this, CurHealth));
 		
 		Die();
-		
+
 		return CurHealth;
 	}
 

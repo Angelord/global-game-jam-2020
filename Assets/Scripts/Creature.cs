@@ -179,7 +179,9 @@ public class Creature : Construct {
 	protected override void OnRepair() {
 		_scrapEffect.SetActive(false);
 		
-		CustomCoroutine.WaitOneFrameThenExecute(() => { Attacker.enabled = true; });
+		CustomCoroutine.WaitOneFrameThenExecute(() => {
+			Attacker.enabled = true;
+		});
 		_sprite.material = Faction.UnitMat;
 	}
 

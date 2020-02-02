@@ -47,8 +47,8 @@ public abstract class Attacker : MonoBehaviour {
 		}
 	}
 
-	private void OnEnable() {
-		_currentTarget = _senses.GetAttackTarget(_construct.Faction);
+	private void OnDisable() {
+		_currentTarget = null;
 	}
 
 	private void Update() {
