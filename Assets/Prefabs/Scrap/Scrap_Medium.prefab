@@ -98,11 +98,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 14
+  BarYOffset: 1
   armorPercent: 0
   isDead: 0
+  DestroyOnDeath: 1
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 0}
+  repairFX: {fileID: 0}
+  repairFX_p2: {fileID: 0}
 --- !u!114 &3087158282022518450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,7 +133,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.006616988, y: 0.064556055}

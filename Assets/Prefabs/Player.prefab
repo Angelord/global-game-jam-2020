@@ -182,7 +182,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &8015586944456003757
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,6 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 180
+  BarYOffset: 1
   armorPercent: 0
   isDead: 0
   DestroyOnDeath: 0
@@ -328,6 +329,7 @@ MonoBehaviour:
   PlayerCamera: {fileID: 0}
   Sparks: {fileID: 1699756472}
   Body: {fileID: 2116731264536727101}
+  _scrap: 0
 --- !u!58 &8015586945620854568
 CircleCollider2D:
   m_ObjectHideFlags: 0
