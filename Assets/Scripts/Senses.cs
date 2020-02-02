@@ -66,7 +66,6 @@ public class Senses : MonoBehaviour {
 	}
 	
 	private void HandleScrapObjectDiedEvent(ScrapObjectDiedEvent gameEvent) {
-		Debug.Log("Object died");
 		if (_objectsInRange.Contains(gameEvent.ScrapObject)) {
 			_objectsInRange.Remove(gameEvent.ScrapObject);
 		}

@@ -3248,6 +3248,42 @@ PrefabInstance:
       propertyPath: PlayerCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
+        type: 3}
+      propertyPath: HorizontalAxis
+      value: Horizontal_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
+        type: 3}
+      propertyPath: VerticalAxis
+      value: Vertical_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
+        type: 3}
+      propertyPath: SalvageButton
+      value: Salvage_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
+        type: 3}
+      propertyPath: RepairButton
+      value: Repair_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
+        type: 3}
+      propertyPath: UseButton
+      value: Use_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
+        type: 3}
+      propertyPath: RecallButton
+      value: Recall_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
+        type: 3}
+      propertyPath: _faction
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d0070d7a5c5d7f45930a9bec314e69f,
+        type: 2}
     - target: {fileID: 8015586945620854567, guid: 19ed24b6d601bec41bbf932b071e08ac,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9089,11 +9125,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 4724930170643949607, guid: 0a15a6a24ff124af990417aca97b3349,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a15a6a24ff124af990417aca97b3349, type: 3}
 --- !u!1001 &1529750318

@@ -14,11 +14,11 @@ public class Player : ScrapBehaviour {
 	public string RepairButton = "Repair_1";
 	public string UseButton = "Use_1";
 	public string RecallButton = "Recall_1";
-    public Camera PlayerCamera;
-    public SpriteRenderer Sparks;
-    public SpriteRenderer Body;
-    
-    public event Action<PlayerCommand> OnCommand;
+	public Camera PlayerCamera;
+	public SpriteRenderer Sparks;
+	public SpriteRenderer Body;
+
+	public event Action<PlayerCommand> OnCommand;
 
 	private float _scrap;
 	private Rigidbody2D _rigidbody;
@@ -26,7 +26,10 @@ public class Player : ScrapBehaviour {
 	private PlayerSenses _senses;
 	private float _lastRecall;
 	private Animator _animator;
-	
+	private int _winCount;
+
+	public int WinCount { get => _winCount; }
+
 	public PlayerSenses Senses => _senses;
 
 	public float Scrap => _scrap;
@@ -40,6 +43,7 @@ public class Player : ScrapBehaviour {
 	public bool Recalling { get { return Time.time - _lastRecall <= Stats.RecallDuration; } }
 
 	protected override void OnDie() {
+		EventManager.RemoveListener<PlayerDiedEvent>(HandlePlayerDiedEvent);
 		EventManager.TriggerEvent(new PlayerDiedEvent(this));
 		gameObject.SetActive(false);
 	}
@@ -49,8 +53,10 @@ public class Player : ScrapBehaviour {
 		_footCollider = GetComponent<CircleCollider2D>();
 		_senses = GetComponentInChildren<PlayerSenses>();
 		_animator = GetComponent<Animator>();
-		
+
 		Body.material = Faction.UnitMat;
+		
+		EventManager.AddListener<PlayerDiedEvent>(HandlePlayerDiedEvent);
 	}
 
 	private void Update() {
@@ -66,7 +72,9 @@ public class Player : ScrapBehaviour {
 
 		if (Input.GetButtonDown(RepairButton)) {
 			ScrapBehaviour repairable = _senses.GetRepairTarget();
-			if (repairable != null) { Repair(repairable as Construct); }
+			if (repairable != null) {
+				Repair(repairable as Construct);
+			}
 		}
 		else if (Input.GetButtonDown(SalvageButton)) {
 			_animator.SetBool("Working", true);
@@ -78,7 +86,9 @@ public class Player : ScrapBehaviour {
 		}
 		else if (Input.GetButtonDown(UseButton)) {
 			ScrapBehaviour usable = _senses.GetUseTarget();
-			if (usable != null) { Use(usable); }
+			if (usable != null) {
+				Use(usable);
+			}
 		}
 		else if (Input.GetButtonDown(RecallButton)) {
 			Recall();
@@ -87,27 +97,27 @@ public class Player : ScrapBehaviour {
 
 	private void Repair(Construct target) {
 		Debug.Log("REPAIR");
-        if(_scrap < target.RepairCost)
-        {
-            // TODO add beep sound
-            return;
-        }
-        // TODO add repair sound
-        _scrap -= target.RepairCost;
-		    target.Repair(this);
+		if (_scrap < target.RepairCost) {
+			// TODO add beep sound
+			return;
+		}
+
+		// TODO add repair sound
+		_scrap -= target.RepairCost;
+		target.Repair(this);
 	}
 
-    protected override void OnTakeDamage() {
-        Debug.Log("SHAKE CAMERA");
-        if(PlayerCamera == null)
-        {
-            Debug.Log("NO CAMERA DETECTED");
-        }
-        PlayerCamera.transform.parent.GetComponent<PerlinShake>().PlayShake();
-    }
+	protected override void OnTakeDamage() {
+		Debug.Log("SHAKE CAMERA");
+		if (PlayerCamera == null) {
+			Debug.Log("NO CAMERA DETECTED");
+		}
+
+		PlayerCamera.transform.parent.GetComponent<PerlinShake>().PlayShake();
+	}
 
 
-    private void Salvage(Construct target) {
+	private void Salvage(Construct target) {
 		float salvageAmount = target.Salvage();
 		_scrap += salvageAmount;
 		Debug.Log("SALVAGED " + salvageAmount);
@@ -120,7 +130,9 @@ public class Player : ScrapBehaviour {
 	private void Recall() {
 		Debug.Log("RECALL");
 
-		if (Time.time - _lastRecall < Stats.RecallFrequency) { return; }
+		if (Time.time - _lastRecall < Stats.RecallFrequency) {
+			return;
+		}
 
 		_lastRecall = Time.time;
 
@@ -136,7 +148,8 @@ public class Player : ScrapBehaviour {
 		if (moveDir.magnitude > 0.1f) {
 			moveDir.Normalize();
 			_animator.SetBool("Moving", true);
-			Body.transform.localScale = moveDir.x > 0.0f ? new Vector3(1.0f, 1.0f, 1.0f) : new Vector3(-1.0f, 1.0f, 1.0f);
+			Body.transform.localScale =
+				moveDir.x > 0.0f ? new Vector3(1.0f, 1.0f, 1.0f) : new Vector3(-1.0f, 1.0f, 1.0f);
 		}
 		else {
 			_animator.SetBool("Moving", false);
@@ -144,6 +157,13 @@ public class Player : ScrapBehaviour {
 
 		_rigidbody.AddForce(moveDir * Stats.MovementSpeed - _rigidbody.velocity * 0.9f, ForceMode2D.Impulse);
 	}
+
+	private void HandlePlayerDiedEvent(PlayerDiedEvent diedEvent) {
+		if (diedEvent.Player != this) {
+			_winCount++;
+		}
+	}
+
 }
 
 

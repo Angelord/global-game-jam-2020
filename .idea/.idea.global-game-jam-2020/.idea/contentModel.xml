@@ -276,6 +276,7 @@
             <e p="PlayerGUI.cs" t="Include" />
             <e p="RepairGUI.cs" t="Include" />
             <e p="SalvageGUI.cs" t="Include" />
+            <e p="ScoreGUI.cs" t="Include" />
           </e>
         </e>
         <e p="Shaders" t="Include">

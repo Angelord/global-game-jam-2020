@@ -5506,6 +5506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3664f65ac23f74eee83b5c82431d9f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FocusAtStart: 1
   MinSpeed: 1
   MaxSpeed: 5
   MaxSpeedDistance: 4
@@ -12108,6 +12109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3664f65ac23f74eee83b5c82431d9f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FocusAtStart: 1
   MinSpeed: 1
   MaxSpeed: 5
   MaxSpeedDistance: 4
