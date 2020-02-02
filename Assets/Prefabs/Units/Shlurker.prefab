@@ -148,7 +148,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.5
+  m_Radius: 2.4
 --- !u!114 &6420457340361172585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,15 +230,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4147a8a3f7c84c8bb0e950bc1e7e320a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 50
-  armorPercent: 0
+  MaxHealth: 40
+  armorPercent: 35
   isDead: 0
   Owner: {fileID: 0}
   Broken: 0
   breakFx: {fileID: 7300804457808948310, guid: 170f9288243614fb48169bdc57ac6f9a, type: 3}
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 2460905028729672229}
-  MovementSpeed: 4
+  MovementSpeed: 4.8
 --- !u!114 &6981424964179171446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,9 +251,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7ae2d495844256bd9147a49676bd83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackRate: 0.56
-  Damage: 5
-  Range: 0.6
+  AttackRate: 0.88
+  Damage: 14.4
+  Range: 0.85
   HasAttackAnimation: 1
 --- !u!50 &96369764371787430
 Rigidbody2D:

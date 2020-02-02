@@ -151,8 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4147a8a3f7c84c8bb0e950bc1e7e320a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 50
-  armorPercent: 0
+  MaxHealth: 80
+  armorPercent: 30
   isDead: 0
   Owner: {fileID: 0}
   Broken: 1
@@ -172,9 +172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ef7da145a27094ca5cf0372bc68090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackRate: 1
-  Damage: 5
-  Range: 2.7
+  AttackRate: 2.08
+  Damage: 36.6
+  Range: 2.2
   HasAttackAnimation: 1
   Projectile: {fileID: 7830425388499362709, guid: 5da78dc9fde43f344bd66806c2fb169d,
     type: 3}
@@ -262,7 +262,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3.6
+  m_Radius: 4
 --- !u!114 &2893326414137435484
 MonoBehaviour:
   m_ObjectHideFlags: 0

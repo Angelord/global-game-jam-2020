@@ -151,15 +151,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4147a8a3f7c84c8bb0e950bc1e7e320a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 50
-  armorPercent: 0
+  MaxHealth: 13
+  armorPercent: 50
   isDead: 0
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 7300804457808948310, guid: 170f9288243614fb48169bdc57ac6f9a, type: 3}
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 197083155824485735}
-  MovementSpeed: 4
+  MovementSpeed: 4.2
 --- !u!114 &4645967725002731312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,9 +172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ef7da145a27094ca5cf0372bc68090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackRate: 0.45
-  Damage: 5
-  Range: 2
+  AttackRate: 0.24
+  Damage: 3
+  Range: 1.8
   HasAttackAnimation: 1
   Projectile: {fileID: 7830425388499362709, guid: 6a754a2e33d7f7c44969154dbb7501d9,
     type: 3}
@@ -262,7 +262,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.5
+  m_Radius: 3
 --- !u!114 &8755210898496344363
 MonoBehaviour:
   m_ObjectHideFlags: 0
