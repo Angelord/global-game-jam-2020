@@ -142,7 +142,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287505989827681090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.07, y: -3.87, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1287505988909067236}
@@ -185,6 +185,7 @@ MonoBehaviour:
   MaxHealth: 80
   armorPercent: 30
   isDead: 0
+  DestroyOnDeath: 1
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 3314953862076795691, guid: 766c7adc74ed6415cac2cce3bbc4a2bf, type: 3}
