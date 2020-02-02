@@ -10,7 +10,8 @@ public abstract class Attacker : MonoBehaviour {
 	public float Damage;
 	public float Range;
 	public bool HasAttackAnimation;
-
+	public bool AttackOnAnimationTrigger = false;
+	
 	private Construct _construct;
 	private Senses _senses;
 	private ScrapBehaviour _currentTarget;
@@ -76,7 +77,9 @@ public abstract class Attacker : MonoBehaviour {
 
 		if (Time.time - _lastAttack >= AttackRate) {
 
-			Attack(_currentTarget);
+			if (!AttackOnAnimationTrigger) {
+				Attack(_currentTarget);
+			}
 
 			if (HasAttackAnimation) {
 				_animator.SetTrigger(AttackTrigger);
@@ -85,6 +88,12 @@ public abstract class Attacker : MonoBehaviour {
 
 			_lastAttack = Time.time;
 		}
+	}
+
+	public void OnAttackAnimationClimax() {
+		if(CurrentTarget == null) return;
+		
+		Attack(CurrentTarget);
 	}
 
 	public void OnAttackAnimationOver() {

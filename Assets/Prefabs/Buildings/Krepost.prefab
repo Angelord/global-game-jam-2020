@@ -110,7 +110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3274402828140805922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.92, y: -1.49, z: -8.993129}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3274402829344325989}
@@ -131,10 +131,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ef7da145a27094ca5cf0372bc68090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackRate: 0.5
-  Damage: 5
-  Range: 3.8
+  AttackRate: 1.12
+  Damage: 22
+  Range: 5
   HasAttackAnimation: 1
+  AttackOnAnimationTrigger: 1
   Projectile: {fileID: 7830425388499362709, guid: 230e2771eacbd494fa32ef02a5e483f5,
     type: 3}
   barrel: {fileID: 3274402829128823432}
@@ -150,8 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94c257f423ff4618a5179e0c89ef9b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 10
-  armorPercent: 0
+  MaxHealth: 70
+  armorPercent: 40
   isDead: 0
   DestroyOnDeath: 1
   Owner: {fileID: 0}
@@ -298,7 +299,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3274402829128823432}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.206, y: 0.638, z: 0}
+  m_LocalPosition: {x: -0.206, y: 0.824, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3274402828065561476}
@@ -351,7 +352,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3.8
+  m_Radius: 5
 --- !u!114 &3274402829344325990
 MonoBehaviour:
   m_ObjectHideFlags: 0
