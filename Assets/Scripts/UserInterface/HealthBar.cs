@@ -4,8 +4,6 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour {
 
-	private static readonly Color DefaultColor = new Color(0.24f, 0.78f, 0.42f);
-	private static readonly Color EnemyColor = new Color(0.77f, 0.16f, 0.16f);
 	private static readonly Color BrokenColor = new Color(0.63f, 0.5f, 0.4f);
 
 	public float YOffset = 100.0f;
@@ -41,12 +39,12 @@ public class HealthBar : MonoBehaviour {
 			if (target.Broken) {
 				BarFill.color = BrokenColor;
 			}
-			else if (_player.Faction.IsEnemy(_target.Faction)) {
-				BarFill.color = EnemyColor;
-			}
 			else {
-				BarFill.color = DefaultColor;
+				BarFill.color = target.Faction.Color;
 			}
+		}
+		else if(_target is Player) {
+			BarFill.color = ((Player) _target).Faction.Color;
 		}
 		else {
 			BarFill.color = BrokenColor;
