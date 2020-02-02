@@ -26,11 +26,13 @@ public class Tower : Building {
 	protected override void OnRepair() {
 		Attacker.enabled = true;
 		Animator.SetTrigger("Repair");
+		FlipSprite.GetComponent<SpriteRenderer>().material = Faction.UnitMat;
 	}
 
 	protected override void OnBreak() {
 		Attacker.enabled = false;
 		Animator.SetTrigger("Break");
+		FlipSprite.GetComponent<SpriteRenderer>().material = Faction.UnitMat;
 	}
 
     void Start()

@@ -232,7 +232,6 @@
             <e p="Util_Easing.cs" t="Include" />
             <e p="Util_Noise.cs" t="Include" />
           </e>
-          <e p="ColorBlink.cs" t="Include" />
           <e p="Construct.cs" t="Include" />
           <e p="Creature.cs" t="Include" />
           <e p="Events" t="Include">

@@ -25,6 +25,8 @@ public abstract class Attacker : MonoBehaviour {
 
 	public bool Attacking => _attacking;
 
+	public Construct Construct { get => _construct; }
+
 	public bool TargetIsInRange() {
 		if (_currentTarget == null) return false;
 		return Vector2.Distance(_currentTarget.transform.position, transform.position) <= Range;

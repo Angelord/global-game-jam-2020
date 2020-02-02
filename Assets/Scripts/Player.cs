@@ -20,7 +20,7 @@ public class Player : ScrapBehaviour {
 
 	public event Action<PlayerCommand> OnCommand;
 
-	private float _scrap;
+	[SerializeField] private float _scrap;
 	private Rigidbody2D _rigidbody;
 	private CircleCollider2D _footCollider;
 	private PlayerSenses _senses;
