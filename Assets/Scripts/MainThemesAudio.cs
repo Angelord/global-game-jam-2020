@@ -18,9 +18,5 @@ public class MainThemesAudio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            audioManager.Play("gun");
-        }
     }
 }

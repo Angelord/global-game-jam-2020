@@ -128,6 +128,14 @@ MonoBehaviour:
     loop: 0
     RandomSound: 0
     source: {fileID: 0}
+  - name: player_gets_hit
+    clips:
+    - {fileID: 8300000, guid: 7148a6b16a6248b4dbc2073c5bf58853, type: 3}
+    volume: 1
+    pitch_variation: 0
+    loop: 0
+    RandomSound: 0
+    source: {fileID: 0}
 --- !u!114 &302388992361286178
 MonoBehaviour:
   m_ObjectHideFlags: 0
