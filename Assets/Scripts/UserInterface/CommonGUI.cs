@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Claw.Chrono;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -21,7 +22,15 @@ public class CommonGUI : MonoBehaviour {
 		});
 	}
 
-	public void OnQuitButtonClick() {
+	public void OnQuitButtonClick()
+	{
 		Application.Quit();
 	}
+
+	public void OnShowroomButtonClick()
+	{
+		SceneManager.LoadScene("Showroom");
+	}
+
+
 }
