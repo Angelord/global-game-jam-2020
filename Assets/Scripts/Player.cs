@@ -49,22 +49,14 @@ public class Player : ScrapBehaviour {
 
 	private void Update() {
 
-		if (Input.GetButton(RepairButton)) {
+		if (Input.GetButton(RepairButton) || Input.GetButton(SalvageButton) || Input.GetButton(UseButton)) {
 			_animator.SetBool("Working", true);
-			Sparks.color = Stats.SparkColorRepair;
-		}
-		else if (Input.GetButton(SalvageButton)) {
-			_animator.SetBool("Working", true);
-			Sparks.color = Stats.SparkColorSalvage;
-		}
-		else if (Input.GetButton(UseButton)) {
-			_animator.SetBool("Working", true);
-			Sparks.color = Stats.SparkColorUse;
 		}
 		else {
 			_animator.SetBool("Working", false);
-			Sparks.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
 		}
+
+		Sparks.color = _animator.GetBool("Working") ? Faction.Color : new Color(0.0f, 0.0f, 0.0f, 0.0f);
 
 		if (Input.GetButtonDown(RepairButton)) {
 			ScrapBehaviour repairable = _senses.GetRepairTarget();
