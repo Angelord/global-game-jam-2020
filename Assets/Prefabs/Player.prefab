@@ -316,6 +316,7 @@ MonoBehaviour:
   MaxHealth: 100
   armorPercent: 0
   isDead: 0
+  DestroyOnDeath: 0
   _faction: {fileID: 11400000, guid: 7d0070d7a5c5d7f45930a9bec314e69f, type: 2}
   Stats: {fileID: 11400000, guid: aa005770e63f7c744afc9d7892e8a0ce, type: 2}
   HorizontalAxis: Horizontal_1

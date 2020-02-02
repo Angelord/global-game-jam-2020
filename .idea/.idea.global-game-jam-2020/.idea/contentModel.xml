@@ -235,6 +235,7 @@
             <e p="ConstructSalvagedEvent.cs" t="Include" />
             <e p="EntityBrokeEvent.cs" t="Include" />
             <e p="ObjectBrokeEvent.cs" t="Include" />
+            <e p="PlayerDiedEvent.cs" t="Include" />
             <e p="ScrapObjectDiedEvent.cs" t="Include" />
             <e p="ScrapObjectSpawnedEvent.cs" t="Include" />
           </e>
@@ -263,6 +264,7 @@
           <e p="UserInterface" t="Include">
             <e p="CommonGUI.cs" t="Include" />
             <e p="FloatingText.cs" t="Include" />
+            <e p="GameOverGUI.cs" t="Include" />
             <e p="GUIBehaviour.cs" t="Include" />
             <e p="HealthBar.cs" t="Include" />
             <e p="HealthGUI.cs" t="Include" />

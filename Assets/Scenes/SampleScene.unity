@@ -286,6 +286,7 @@ MonoBehaviour:
   MaxHealth: 100
   armorPercent: 0
   isDead: 0
+  DestroyOnDeath: 1
   _faction: {fileID: 11400000, guid: 99969bd06bfea474da2ce8006138cc21, type: 2}
   Stats: {fileID: 11400000, guid: aa005770e63f7c744afc9d7892e8a0ce, type: 2}
   HorizontalAxis: Horizontal_2
@@ -430,7 +431,7 @@ GameObject:
   - component: {fileID: 206080671}
   m_Layer: 0
   m_Name: Game Master
-  m_TagString: Untagged
+  m_TagString: GameMaster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -744,6 +745,7 @@ MonoBehaviour:
   MaxHealth: 100
   armorPercent: 0
   isDead: 0
+  DestroyOnDeath: 1
   Owner: {fileID: 205854730}
   Broken: 0
   breakFx: {fileID: 0}
@@ -1102,6 +1104,7 @@ MonoBehaviour:
   MaxHealth: 100
   armorPercent: 0
   isDead: 0
+  DestroyOnDeath: 1
   Owner: {fileID: 205854730}
   Broken: 0
   breakFx: {fileID: 0}
@@ -1313,7 +1316,7 @@ PrefabInstance:
     - target: {fileID: 1284730679844951215, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951215, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
@@ -1382,7 +1385,7 @@ PrefabInstance:
     - target: {fileID: 8015586945620854567, guid: 19ed24b6d601bec41bbf932b071e08ac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8015586945620854567, guid: 19ed24b6d601bec41bbf932b071e08ac,
         type: 3}
@@ -1876,6 +1879,7 @@ MonoBehaviour:
   MaxHealth: 100
   armorPercent: 0
   isDead: 0
+  DestroyOnDeath: 1
   Owner: {fileID: 205854730}
   Broken: 0
   breakFx: {fileID: 0}

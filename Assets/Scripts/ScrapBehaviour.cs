@@ -14,6 +14,8 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 
 	public bool isDead = false;
 
+	public bool DestroyOnDeath = true;
+	
 	public abstract Faction Faction { get; }
 
 	public virtual bool Attackable => false;
@@ -31,6 +33,8 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 	}
 	
 	public void TakeDamage(float amount) {
+		if(isDead) return;
+		
 		_curHealth -= amount * (1 - armorPercent/100);
 		OnTakeDamage();
 		if (_curHealth <= 0.0f) {
@@ -42,8 +46,10 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 		isDead = true;
 
 		// TODO die better death
-		Destroy(gameObject, 0.1f);
-		
+		if (DestroyOnDeath) {
+			Destroy(gameObject, 0.1f);
+		}
+
 		EventManager.TriggerEvent(new ScrapObjectDiedEvent(this));
 		
 		OnDie();

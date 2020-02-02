@@ -12,7 +12,10 @@ public class GUIBehaviour : MonoBehaviour {
 	public void Initialize(Camera camera, Player player) {
 		_camera = camera;
 		_player = player;
+		OnInitialize();
 	}
+
+	protected virtual void OnInitialize() { }
 
 	public static Vector2 WorldToScreen(Vector2 pos, Camera camera, float yOffset = 0.0f) {
 		return (Vector2)camera.WorldToScreenPoint(pos) + new Vector2(- camera.rect.x * Screen.width, yOffset);

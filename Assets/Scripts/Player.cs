@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Claw;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -37,6 +38,11 @@ public class Player : ScrapBehaviour {
 	public CircleCollider2D FootCollider => _footCollider;
 
 	public bool Recalling { get { return Time.time - _lastRecall <= Stats.RecallDuration; } }
+
+	protected override void OnDie() {
+		EventManager.TriggerEvent(new PlayerDiedEvent(this));
+		gameObject.SetActive(false);
+	}
 
 	private void Start() {
 		_rigidbody = GetComponent<Rigidbody2D>();

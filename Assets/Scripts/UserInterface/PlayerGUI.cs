@@ -16,7 +16,7 @@ public class PlayerGUI : MonoBehaviour {
 
 		_camera = GetComponent<Canvas>().worldCamera;
 		
-		GUIBehaviour[] behaviours = GetComponentsInChildren<GUIBehaviour>();
+		GUIBehaviour[] behaviours = GetComponentsInChildren<GUIBehaviour>(true);
 
 		foreach (GUIBehaviour guiBehaviour in behaviours) {
 			guiBehaviour.Initialize(Camera, Player);
