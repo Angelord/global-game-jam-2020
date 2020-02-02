@@ -192,7 +192,6 @@ MonoBehaviour:
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 5988598870480507152}
   MovementSpeed: 4
-  race: 5
 --- !u!114 &1287505989827681095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +208,8 @@ MonoBehaviour:
   Damage: 36.6
   Range: 2.2
   HasAttackAnimation: 1
+  AttackOnAnimationTrigger: 0
+  AudioData: {fileID: 11400000, guid: d73908dde52a34045bb9e774c4c4e39d, type: 2}
   Projectile: {fileID: 7830425388499362709, guid: 5da78dc9fde43f344bd66806c2fb169d,
     type: 3}
   barrel: {fileID: 731024274077896592}

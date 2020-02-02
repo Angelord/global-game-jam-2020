@@ -254,13 +254,13 @@ MonoBehaviour:
   MaxHealth: 34
   armorPercent: 65
   isDead: 0
+  DestroyOnDeath: 1
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 3314953862076795691, guid: 766c7adc74ed6415cac2cce3bbc4a2bf, type: 3}
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 415802647807602484}
   MovementSpeed: 3.6
-  race: 3
 --- !u!114 &5116334779426088295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,6 +277,8 @@ MonoBehaviour:
   Damage: 4.2
   Range: 1.4
   HasAttackAnimation: 1
+  AttackOnAnimationTrigger: 0
+  AudioData: {fileID: 11400000, guid: affa01b7918c340438325cf1cf3bb407, type: 2}
 --- !u!50 &2789278006482129847
 Rigidbody2D:
   serializedVersion: 4
