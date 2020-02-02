@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour {
 		Vector2 moveDir = targetPos - transform.position;
 		moveDir.Normalize();
 		transform.Translate(Time.deltaTime * Speed * moveDir);
-		if (Vector2.Distance(targetPos, transform.position) < 0.05f) {
+		if (Vector2.Distance(targetPos, transform.position) <= 0.08f) {
 			_onReach();
 			Destroy(this.gameObject);
 		}
