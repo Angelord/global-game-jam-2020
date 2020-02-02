@@ -63,6 +63,54 @@ MonoBehaviour:
     loop: 0
     RandomSound: 0
     source: {fileID: 0}
+  - name: hentairoi_attack
+    clips:
+    - {fileID: 8300000, guid: 8308ee7e85ea6b445852f1cee1feff10, type: 3}
+    volume: 1
+    pitch_variation: 0
+    loop: 0
+    RandomSound: 0
+    source: {fileID: 0}
+  - name: gunner_attack
+    clips:
+    - {fileID: 8300000, guid: 5565292f6abfcc349b76705a9cd4f393, type: 3}
+    volume: 1
+    pitch_variation: 0
+    loop: 0
+    RandomSound: 0
+    source: {fileID: 0}
+  - name: pistario_attack
+    clips:
+    - {fileID: 8300000, guid: 385ae4d2273781f4d854d03ea62fe03e, type: 3}
+    volume: 1
+    pitch_variation: 0
+    loop: 0
+    RandomSound: 0
+    source: {fileID: 0}
+  - name: rakabat_attack
+    clips:
+    - {fileID: 8300000, guid: 4cfbd9dd00ee392478ba0b0285dd9947, type: 3}
+    volume: 1
+    pitch_variation: 0
+    loop: 0
+    RandomSound: 0
+    source: {fileID: 0}
+  - name: shlurker_attack
+    clips:
+    - {fileID: 8300000, guid: fe3040a5ceafd0741bd7638397132706, type: 3}
+    volume: 1
+    pitch_variation: 0
+    loop: 0
+    RandomSound: 0
+    source: {fileID: 0}
+  - name: zaratiusha_attack
+    clips:
+    - {fileID: 8300000, guid: 50213f6c95d7e4243919465570e8c80c, type: 3}
+    volume: 1
+    pitch_variation: 0
+    loop: 0
+    RandomSound: 0
+    source: {fileID: 0}
 --- !u!114 &302388992361286178
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,16 +11,17 @@ public abstract class Attacker : MonoBehaviour {
 	public float Range;
 	public bool HasAttackAnimation;
 	public bool AttackOnAnimationTrigger = false;
-	public AudioData AudioData;
-	
-	private Construct _construct;
+	public AudioData AudioDataObject;
+
+    private Construct _construct;
 	private Senses _senses;
 	private ScrapBehaviour _currentTarget;
 	private float _lastAttack;
 	private Animator _animator;
 	private bool _attacking;
+    private AudioManager _audioManager;
 
-	public ScrapBehaviour CurrentTarget => _currentTarget;
+    public ScrapBehaviour CurrentTarget => _currentTarget;
 
 	public bool Attacking => _attacking;
 
@@ -30,7 +31,8 @@ public abstract class Attacker : MonoBehaviour {
 	}
 
 	private void Start() {
-		_construct = GetComponent<Construct>();
+        _audioManager = FindObjectOfType<AudioManager>();
+        _construct = GetComponent<Construct>();
 		_senses = GetComponentInChildren<Senses>();
 		_senses.OnObjectEnter += OnObjectEnter;
 		_senses.OnObjectExit += OnObjectExit;
@@ -85,13 +87,39 @@ public abstract class Attacker : MonoBehaviour {
 			if (HasAttackAnimation) {
 				_animator.SetTrigger(AttackTrigger);
 				_attacking = true;
+                OnAttack();
 			}
 
 			_lastAttack = Time.time;
 		}
 	}
 
-	public void OnAttackAnimationClimax() {
+    private void OnAttack()
+    {
+        switch(AudioDataObject.Race)
+        {
+            case CreatureType.Gunner:
+                _audioManager.Play("gunner_attack");
+                break;
+            case CreatureType.Hentairoi:
+                _audioManager.Play("hentairoi_attack");
+                break;
+            case CreatureType.Pistario:
+                _audioManager.Play("pistario_attack");
+                break;
+            case CreatureType.Rakabat:
+                _audioManager.Play("rakabat_attack");
+                break;
+            case CreatureType.Shlurker:
+                _audioManager.Play("shlurker_attack");
+                break;
+            case CreatureType.Zaratiusha:
+                _audioManager.Play("zaratiusha_attack");
+                break;
+        }
+    }
+
+    public void OnAttackAnimationClimax() {
 		if(CurrentTarget == null) return;
 		
 		Attack(CurrentTarget);
