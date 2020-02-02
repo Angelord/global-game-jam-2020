@@ -19,7 +19,7 @@ namespace Scrapper {
             if(Bounds == null) return;
             
             Vector2 cameraBottomLeft = Camera.ScreenToWorldPoint(new Vector3(Screen.width * Camera.rect.x, 0.0f, 0.0f));
-            Vector2 cameraTopRight = Camera.ScreenToWorldPoint(new Vector3(cameraBottomLeft.x + Screen.width - Screen.width * Camera.rect.width, Screen.height, 0.0f));
+            Vector2 cameraTopRight = Camera.ScreenToWorldPoint(new Vector3(Screen.width * Camera.rect.x + Screen.width * Camera.rect.width, Screen.height, 0.0f));
 
             Vector3 adjustmentOffset = Vector2.zero;
 
