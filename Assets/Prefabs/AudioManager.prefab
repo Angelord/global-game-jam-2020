@@ -119,6 +119,14 @@ MonoBehaviour:
     loop: 0
     RandomSound: 0
     source: {fileID: 0}
+  - name: repair_sound
+    clips:
+    - {fileID: 8300000, guid: e9f098eb53d095d46bc990d1da805a18, type: 3}
+    volume: 1
+    pitch_variation: 0
+    loop: 0
+    RandomSound: 0
+    source: {fileID: 0}
 --- !u!114 &302388992361286178
 MonoBehaviour:
   m_ObjectHideFlags: 0

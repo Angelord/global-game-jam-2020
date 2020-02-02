@@ -105,7 +105,8 @@ public class Player : ScrapBehaviour {
 
 		// TODO add repair sound
 		_scrap -= target.RepairCost;
-		target.Repair(this);
+        _audioManager.Play("repair_sound");
+        target.Repair(this);
 	}
 
 	protected override void OnTakeDamage() {
