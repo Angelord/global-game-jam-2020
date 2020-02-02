@@ -42,4 +42,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _TeamColor: {r: 0.3537736, g: 0.9035531, b: 1, a: 1}
+    - _TeamColor: {r: 0, g: 1, b: 0.48655796, a: 1}
