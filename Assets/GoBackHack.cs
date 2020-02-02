@@ -14,7 +14,7 @@ public class GoBackHack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Escape)) {
+        if(Input.anyKey) {
             SceneManager.LoadScene("MasterScene");
         }
 
