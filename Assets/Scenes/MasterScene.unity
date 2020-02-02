@@ -5476,9 +5476,9 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Camera_Player1
   m_TagString: MainCamera
@@ -5494,24 +5494,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
---- !u!114 &519420030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3664f65ac23f74eee83b5c82431d9f59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FocusAtStart: 1
-  MinSpeed: 1
-  MaxSpeed: 5
-  MaxSpeedDistance: 4
-  _targets:
-  - {fileID: 138788291}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -5615,6 +5597,24 @@ MonoBehaviour:
   Bounds: {fileID: 2036512322}
   XAxis: 1
   YAxis: 1
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d6aa58154343aeac025070da49443c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FocusAtStart: 1
+  MinSpeed: 1
+  MaxSpeed: 5
+  MaxSpeedDistance: 4
+  _targets:
+  - {fileID: 138788291}
 --- !u!4 &528240608 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
@@ -12087,9 +12087,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1112256220}
   - component: {fileID: 1112256219}
-  - component: {fileID: 1112256217}
   - component: {fileID: 1112256218}
   - component: {fileID: 1112256221}
+  - component: {fileID: 1112256222}
   m_Layer: 0
   m_Name: Camera_Player2
   m_TagString: MainCamera
@@ -12097,24 +12097,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1112256217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112256216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3664f65ac23f74eee83b5c82431d9f59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FocusAtStart: 1
-  MinSpeed: 1
-  MaxSpeed: 5
-  MaxSpeedDistance: 4
-  _targets:
-  - {fileID: 8015586945288438951}
 --- !u!114 &1112256218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12218,6 +12200,24 @@ MonoBehaviour:
   Bounds: {fileID: 2036512322}
   XAxis: 1
   YAxis: 1
+--- !u!114 &1112256222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112256216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d6aa58154343aeac025070da49443c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FocusAtStart: 1
+  MinSpeed: 1
+  MaxSpeed: 5
+  MaxSpeedDistance: 4
+  _targets:
+  - {fileID: 8015586945288438951}
 --- !u!4 &1113739530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
