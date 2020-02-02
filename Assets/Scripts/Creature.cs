@@ -73,7 +73,7 @@ public class Creature : Construct {
 		if (_state == UnitState.Following) {
 			if (_attacker.CurrentTarget == null) { return; }
 
-			if (Owner.Recalling) { return; }
+			if (Owner && Owner.Recalling) { return; }
 
 			if (!_attacker.TargetIsInRange()) {
 

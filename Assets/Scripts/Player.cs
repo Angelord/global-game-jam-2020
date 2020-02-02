@@ -80,7 +80,7 @@ public class Player : ScrapBehaviour {
         {
             Debug.Log("NO CAMERA DETECTED");
         }
-        PlayerCamera.GetComponent<PerlinShake>().PlayShake();
+        PlayerCamera.transform.parent.GetComponent<PerlinShake>().PlayShake();
     }
 
 
