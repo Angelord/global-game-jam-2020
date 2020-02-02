@@ -98,6 +98,8 @@ public class Creature : Construct {
 		if(Owner == null) return;
 		if(Broken) return;
 
+		Attacker.enabled = !Owner.Recalling;
+
 		if (Attacker.Attacking) {
 			_rigidbody.velocity = Vector2.zero;
 			if (Attacker.CurrentTarget != null) {

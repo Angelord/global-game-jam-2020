@@ -62,8 +62,7 @@ public abstract class Attacker : MonoBehaviour {
 
 		if (_currentTarget == null) { return; }
 
-		if (_currentTarget.Faction == _construct.Faction)
-		{
+		if (_currentTarget.Faction == _construct.Faction) {
 			_currentTarget = null;
 			return;
 		}
