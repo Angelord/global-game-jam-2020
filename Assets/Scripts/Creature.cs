@@ -90,7 +90,7 @@ public class Creature : Construct {
 		if (Attacker.Attacking) {
 			_rigidbody.velocity = Vector2.zero;
 			if (Attacker.CurrentTarget != null) {
-				_sprite.flipX = transform.position.x - Attacker.CurrentTarget.transform.position.x > 0.0f;
+				setFlip(transform.position.x - Attacker.CurrentTarget.transform.position.x > 0.0f);
 			}
 
 			return;
@@ -152,10 +152,21 @@ public class Creature : Construct {
 		return Arrive(Attacker.CurrentTarget.transform.position, minDistance, _steering.FollowDecceleration) * _steering.Follow;
 	}
 
+	private void setFlip(bool left)
+	{
+		if (_sprite.transform.localScale.x > 0 && left)
+		{
+			_sprite.transform.localScale = new Vector3(-_sprite.transform.localScale.x, _sprite.transform.localScale.y, _sprite.transform.localScale.z);
+		} else if (_sprite.transform.localScale.x < 0 && !left)
+        {
+			_sprite.transform.localScale = new Vector3(-_sprite.transform.localScale.x, _sprite.transform.localScale.y, _sprite.transform.localScale.z);
+		}
+	}
+
 	private void Move(Vector2 direction) {
 		
 		if (direction.sqrMagnitude > MovementSpeed * 0.1f) {
-			_sprite.flipX = _rigidbody.velocity.x < 0.0f;
+			setFlip(_rigidbody.velocity.x < 0.0f);
 			_animator.SetBool("Moving", true);
 		}
 		else {
