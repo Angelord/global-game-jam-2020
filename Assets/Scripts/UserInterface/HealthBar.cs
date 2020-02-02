@@ -28,7 +28,8 @@ public class HealthBar : MonoBehaviour {
 	private void Update() {
 		if(_target == null) return;
 
-		Vector2 screenPos = GUIBehaviour.WorldToScreen(_target.transform.position, _camera, YOffset);
+		Vector3 offset = new Vector3(0.0f, _target.BarYOffset, 0.0f);
+		Vector2 screenPos = GUIBehaviour.WorldToScreen(_target.transform.position + offset, _camera);
 		
 		GetComponent<RectTransform>().anchoredPosition = screenPos;
 

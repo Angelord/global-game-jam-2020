@@ -7,6 +7,8 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 	
 	public float MaxHealth;
 
+	public float BarYOffset = 1.0f;
+	
     [Range(0, 100)]
 	public float armorPercent = 0;
 

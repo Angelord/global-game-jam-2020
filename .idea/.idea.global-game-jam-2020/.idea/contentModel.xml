@@ -244,6 +244,7 @@
           </e>
           <e p="Faction.cs" t="Include" />
           <e p="GameMaster.cs" t="Include" />
+          <e p="Maggot.cs" t="Include" />
           <e p="MainThemesAudio.cs" t="Include" />
           <e p="MeleeAttacker.cs" t="Include" />
           <e p="Player.cs" t="Include" />
