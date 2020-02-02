@@ -22,10 +22,13 @@ public abstract class Construct : ScrapBehaviour {
 
 	public GameObject breakFx;
 
+	private bool skipBreak = false;
+
 	private void Start() {
 		OnStart();
 		if (Broken) {
 			Break();
+			skipBreak = true;
 			OnBreak();
 		}
 		else if(Owner != null) {
@@ -101,6 +104,11 @@ public abstract class Construct : ScrapBehaviour {
 	}
 
 	protected virtual void OnBreak() {
+        if(skipBreak)
+        {
+			skipBreak = false;
+			return;
+        }
 
 		if (breakFx != null)
         {
