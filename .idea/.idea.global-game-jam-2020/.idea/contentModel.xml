@@ -267,6 +267,10 @@
             <e p="RepairGUI.cs" t="Include" />
           </e>
         </e>
+        <e p="Shaders" t="Include">
+          <e p="Sprites-Team-Color.shader" t="Include" />
+          <e p="TeamColorSprites.cginc" t="Include" />
+        </e>
         <e p="TODO.txt" t="Include" />
         <e p="Vendor" t="Include">
           <e p="Fullscreen" t="Include">

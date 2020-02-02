@@ -19,6 +19,8 @@ public abstract class Construct : ScrapBehaviour {
 	public override Faction Faction { get { return Owner == null ? Faction.Neutral : Owner.Faction; } }
 
 	private void Start() {
+		OnStart();
+
 		if (Broken) {
 			CurHealth = MaxHealth * BREAK_PERCENTAGE;
 			OnBreak();
@@ -26,8 +28,6 @@ public abstract class Construct : ScrapBehaviour {
 		else if(Owner != null) {
 			Owner.OnCommand += OnOwnerCommand;
 		}
-		
-		OnStart();
 	}
 
 	public virtual void Use() { }

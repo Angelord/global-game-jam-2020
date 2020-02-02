@@ -1950,6 +1950,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1287505988909067239, guid: 2dccded9bd52325479bd975c5ccedae3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f1dd56e8dd9e1ae4cb229145b8ed9b72, type: 2}
     - target: {fileID: 1287505989827681090, guid: 2dccded9bd52325479bd975c5ccedae3,
         type: 3}
       propertyPath: m_Name
@@ -2103,6 +2108,11 @@ PrefabInstance:
       propertyPath: Owner
       value: 
       objectReference: {fileID: 708907060}
+    - target: {fileID: 4645967725002731313, guid: da89db4e5a734b0428544fda78770170,
+        type: 3}
+      propertyPath: Broken
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4645967725002731315, guid: da89db4e5a734b0428544fda78770170,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -15,10 +15,10 @@ public class Creature : Construct {
 	public SteeringStats _steering;
 	
 	public GameObject _scrapEffect;
-
+	
 	public float MovementSpeed = 1.0f;
 	
-	[SerializeField] private UnitState _state = UnitState.Following;
+	private UnitState _state = UnitState.Following;
 	
 	private SpriteRenderer _sprite;
 	
@@ -61,10 +61,14 @@ public class Creature : Construct {
 		_sprite = GetComponentInChildren<SpriteRenderer>();
 		_senses = GetComponentInChildren<Senses>();
 		_animator = GetComponent<Animator>();
+
+		_sprite.material = Faction.UnitMat;
 	}
 
 	private void Update() {
-		if(Broken) return;
+		if(Broken) {
+			_rigidbody.velocity *= 0.5f;
+		}
 		
 		if (_state == UnitState.Following) {
 			if (_attacker.CurrentTarget == null) { return; }
@@ -168,11 +172,13 @@ public class Creature : Construct {
 		_scrapEffect.SetActive(true);
 		Attacker.enabled = false;
 		_rigidbody.velocity = Vector2.zero;
+		_sprite.material = Faction.Neutral.UnitMat;
 	}
 
 	protected override void OnRepair() {
 		_scrapEffect.SetActive(false);
 		Attacker.enabled = true;
+		_sprite.material = Faction.UnitMat;
 	}
 
 	private Vector2 Seek(Vector2 target) {
