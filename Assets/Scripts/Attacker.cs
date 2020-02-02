@@ -96,6 +96,10 @@ public abstract class Attacker : MonoBehaviour {
 
     private void OnAttack()
     {
+        if (AudioDataObject == null)
+        {
+            return;
+        }
         switch(AudioDataObject.Race)
         {
             case CreatureType.Gunner:
@@ -116,6 +120,8 @@ public abstract class Attacker : MonoBehaviour {
             case CreatureType.Zaratiusha:
                 _audioManager.Play("zaratiusha_attack");
                 break;
+            default:
+                return;
         }
     }
 
