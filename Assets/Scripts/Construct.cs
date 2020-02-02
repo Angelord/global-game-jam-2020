@@ -81,10 +81,9 @@ public abstract class Construct : ScrapBehaviour {
 	}
 
 	protected virtual void OnBreak() {
-		Debug.Log(breakFx);
 
 		if (breakFx != null)
-    {
+        {
 			Instantiate(breakFx, transform);
 		}
 

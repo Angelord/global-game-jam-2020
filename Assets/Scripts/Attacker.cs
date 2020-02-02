@@ -3,14 +3,14 @@ using UnityEngine;
 
 [RequireComponent(typeof(Construct))]
 public abstract class Attacker : MonoBehaviour {
-	
+
 	private static readonly int AttackTrigger = Animator.StringToHash("Attack");
 
 	public float AttackRate;
 	public float Damage;
 	public float Range;
 	public bool HasAttackAnimation;
-	
+
 	private Construct _construct;
 	private Senses _senses;
 	private ScrapBehaviour _currentTarget;
@@ -33,6 +33,8 @@ public abstract class Attacker : MonoBehaviour {
 		_senses.OnObjectEnter += OnObjectEnter;
 		_senses.OnObjectExit += OnObjectExit;
 		_animator = GetComponent<Animator>();
+
+		InvokeRepeating("ResetTarget", UnityEngine.Random.Range(1, 4), 2f);
 	}
 
 	private void OnObjectEnter(ScrapBehaviour obj) {
@@ -51,24 +53,30 @@ public abstract class Attacker : MonoBehaviour {
 		_currentTarget = null;
 	}
 
+    private void ResetTarget()
+    {
+		_currentTarget = _senses.GetAttackTarget(_construct.Faction);
+	}
+
 	private void Update() {
+
 		if (_currentTarget == null) { return; }
 
-        if(_currentTarget.Faction == _construct.Faction)
-        {
+		if (_currentTarget.Faction == _construct.Faction)
+		{
 			_currentTarget = null;
 			return;
-        }
+		}
 
 		if (!_currentTarget.Attackable || !TargetIsInRange()) {
 
 			_currentTarget = _senses.GetAttackTarget(_construct.Faction);
-				
+
 			return;
 		}
 
 		if (Time.time - _lastAttack >= AttackRate) {
-			
+
 			Attack(_currentTarget);
 
 			if (HasAttackAnimation) {
@@ -87,9 +95,9 @@ public abstract class Attacker : MonoBehaviour {
 	protected abstract void Attack(ScrapBehaviour target);
 
 	private void OnDrawGizmosSelected() {
-		
+
 		Gizmos.color = Color.red;
-		
+
 		Gizmos.DrawWireSphere(transform.position, Range);
 	}
 }
