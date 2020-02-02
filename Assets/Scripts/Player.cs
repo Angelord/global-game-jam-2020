@@ -26,8 +26,9 @@ public class Player : ScrapBehaviour {
 	private PlayerSenses _senses;
 	private float _lastRecall;
 	private Animator _animator;
+    private AudioManager _audioManager;
 
-	public int WinCount { get => _faction.wins; }
+    public int WinCount { get => _faction.wins; }
 
 	public PlayerSenses Senses => _senses;
 
@@ -48,7 +49,8 @@ public class Player : ScrapBehaviour {
 	}
 
 	private void Start() {
-		_rigidbody = GetComponent<Rigidbody2D>();
+        _audioManager = FindObjectOfType<AudioManager>();
+        _rigidbody = GetComponent<Rigidbody2D>();
 		_footCollider = GetComponent<CircleCollider2D>();
 		_senses = GetComponentInChildren<PlayerSenses>();
 		_animator = GetComponent<Animator>();
@@ -119,7 +121,8 @@ public class Player : ScrapBehaviour {
 	private void Salvage(Construct target) {
 		float salvageAmount = target.Salvage();
 		_scrap += salvageAmount;
-		Debug.Log("SALVAGED " + salvageAmount);
+        _audioManager.Play("collect_scrap");
+        Debug.Log("SALVAGED " + salvageAmount);
 	}
 
 	private void Use(ScrapBehaviour target) {
