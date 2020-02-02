@@ -14,6 +14,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Color: {r: 1, g: 0, b: 0.18378544, a: 1}
   UnitMat: {fileID: 2100000, guid: 5ca0f17309584c2418b9a56be8bddbc4, type: 2}
-  wins: 0
-  repairFx: {fileID: 1045619636449735409, guid: 641c41190241548049ef72de881bb488,
-    type: 3}
