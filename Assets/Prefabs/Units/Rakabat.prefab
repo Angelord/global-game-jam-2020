@@ -278,7 +278,7 @@ MonoBehaviour:
   Range: 1.4
   HasAttackAnimation: 1
   AttackOnAnimationTrigger: 0
-  AudioData: {fileID: 11400000, guid: affa01b7918c340438325cf1cf3bb407, type: 2}
+  AudioDataObject: {fileID: 11400000, guid: affa01b7918c340438325cf1cf3bb407, type: 2}
 --- !u!50 &2789278006482129847
 Rigidbody2D:
   serializedVersion: 4

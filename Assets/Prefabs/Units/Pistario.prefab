@@ -239,7 +239,7 @@ MonoBehaviour:
   Range: 3
   HasAttackAnimation: 1
   AttackOnAnimationTrigger: 1
-  AudioData: {fileID: 11400000, guid: cad56123109cd8b43bef6e5ca141c0b9, type: 2}
+  AudioDataObject: {fileID: 11400000, guid: cad56123109cd8b43bef6e5ca141c0b9, type: 2}
   Projectile: {fileID: 7830425388499362709, guid: 5da78dc9fde43f344bd66806c2fb169d,
     type: 3}
   barrel: {fileID: 5372773555545489921}
