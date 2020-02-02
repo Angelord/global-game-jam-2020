@@ -24,6 +24,7 @@ public class Tower : Building {
 	}
 
 	protected override void OnRepair() {
+		base.OnRepair();
 		Attacker.enabled = true;
 		Animator.SetTrigger("Repair");
 		FlipSprite.GetComponent<SpriteRenderer>().material = Faction.UnitMat;

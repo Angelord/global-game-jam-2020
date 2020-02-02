@@ -187,6 +187,7 @@ public class Creature : Construct {
 	}
 
 	protected override void OnRepair() {
+		base.OnRepair();
 		_scrapEffect.SetActive(false);
 		
 		CustomCoroutine.WaitOneFrameThenExecute(() => {

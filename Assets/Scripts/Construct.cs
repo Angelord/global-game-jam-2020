@@ -21,6 +21,8 @@ public abstract class Construct : ScrapBehaviour {
 	public override Faction Faction { get { return Owner == null ? Faction.Neutral : Owner.Faction; } }
 
 	public GameObject breakFx;
+	public GameObject repairFX;
+	public GameObject repairFX_p2;
 
 	private bool skipBreak = false;
 
@@ -100,6 +102,11 @@ public abstract class Construct : ScrapBehaviour {
 	}
 
 	protected virtual void OnRepair() {
+		if (repairFX != null)
+		{
+			var a = Instantiate(repairFX, transform);
+			a.transform.parent = null;
+		}
 		//TODO : Change sprites, play some animation, etc...
 	}
 
