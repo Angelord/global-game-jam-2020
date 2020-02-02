@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -728,6 +728,7 @@ MonoBehaviour:
   HasAttackAnimation: 0
   Projectile: {fileID: 7830425388499362709, guid: 6a754a2e33d7f7c44969154dbb7501d9,
     type: 3}
+  barrel: {fileID: 0}
 --- !u!114 &608939590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1085,6 +1086,7 @@ MonoBehaviour:
   HasAttackAnimation: 0
   Projectile: {fileID: 7830425388499362709, guid: 6a754a2e33d7f7c44969154dbb7501d9,
     type: 3}
+  barrel: {fileID: 0}
 --- !u!114 &1425578465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1858,6 +1860,7 @@ MonoBehaviour:
   HasAttackAnimation: 0
   Projectile: {fileID: 7830425388499362709, guid: 6a754a2e33d7f7c44969154dbb7501d9,
     type: 3}
+  barrel: {fileID: 0}
 --- !u!114 &2060019942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2128,11 +2131,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6981424964179171443, guid: c1f998c255d1336499e01dc2ff14c828,
-        type: 3}
-      propertyPath: Owner
-      value: 
-      objectReference: {fileID: 1701194243}
     - target: {fileID: 6981424964179171447, guid: c1f998c255d1336499e01dc2ff14c828,
         type: 3}
       propertyPath: m_Name
