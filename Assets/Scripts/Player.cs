@@ -75,14 +75,12 @@ public class Player : ScrapBehaviour {
 		Sparks.color = _animator.GetBool("Working") ? Faction.Color : new Color(0.0f, 0.0f, 0.0f, 0.0f);
 
 		if (Input.GetButtonDown(RepairButton)) {
-			ScrapBehaviour repairable = _senses.GetRepairTarget();
+			Construct repairable = _senses.GetRepairTarget();
 			if (repairable != null) {
-				Repair(repairable as Construct);
+				Repair(repairable);
 			}
 		}
 		else if (Input.GetButtonDown(SalvageButton)) {
-			_animator.SetBool("Working", true);
-			Sparks.color = Stats.SparkColorRepair;
 			Construct salvage = _senses.GetSalvageTarget();
 			if (salvage != null) {
 				Salvage(salvage);
@@ -170,26 +168,4 @@ public class Player : ScrapBehaviour {
 			_faction.wins++;
 		}
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
