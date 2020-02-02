@@ -382,7 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9fe9086ecac4cfb84a10d9c49048355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2.5
+  Speed: 2
   Image: {fileID: 1150847769}
   IntendedAlpha: 0
 --- !u!1 &1256894321
