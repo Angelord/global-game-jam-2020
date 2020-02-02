@@ -504,7 +504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455f74a38eb4f3740ad317f37ef7e55f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameMaster: {fileID: 0}
   BackgroundAlpha: {fileID: 2593383195333749890}
 --- !u!1 &2593383195618474857
 GameObject:
@@ -948,10 +947,14 @@ MonoBehaviour:
     Move : WASD
 
 
-    Repair :
+    Repair : J
 
 
-    Salvage :'
+    Salvage : H
+
+
+    Recall
+    Units : L'
 --- !u!1 &2593383196273169251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,10 +1265,14 @@ MonoBehaviour:
   m_Text: 'Player 2
 
 
-    Move : WASD
+    Move : Arrow Keys
 
 
-    Repair :
+    Repair : 8
 
 
-    Salvage :'
+    Salvage : 7
+
+
+    Recall
+    Units : 6'
