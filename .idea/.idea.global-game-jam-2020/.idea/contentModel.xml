@@ -250,6 +250,7 @@
           <e p="RangedAttacker.cs" t="Include" />
           <e p="RecallCommand.cs" t="Include" />
           <e p="ScrapBehaviour.cs" t="Include" />
+          <e p="ScrapperCameraConstraints.cs" t="Include" />
           <e p="ScrapPile.cs" t="Include" />
           <e p="ScrapSpawner.cs" t="Include" />
           <e p="Senses.cs" t="Include" />
