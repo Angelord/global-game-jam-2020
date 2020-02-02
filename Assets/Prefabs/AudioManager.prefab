@@ -48,6 +48,7 @@ MonoBehaviour:
   - name: background
     clips:
     - {fileID: 8300000, guid: 39cfc42dba0eefb4fac69f9f4d9e51a0, type: 3}
+    - {fileID: 8300000, guid: 6929b43c625efc5458f0b2d5c8934219, type: 3}
     volume: 1
     pitch_variation: 0
     loop: 1
