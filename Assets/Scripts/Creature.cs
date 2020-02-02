@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Claw;
+using Claw.Chrono;
 using UnityEditorInternal;
 using UnityEngine;
 
@@ -177,7 +178,8 @@ public class Creature : Construct {
 
 	protected override void OnRepair() {
 		_scrapEffect.SetActive(false);
-		Attacker.enabled = true;
+		
+		CustomCoroutine.WaitOneFrameThenExecute(() => { Attacker.enabled = true; });
 		_sprite.material = Faction.UnitMat;
 	}
 
