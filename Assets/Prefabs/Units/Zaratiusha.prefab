@@ -79,7 +79,7 @@ SpriteRenderer:
   m_Size: {x: 0.46875, y: 0.53125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1 &1287505989827681090
@@ -156,6 +156,7 @@ MonoBehaviour:
   isDead: 0
   Owner: {fileID: 0}
   Broken: 1
+  breakFx: {fileID: 3314953862076795691, guid: 766c7adc74ed6415cac2cce3bbc4a2bf, type: 3}
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 5988598870480507152}
   MovementSpeed: 4

@@ -156,6 +156,7 @@ MonoBehaviour:
   isDead: 0
   Owner: {fileID: 0}
   Broken: 1
+  breakFx: {fileID: 7300804457808948310, guid: 170f9288243614fb48169bdc57ac6f9a, type: 3}
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 197083155824485735}
   MovementSpeed: 4

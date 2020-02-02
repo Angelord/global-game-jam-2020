@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3115687847476775961}
   m_Layer: 0
   m_Name: Scrap_Small
-  m_TagString: Untagged
+  m_TagString: Scrap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 25
+  armorPercent: 0
   isDead: 0
   Owner: {fileID: 0}
   Broken: 1

@@ -4,24 +4,25 @@ using Claw;
 using UnityEngine;
 
 public abstract class Construct : ScrapBehaviour {
-	
+
 	private const float BREAK_PERCENTAGE = 0.3f;
-	
+
 	public Player Owner;
 
 	public bool Broken = true;
-	
+
 	public virtual bool Usable => false;
 
 	public virtual bool Salvageable => false;
 
 	public virtual bool Repairable => false;
-	
+
 	public override Faction Faction { get { return Owner == null ? Faction.Neutral : Owner.Faction; } }
+
+	public GameObject breakFx;
 
 	private void Start() {
 		OnStart();
-
 		if (Broken) {
 			CurHealth = MaxHealth * BREAK_PERCENTAGE;
 			OnBreak();
@@ -46,11 +47,11 @@ public abstract class Construct : ScrapBehaviour {
 	}
 
 	public float Salvage() {
-		
+
 		OnSalvage();
 
 		EventManager.TriggerEvent(new ConstructSalvagedEvent(this, CurHealth));
-		
+
 		Die();
 
 		return CurHealth;
@@ -69,9 +70,9 @@ public abstract class Construct : ScrapBehaviour {
 	}
 
 	protected virtual void OnSalvage() {
-		
+
 		// TODO : Spawn some particles
-		
+
 		// TODO : Throw event
 	}
 
@@ -80,8 +81,15 @@ public abstract class Construct : ScrapBehaviour {
 	}
 
 	protected virtual void OnBreak() {
+		Debug.Log(breakFx);
+
+		if (breakFx != null)
+    {
+			Instantiate(breakFx, transform);
+		}
+
 		// TODO : Throw event
 	}
-	
+
 	protected virtual void OnOwnerCommand(PlayerCommand command) { }
 }

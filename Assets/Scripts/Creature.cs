@@ -170,6 +170,7 @@ public class Creature : Construct {
 	}
 
 	protected override void OnBreak() {
+		base.OnBreak();
 		_scrapEffect.SetActive(true);
 		Attacker.enabled = false;
 		_rigidbody.velocity = Vector2.zero;
