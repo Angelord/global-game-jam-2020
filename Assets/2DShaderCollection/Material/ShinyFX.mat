@@ -25,11 +25,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _ColorMask: 15
-    - _ShinyFX_Intensity_1: 1.43
-    - _ShinyFX_Pos_1: 0.003
-    - _ShinyFX_Size_1: -0.119
-    - _ShinyFX_Smooth_1: 0.284
-    - _ShinyFX_Speed_1: 1.81
+    - _ShinyFX_Intensity_1: 0.42
+    - _ShinyFX_Pos_1: 0
+    - _ShinyFX_Size_1: 0.035
+    - _ShinyFX_Smooth_1: 0
+    - _ShinyFX_Speed_1: 2.46
     - _SpriteFade: 1
     - _Stencil: 0
     - _StencilComp: 8
