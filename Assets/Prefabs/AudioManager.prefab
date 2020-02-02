@@ -137,6 +137,15 @@ MonoBehaviour:
     loop: 0
     RandomSound: 0
     source: {fileID: 0}
+  - name: tower_attack
+    clips:
+    - {fileID: 8300000, guid: 69674080fb3695945a44f312b691f0e5, type: 3}
+    - {fileID: 8300000, guid: 39883da2fd3d2a841b712b070b938c6c, type: 3}
+    volume: 1
+    pitch_variation: 0
+    loop: 0
+    RandomSound: 0
+    source: {fileID: 0}
 --- !u!114 &302388992361286178
 MonoBehaviour:
   m_ObjectHideFlags: 0

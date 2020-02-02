@@ -7,8 +7,9 @@ public class Tower : Building {
 	public Transform FlipSprite;
 	private RangedAttacker _attacker;
 	private Animator _animator;
-	
-	public RangedAttacker Attacker {
+    private AudioManager _audioManager;
+
+    public RangedAttacker Attacker {
 		get {
 			if (_attacker == null) _attacker = GetComponent<RangedAttacker>();
 			return _attacker;
@@ -32,7 +33,12 @@ public class Tower : Building {
 		Animator.SetTrigger("Break");
 	}
 
-	private void Update() {
+    void Start()
+    {
+        _audioManager = FindObjectOfType<AudioManager>();
+    }
+
+    private void Update() {
 		
 		if(Broken) return;
 	
@@ -41,5 +47,11 @@ public class Tower : Building {
 		float diff = transform.position.x - _attacker.CurrentTarget.transform.position.x;
 
 		FlipSprite.localScale = diff > 0.0f ? new Vector3(1.0f, 1.0f, 1.0f) : new Vector3(-1.0f, 1.0f, 1.0f);
+
+        if(_audioManager != null)
+        {
+            _audioManager.Play("tower_attack");
+        }
+
 	}
 }
