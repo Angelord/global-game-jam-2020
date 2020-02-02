@@ -24,6 +24,6 @@ public class PlayerGUI : MonoBehaviour {
 	}
 
 	private void Update() {
-		ScrapText.text = Player.Scrap.ToString();
+		ScrapText.text = Player.Scrap.ToString("0");
 	}
 }
