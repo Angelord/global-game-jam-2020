@@ -96,11 +96,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e43b87f556d45baab710d166cb07d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 100
+  MaxHealth: 21
   armorPercent: 0
   isDead: 0
   Owner: {fileID: 0}
   Broken: 1
+  breakFx: {fileID: 0}
 --- !u!70 &435926520232919433
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

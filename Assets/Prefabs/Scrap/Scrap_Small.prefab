@@ -97,11 +97,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e43b87f556d45baab710d166cb07d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 25
+  MaxHealth: 7
   armorPercent: 0
   isDead: 0
   Owner: {fileID: 0}
   Broken: 1
+  breakFx: {fileID: 0}
 --- !u!114 &4394680019516862071
 MonoBehaviour:
   m_ObjectHideFlags: 0
