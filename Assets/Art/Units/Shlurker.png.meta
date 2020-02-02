@@ -19,16 +19,16 @@ TextureImporter:
     second: Shlurker_4
   - first:
       213: 1811575813481859529
-    second: Shlurker_5
+    second: Shlurker_w5
   - first:
       213: -1846668410508954523
-    second: Shlurker_6
+    second: Shlurker_w6
   - first:
       213: 4058167577166443087
-    second: Shlurker_7
+    second: Shlurker_w7
   - first:
       213: -6355446818264404917
-    second: Shlurker_8
+    second: Shlurker_w8
   - first:
       213: -920187949454621523
     second: Shlurker_Attack_9
@@ -59,6 +59,81 @@ TextureImporter:
   - first:
       213: 55448128288832085
     second: Shlurker_Shlurker_18
+  - first:
+      213: -139428339309581689
+    second: Shlurker_0
+  - first:
+      213: 9062875716845441986
+    second: Shlurker_1
+  - first:
+      213: 4931526919635984569
+    second: Shlurker_2
+  - first:
+      213: 1854276806924718270
+    second: Shlurker_3
+  - first:
+      213: 3825987360173266545
+    second: Shlurker_4
+  - first:
+      213: -892807278698315079
+    second: Shlurker_w5
+  - first:
+      213: -1898585390698153080
+    second: Shlurker_w6
+  - first:
+      213: 1664014930334331842
+    second: Shlurker_w7
+  - first:
+      213: -8462711310103942030
+    second: Shlurker_w8
+  - first:
+      213: -2449417190800319602
+    second: Shlurker_w9
+  - first:
+      213: 4267578530642425728
+    second: Shlurker_w10
+  - first:
+      213: -9073566600770436947
+    second: Shlurker_w11
+  - first:
+      213: 3210867294116430688
+    second: Shlurker_w12
+  - first:
+      213: 9118758702251622656
+    second: Shlurker_13
+  - first:
+      213: -5369265857205838822
+    second: Shlurker_14
+  - first:
+      213: 2279563994352421684
+    second: Shlurker_15
+  - first:
+      213: -5629730835557663346
+    second: Shlurker_16
+  - first:
+      213: 5710310990016710805
+    second: Shlurker_17
+  - first:
+      213: -5700508142536661203
+    second: Shlurker_18
+  - first:
+      213: -5130955760860806257
+    second: Shlurker_19
+  - first:
+      213: -8856965108634204658
+    second: Shlurker_20
+  - first:
+      213: -6373252524282453133
+    second: Shlurker_21
+  - first:
+      213: -8318525611799262870
+    second: Shlurker_22
+  - first:
+      213: 9185362773091840694
+    second: Shlurker_23
+  - first:
+      213: -4813043946879415189
+    second: Shlurker_24
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -159,18 +234,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 115
-        width: 20
-        height: 29
+        y: 172
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.5, y: 0.06896552}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32fbd427dab5329b0800000000000000
-      internalID: -5106136752002842845
+      spriteID: 78a64d30aa6a01ef0800000000000000
+      internalID: -139428339309581689
       vertices: []
       indices: 
       edges: []
@@ -179,19 +254,19 @@ TextureImporter:
       name: Shlurker_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 86
-        width: 18
-        height: 29
+        x: 42
+        y: 172
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.5, y: 0.06896552}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb7f0dafef858e5f0800000000000000
-      internalID: -727233487667398724
+      spriteID: 2c31612827dc5cd70800000000000000
+      internalID: 9062875716845441986
       vertices: []
       indices: 
       edges: []
@@ -200,19 +275,19 @@ TextureImporter:
       name: Shlurker_2
       rect:
         serializedVersion: 2
-        x: 20
-        y: 86
-        width: 20
-        height: 29
+        x: 84
+        y: 172
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.5, y: 0.06896552}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f953843ffbb884770800000000000000
-      internalID: 8595273545373201823
+      spriteID: 9b0ed25ea9d407440800000000000000
+      internalID: 4931526919635984569
       vertices: []
       indices: 
       edges: []
@@ -221,19 +296,19 @@ TextureImporter:
       name: Shlurker_3
       rect:
         serializedVersion: 2
-        x: 42
-        y: 86
-        width: 18
-        height: 29
+        x: 126
+        y: 172
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.5, y: 0.06896552}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc75059a468434230800000000000000
-      internalID: 3621818122510555085
+      spriteID: eb05ef77ee6bbb910800000000000000
+      internalID: 1854276806924718270
       vertices: []
       indices: 
       edges: []
@@ -242,313 +317,439 @@ TextureImporter:
       name: Shlurker_4
       rect:
         serializedVersion: 2
-        x: 61
-        y: 86
-        width: 20
-        height: 30
+        x: 168
+        y: 172
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.5, y: 0.06666667}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c9ab13bcc75fd1c0800000000000000
-      internalID: -4476762967893104186
+      spriteID: 176134eab33a81530800000000000000
+      internalID: 3825987360173266545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shlurker_5
+      name: Shlurker_w5
       rect:
         serializedVersion: 2
-        x: 83
-        y: 86
-        width: 19
-        height: 28
+        x: 0
+        y: 129
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.47368422, y: 0.071428575}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c9864eaa92042910800000000000000
-      internalID: 1811575813481859529
+      spriteID: 9b2cd44a28c1c93f0800000000000000
+      internalID: -892807278698315079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shlurker_6
+      name: Shlurker_w6
       rect:
         serializedVersion: 2
-        x: 103
-        y: 86
-        width: 17
-        height: 29
+        x: 42
+        y: 129
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.5294118, y: 0.06896552}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 564bdad5dd05f56e0800000000000000
-      internalID: -1846668410508954523
+      spriteID: 88bb0b375aed6a5e0800000000000000
+      internalID: -1898585390698153080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shlurker_7
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 87
-        width: 19
-        height: 27
-      alignment: 9
-      pivot: {x: 0.47368422, y: 0.074074075}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f42730c09e1815830800000000000000
-      internalID: 4058167577166443087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shlurker_8
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 86
-        width: 18
-        height: 29
-      alignment: 9
-      pivot: {x: 0.5, y: 0.06896552}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4ca6789acaecc7a0800000000000000
-      internalID: -6355446818264404917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shlurker_Attack_9
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 46
-        width: 21
-        height: 29
-      alignment: 9
-      pivot: {x: 0.52380955, y: 0.06896552}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da489227fe5da33f0800000000000000
-      internalID: -920187949454621523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shlurker_Attacker_10
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 46
-        width: 25
-        height: 36
-      alignment: 9
-      pivot: {x: 0.5025311, y: 0.10328049}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65eb486bc5e31efa0800000000000000
-      internalID: -5773264679392199082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shlurker_Shlurker_11
+      name: Shlurker_w7
       rect:
         serializedVersion: 2
         x: 84
-        y: 46
-        width: 33
-        height: 32
-      alignment: 9
-      pivot: {x: 0.5151515, y: 0.0625}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 947adc389710f3a10800000000000000
-      internalID: 1891231989932861257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shlurker_Shlurker_12
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 43
-        width: 38
+        y: 129
+        width: 42
         height: 43
       alignment: 9
-      pivot: {x: 0.34210527, y: 0.1627907}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9db76f5f6b8a29820800000000000000
-      internalID: 2923584611880958937
+      spriteID: 2c3368743c4c71710800000000000000
+      internalID: 1664014930334331842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shlurker_Shlurker_13
+      name: Shlurker_w8
       rect:
         serializedVersion: 2
-        x: 5
-        y: 3
-        width: 25
-        height: 29
+        x: 126
+        y: 129
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.52, y: 0.06896552}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ca0beb58a06c61a0800000000000000
-      internalID: -6814965859905500476
+      spriteID: 27ce29c96e86e8a80800000000000000
+      internalID: -8462711310103942030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shlurker_Shlurker_14
+      name: Shlurker_w9
       rect:
         serializedVersion: 2
-        x: 47
-        y: 3
-        width: 30
-        height: 34
+        x: 168
+        y: 129
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.5, y: 0.05882353}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a0c76367c99756d0800000000000000
-      internalID: -3001761544973860695
+      spriteID: e8b9c93ea0ce10ed0800000000000000
+      internalID: -2449417190800319602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shlurker_Shlurker_15
+      name: Shlurker_w10
       rect:
         serializedVersion: 2
-        x: 90
-        y: 3
-        width: 30
-        height: 30
+        x: 0
+        y: 86
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.5, y: 0.06666667}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6d341ea01b4c5cf0800000000000000
-      internalID: -262252143282209426
+      spriteID: 0877602201c793b30800000000000000
+      internalID: 4267578530642425728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shlurker_Shlurker_16
+      name: Shlurker_w11
       rect:
         serializedVersion: 2
-        x: 132
-        y: 3
-        width: 27
-        height: 28
+        x: 42
+        y: 86
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.5185185, y: 0.071428575}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05f9eb86a9f8d9e60800000000000000
-      internalID: 7970684808860704592
+      spriteID: da0ca3b1047341280800000000000000
+      internalID: -9073566600770436947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shlurker_Shlurker_17
+      name: Shlurker_w12
       rect:
         serializedVersion: 2
-        x: 177
-        y: 3
-        width: 25
-        height: 29
+        x: 84
+        y: 86
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.52, y: 0.06896552}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7be78490b1f5be970800000000000000
-      internalID: 8785220067840786103
+      spriteID: 063cab6caca4f8c20800000000000000
+      internalID: 3210867294116430688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shlurker_Shlurker_18
+      name: Shlurker_13
       rect:
         serializedVersion: 2
-        x: 177
+        x: 126
+        y: 86
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001c538f9b65c8e70800000000000000
+      internalID: 9118758702251622656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shlurker_14
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 86
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cdc9486298c75b0800000000000000
+      internalID: -5369265857205838822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shlurker_15
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 43
-        width: 30
-        height: 31
+        width: 42
+        height: 43
       alignment: 9
-      pivot: {x: 0.26666668, y: 0.19354838}
+      pivot: {x: 0.45, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55abd1667cdf4c000800000000000000
-      internalID: 55448128288832085
+      spriteID: 43b852e0063a2af10800000000000000
+      internalID: 2279563994352421684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shlurker_16
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 43
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8db585f1ad2fd1b0800000000000000
+      internalID: -5629730835557663346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shlurker_17
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 43
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59884f447991f3f40800000000000000
+      internalID: 5710310990016710805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shlurker_18
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 43
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2761e40c0ab3e0b0800000000000000
+      internalID: -5700508142536661203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shlurker_19
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 43
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83c5a3abee2bc8b0800000000000000
+      internalID: -5130955760860806257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shlurker_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0644dfe82db51580800000000000000
+      internalID: -8856965108634204658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shlurker_21
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373684a9898ad87a0800000000000000
+      internalID: -6373252524282453133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shlurker_22
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6947bd8709ae8c80800000000000000
+      internalID: -8318525611799262870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shlurker_23
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b27c37a6c6f87f70800000000000000
+      internalID: 9185362773091840694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shlurker_24
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c88e9e702a43db0800000000000000
+      internalID: -4813043946879415189
       vertices: []
       indices: 
       edges: []

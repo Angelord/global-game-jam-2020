@@ -35,6 +35,51 @@ TextureImporter:
   - first:
       213: 8446813852068580096
     second: War_Attack_5
+  - first:
+      213: -4427313421195731488
+    second: Zaratiusha_0
+  - first:
+      213: -663236023493705844
+    second: Zaratiusha_1
+  - first:
+      213: 6587744835042572460
+    second: Zaratiusha_2
+  - first:
+      213: 2211426932213438883
+    second: Zaratiusha_3
+  - first:
+      213: -1846539828179132344
+    second: Zaratiusha_4
+  - first:
+      213: -5001403891017536235
+    second: Zaratiusha_5
+  - first:
+      213: -2205591667083476677
+    second: Zaratiusha_6
+  - first:
+      213: -5562569796090484652
+    second: Zaratiusha_7
+  - first:
+      213: 3029140356206469933
+    second: Zaratiusha_8
+  - first:
+      213: 1181385140759508165
+    second: Zaratiusha_9
+  - first:
+      213: -3802857291502061137
+    second: Zaratiusha_10
+  - first:
+      213: -202023464098759469
+    second: Zaratiusha_11
+  - first:
+      213: 5559206811098623253
+    second: Zaratiusha_12
+  - first:
+      213: -3368444639860588460
+    second: Zaratiusha_13
+  - first:
+      213: -7418391871869232196
+    second: Zaratiusha_14
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -131,232 +176,316 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spritesheet 5Wrlod 1_0
+      name: Zaratiusha_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 97
-        width: 42
-        height: 47
+        y: 102
+        width: 56
+        height: 51
       alignment: 9
-      pivot: {x: 0.57459897, y: 0.06446871}
+      pivot: {x: 0.6, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce7f5b4b587d34760800000000000000
-      internalID: 7441027978608637932
+      spriteID: 0ed1f4c76e50f82c0800000000000000
+      internalID: -4427313421195731488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet 5Wrlod 1_1
+      name: Zaratiusha_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 102
+        width: 56
+        height: 51
+      alignment: 9
+      pivot: {x: 0.6, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f3a61c956bbc6f0800000000000000
+      internalID: -663236023493705844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zaratiusha_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 102
+        width: 56
+        height: 51
+      alignment: 9
+      pivot: {x: 0.6, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca870ab260f5c6b50800000000000000
+      internalID: 6587744835042572460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zaratiusha_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 102
+        width: 56
+        height: 51
+      alignment: 9
+      pivot: {x: 0.6, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a95055041190be10800000000000000
+      internalID: 2211426932213438883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zaratiusha_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 102
+        width: 56
+        height: 51
+      alignment: 9
+      pivot: {x: 0.6, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840a5c54fc5cf56e0800000000000000
+      internalID: -1846539828179132344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zaratiusha_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 46
-        width: 51
+        y: 51
+        width: 56
         height: 51
       alignment: 9
-      pivot: {x: 0.57372147, y: 0.09862802}
+      pivot: {x: 0.6, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ac38728f6aeb5e80800000000000000
-      internalID: -8188693732791927645
+      spriteID: 51da4a1e8a1779ab0800000000000000
+      internalID: -5001403891017536235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet 5Wrlod 1_2
+      name: Zaratiusha_6
       rect:
         serializedVersion: 2
-        x: 51
-        y: 46
-        width: 51
+        x: 56
+        y: 51
+        width: 56
         height: 51
       alignment: 9
-      pivot: {x: 0.55324316, y: 0.17234944}
+      pivot: {x: 0.6, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4578fffa69a8ffb0800000000000000
-      internalID: -4613751541214972596
+      spriteID: b318de3801a2461e0800000000000000
+      internalID: -2205591667083476677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet 5Wrlod 1_3
+      name: Zaratiusha_7
       rect:
         serializedVersion: 2
-        x: 102
-        y: 46
-        width: 51
+        x: 112
+        y: 51
+        width: 56
         height: 51
       alignment: 9
-      pivot: {x: 0.54914767, y: 0.09043675}
+      pivot: {x: 0.6, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d1d1bfac64dc1790800000000000000
-      internalID: -7557932511365312041
+      spriteID: 458a5b10e38cdc2b0800000000000000
+      internalID: -5562569796090484652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet 5Wrlod 1_4
+      name: Zaratiusha_8
       rect:
         serializedVersion: 2
-        x: 153
-        y: 46
-        width: 51
+        x: 168
+        y: 51
+        width: 56
         height: 51
       alignment: 9
-      pivot: {x: 0.5409564, y: 0.08634111}
+      pivot: {x: 0.6, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fa43ead4115ad0b0800000000000000
-      internalID: -5703156828097787147
+      spriteID: d23ac7ada1ba90a20800000000000000
+      internalID: 3029140356206469933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet 5Wrlod 1_5
+      name: Zaratiusha_9
       rect:
         serializedVersion: 2
-        x: 204
-        y: 46
-        width: 51
+        x: 224
+        y: 51
+        width: 56
         height: 51
       alignment: 9
-      pivot: {x: 0.59010404, y: 0.09862802}
+      pivot: {x: 0.6, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6d0ad03a01a49190800000000000000
-      internalID: -7956557576515482257
+      spriteID: 5c435e9b68f156010800000000000000
+      internalID: 1181385140759508165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: War_Attack_1
+      name: Zaratiusha_10
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 56
-        height: 46
+        height: 51
       alignment: 9
-      pivot: {x: 0.578329, y: 0.06408219}
+      pivot: {x: 0.6, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 339c5facc21582df0800000000000000
-      internalID: -204824530219841229
+      spriteID: fa9f3881179893bc0800000000000000
+      internalID: -3802857291502061137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: War_Attack_2
+      name: Zaratiusha_11
       rect:
         serializedVersion: 2
         x: 56
         y: 0
         width: 56
-        height: 46
+        height: 51
       alignment: 9
-      pivot: {x: 0.5932489, y: 0.07770462}
+      pivot: {x: 0.6, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51e3c6733506144a0800000000000000
-      internalID: -6610896867474784747
+      spriteID: 3dc7912dab4423df0800000000000000
+      internalID: -202023464098759469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: War_Attack_3
+      name: Zaratiusha_12
       rect:
         serializedVersion: 2
         x: 112
         y: 0
         width: 56
-        height: 46
+        height: 51
       alignment: 9
-      pivot: {x: 0.6081687, y: 0.08224543}
+      pivot: {x: 0.6, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a36873b3fbc6bae0800000000000000
-      internalID: -1533814375524572249
+      spriteID: 51d27780425462d40800000000000000
+      internalID: 5559206811098623253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: War_Attack_4
+      name: Zaratiusha_13
       rect:
         serializedVersion: 2
         x: 168
         y: 0
         width: 56
-        height: 46
+        height: 51
       alignment: 9
-      pivot: {x: 0.61562866, y: 0.08224543}
+      pivot: {x: 0.6, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b93ca884a6956b60800000000000000
-      internalID: 7738757168117856692
+      spriteID: 4508a836271e041d0800000000000000
+      internalID: -3368444639860588460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: War_Attack_5
+      name: Zaratiusha_14
       rect:
         serializedVersion: 2
         x: 224
         y: 0
         width: 56
-        height: 46
+        height: 51
       alignment: 9
-      pivot: {x: 0.53356963, y: 0.07316381}
+      pivot: {x: 0.6, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00b8560027c193570800000000000000
-      internalID: 8446813852068580096
+      spriteID: cbbd69895e39c0990800000000000000
+      internalID: -7418391871869232196
       vertices: []
       indices: 
       edges: []

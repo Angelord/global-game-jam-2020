@@ -50,6 +50,57 @@ TextureImporter:
   - first:
       213: -1430157508506612401
     second: Hentairoi_15
+  - first:
+      213: 1278706754229171055
+    second: Hentairoi_0
+  - first:
+      213: -2386908916252755616
+    second: Hentairoi_1
+  - first:
+      213: 6390542386717402166
+    second: Hentairoi_2
+  - first:
+      213: 7991632700930826130
+    second: Hentairoi_3
+  - first:
+      213: -4391330741977693287
+    second: Hentairoi_4
+  - first:
+      213: 5940037405423448657
+    second: Hentairoi_5
+  - first:
+      213: 1300673514353894236
+    second: Hentairoi_6
+  - first:
+      213: 2200028670619981079
+    second: Hentairoi_7
+  - first:
+      213: 8666744630876771946
+    second: Hentairoi_8
+  - first:
+      213: -5146387620207122698
+    second: Hentairoi_9
+  - first:
+      213: 3609954263102356220
+    second: Hentairoi_10
+  - first:
+      213: -1357669603119458150
+    second: Hentairoi_11
+  - first:
+      213: 3219893832000133937
+    second: Hentairoi_12
+  - first:
+      213: 4426132325169938599
+    second: Hentairoi_13
+  - first:
+      213: 563882695178964324
+    second: Hentairoi_14
+  - first:
+      213: 4270400623949119505
+    second: Hentairoi_16
+  - first:
+      213: -8226398542562828905
+    second: Hentairoi_17
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -150,18 +201,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 207
-        width: 26
-        height: 44
+        y: 280.83334
+        width: 79
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.53846157, y: 0.1590909}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27b8560a877ad0430800000000000000
-      internalID: 3750838201198414706
+      spriteID: f63f8b1a401eeb110800000000000000
+      internalID: 1278706754229171055
       vertices: []
       indices: 
       edges: []
@@ -170,19 +221,19 @@ TextureImporter:
       name: Hentairoi_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 168
-        width: 32
-        height: 39
+        x: 79
+        y: 280.83334
+        width: 79
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.53125, y: 0.15384616}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57d02877612da5d60800000000000000
-      internalID: 7879841491974229365
+      spriteID: 069ba8facfeffded0800000000000000
+      internalID: -2386908916252755616
       vertices: []
       indices: 
       edges: []
@@ -191,19 +242,19 @@ TextureImporter:
       name: Hentairoi_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 168
-        width: 32
-        height: 39
+        x: 158
+        y: 280.83334
+        width: 79
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.48387095, y: 0.15384616}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79d9bfdd7126849a0800000000000000
-      internalID: -6248636628328538729
+      spriteID: 6342e523174cfa850800000000000000
+      internalID: 6390542386717402166
       vertices: []
       indices: 
       edges: []
@@ -212,19 +263,19 @@ TextureImporter:
       name: Hentairoi_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 168
-        width: 32
-        height: 39
+        x: 0
+        y: 224.83333
+        width: 79
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.5, y: 0.15384616}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 604e743bb9119da30800000000000000
-      internalID: 4240439884571468806
+      spriteID: 29f906a999bf7ee60800000000000000
+      internalID: 7991632700930826130
       vertices: []
       indices: 
       edges: []
@@ -233,19 +284,19 @@ TextureImporter:
       name: Hentairoi_4
       rect:
         serializedVersion: 2
-        x: 96
-        y: 168
-        width: 32
-        height: 39
+        x: 79
+        y: 224.83333
+        width: 79
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.5, y: 0.17948718}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5cb85c7916389b70800000000000000
-      internalID: 8905927746213428316
+      spriteID: 993ca29d4fbde03c0800000000000000
+      internalID: -4391330741977693287
       vertices: []
       indices: 
       edges: []
@@ -254,19 +305,19 @@ TextureImporter:
       name: Hentairoi_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 168
-        width: 32
-        height: 39
+        x: 158
+        y: 224.83333
+        width: 79
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.5, y: 0.15384616}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89df0482db0de5a00800000000000000
-      internalID: 747264099032825240
+      spriteID: 1523cce6c804f6250800000000000000
+      internalID: 5940037405423448657
       vertices: []
       indices: 
       edges: []
@@ -275,187 +326,250 @@ TextureImporter:
       name: Hentairoi_6
       rect:
         serializedVersion: 2
-        x: 160
-        y: 168
-        width: 32
-        height: 39
-      alignment: 9
-      pivot: {x: 0.53125, y: 0.17948718}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 657643f1493bb69d0800000000000000
-      internalID: -2779930896211089578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hentairoi_Attack_1
-      rect:
-        serializedVersion: 2
         x: 0
-        y: 112
+        y: 168.83333
         width: 79
-        height: 56
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.443038, y: 0.21428573}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbb1fa20290daed70800000000000000
-      internalID: 9073293724820118459
+      spriteID: c53a2d78babec0210800000000000000
+      internalID: 1300673514353894236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hentairoi_Attack_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 79
-        height: 56
-      alignment: 9
-      pivot: {x: 0.4936709, y: 0.19642858}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a79034f0aab8d9190800000000000000
-      internalID: -7954047804349675142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hentairoi_Attack_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 56
-        width: 79
-        height: 56
-      alignment: 9
-      pivot: {x: 0.39240506, y: 0.19642858}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61efff674e2206a10800000000000000
-      internalID: 1900557407394725398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hentairoi_Attack_2
+      name: Hentairoi_7
       rect:
         serializedVersion: 2
         x: 79
-        y: 112
+        y: 168.83333
         width: 79
-        height: 56
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.45569623, y: 0.19642858}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f99dd17ca7524a780800000000000000
-      internalID: -8672765773151872609
+      spriteID: 7159aff6b62188e10800000000000000
+      internalID: 2200028670619981079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hentairoi_Attack_3
+      name: Hentairoi_8
       rect:
         serializedVersion: 2
         x: 158
-        y: 112
+        y: 168.83333
         width: 79
-        height: 56
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.4050633, y: 0.21428573}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7994cc66193269750800000000000000
-      internalID: 6311271035208223127
+      spriteID: a661f6ac256764870800000000000000
+      internalID: 8666744630876771946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hentairoi_Attack_5
+      name: Hentairoi_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112.83333
+        width: 79
+        height: 56.166668
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f62615e9bb5498b0800000000000000
+      internalID: -5146387620207122698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hentairoi_10
       rect:
         serializedVersion: 2
         x: 79
-        y: 56
+        y: 112.83333
         width: 79
-        height: 56
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.4050633, y: 0.26785716}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1498e9e49717be40800000000000000
-      internalID: 5672028184043361308
+      spriteID: cfa7f93a642291230800000000000000
+      internalID: 3609954263102356220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hentairoi_Attack_6
+      name: Hentairoi_11
       rect:
         serializedVersion: 2
         x: 158
-        y: 56
+        y: 112.83333
         width: 79
-        height: 56
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.4936709, y: 0.19642858}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11d50fb448f7b2d50800000000000000
-      internalID: 6713599875712310545
+      spriteID: a9818bf60b6982de0800000000000000
+      internalID: -1357669603119458150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hentairoi_Attack_8
+      name: Hentairoi_12
       rect:
         serializedVersion: 2
-        x: 79
-        y: 0
+        x: 0
+        y: 56.833332
         width: 79
-        height: 56
+        height: 56.166668
       alignment: 9
-      pivot: {x: 0.4936709, y: 0.19642858}
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cb61f22f3fb0f230800000000000000
-      internalID: 3670643974197046210
+      spriteID: 13bd6d6616c5fac20800000000000000
+      internalID: 3219893832000133937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hentairoi_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 56.833332
+        width: 79
+        height: 56.166668
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0c0aa26e7cc6d30800000000000000
+      internalID: 4426132325169938599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hentairoi_14
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 56.833332
+        width: 79
+        height: 56.166668
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46dc12dd25053d700800000000000000
+      internalID: 563882695178964324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hentairoi_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.83333206
+        width: 79
+        height: 56.166668
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d0b94c25f072ce0800000000000000
+      internalID: -1430157508506612401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hentairoi_16
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0.83333206
+        width: 79
+        height: 56.166668
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110081fedb2834b30800000000000000
+      internalID: 4270400623949119505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hentairoi_17
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0.83333206
+        width: 79
+        height: 56.166668
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d50c16c16f5dd80800000000000000
+      internalID: -8226398542562828905
       vertices: []
       indices: 
       edges: []

@@ -50,6 +50,66 @@ TextureImporter:
   - first:
       213: -5235552108816226068
     second: Pistario_Attack_15
+  - first:
+      213: -4790113765066635828
+    second: Pistario_0
+  - first:
+      213: 2593573975127511311
+    second: Pistario_1
+  - first:
+      213: 7410210168401286969
+    second: Pistario_2
+  - first:
+      213: -5121238272123661497
+    second: Pistario_3
+  - first:
+      213: -6044897195881828157
+    second: Pistario_4
+  - first:
+      213: -2727589065626303852
+    second: Pistario_5
+  - first:
+      213: -2507379772792812186
+    second: Pistario_6
+  - first:
+      213: -7258272986756680846
+    second: Pistario_7
+  - first:
+      213: 9118093559262254509
+    second: Pistario_8
+  - first:
+      213: 6832664444986644988
+    second: Pistario_9
+  - first:
+      213: -6342016328720645546
+    second: Pistario_10
+  - first:
+      213: 5863270743020047887
+    second: Pistario_11
+  - first:
+      213: -5732585014912851681
+    second: Pistario_12
+  - first:
+      213: 7619918247456940205
+    second: Pistario_13
+  - first:
+      213: 1228896482601603739
+    second: Pistario_14
+  - first:
+      213: 34438328195632074
+    second: Pistario_15
+  - first:
+      213: 1023101323057399057
+    second: Pistario_16
+  - first:
+      213: -7944528192242166332
+    second: Pistario_17
+  - first:
+      213: -4085472827528519683
+    second: Pistario_18
+  - first:
+      213: -8466237875986394220
+    second: Pistario_19
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -150,18 +210,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 90
-        width: 27
-        height: 16
+        y: 100
+        width: 32
+        height: 25
       alignment: 9
-      pivot: {x: 0.341909, y: 0.075129986}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 081e13c685e219a80800000000000000
-      internalID: -8461931267545243264
+      spriteID: cc58e77e8e8168db0800000000000000
+      internalID: -4790113765066635828
       vertices: []
       indices: 
       edges: []
@@ -170,19 +230,19 @@ TextureImporter:
       name: Pistario_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 70
+        x: 32
+        y: 100
         width: 32
-        height: 20
+        height: 25
       alignment: 9
-      pivot: {x: 0.42095453, y: 0.19962692}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 970605d1169c75b60800000000000000
-      internalID: 7734872303972933753
+      spriteID: f015c2ef9c93ef320800000000000000
+      internalID: 2593573975127511311
       vertices: []
       indices: 
       edges: []
@@ -191,19 +251,19 @@ TextureImporter:
       name: Pistario_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 70
+        x: 64
+        y: 100
         width: 32
-        height: 20
+        height: 25
       alignment: 9
-      pivot: {x: 0.30238616, y: 0.19172248}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a063e53ecac1e660800000000000000
-      internalID: 7413429448644714658
+      spriteID: 937db8e13ea56d660800000000000000
+      internalID: 7410210168401286969
       vertices: []
       indices: 
       edges: []
@@ -212,19 +272,19 @@ TextureImporter:
       name: Pistario_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 70
+        x: 96
+        y: 100
         width: 32
-        height: 20
+        height: 25
       alignment: 9
-      pivot: {x: 0.38143158, y: 0.19172248}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e48b53d331abdff0800000000000000
-      internalID: -10237330176899871
+      spriteID: 7431febcce4bde8b0800000000000000
+      internalID: -5121238272123661497
       vertices: []
       indices: 
       edges: []
@@ -233,19 +293,19 @@ TextureImporter:
       name: Pistario_4
       rect:
         serializedVersion: 2
-        x: 96
-        y: 70
+        x: 0
+        y: 75
         width: 32
-        height: 20
+        height: 25
       alignment: 9
-      pivot: {x: 0.38637185, y: 0.20753136}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3a386aa8446f0150800000000000000
-      internalID: 5840997504982202938
+      spriteID: 3c075bf07063c1ca0800000000000000
+      internalID: -6044897195881828157
       vertices: []
       indices: 
       edges: []
@@ -254,19 +314,19 @@ TextureImporter:
       name: Pistario_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 50
+        x: 32
+        y: 75
         width: 32
-        height: 20
+        height: 25
       alignment: 9
-      pivot: {x: 0.3715511, y: 0.19172248}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3178d84c25800dd20800000000000000
-      internalID: 3301147678440523539
+      spriteID: 492ca1a3238a52ad0800000000000000
+      internalID: -2727589065626303852
       vertices: []
       indices: 
       edges: []
@@ -275,19 +335,19 @@ TextureImporter:
       name: Pistario_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 50
+        x: 64
+        y: 75
         width: 32
-        height: 20
+        height: 25
       alignment: 9
-      pivot: {x: 0.36661065, y: 0.19962692}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 921e11f4f621bc4c0800000000000000
-      internalID: -4266295952726171351
+      spriteID: 66d4fad916ff33dd0800000000000000
+      internalID: -2507379772792812186
       vertices: []
       indices: 
       edges: []
@@ -296,187 +356,271 @@ TextureImporter:
       name: Pistario_7
       rect:
         serializedVersion: 2
+        x: 96
+        y: 75
+        width: 32
+        height: 25
+      alignment: 9
+      pivot: {x: 0.3, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273fd8dac2f654b90800000000000000
+      internalID: -7258272986756680846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistario_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 32
+        height: 25
+      alignment: 9
+      pivot: {x: 0.3, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da59a9c48c9f98e70800000000000000
+      internalID: 9118093559262254509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistario_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 50
+        width: 32
+        height: 25
+      alignment: 9
+      pivot: {x: 0.3, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9ded89c1082de50800000000000000
+      internalID: 6832664444986644988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistario_10
+      rect:
+        serializedVersion: 2
         x: 64
         y: 50
         width: 32
-        height: 20
+        height: 25
       alignment: 9
-      pivot: {x: 0.42095423, y: 0.16010419}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 551bde95bf9e70f70800000000000000
-      internalID: 9153542033408635221
+      spriteID: 65201ee10c1acf7a0800000000000000
+      internalID: -6342016328720645546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pistario_Attack_8
+      name: Pistario_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 50
+        width: 32
+        height: 25
+      alignment: 9
+      pivot: {x: 0.3, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e86a30da58e5150800000000000000
+      internalID: 5863270743020047887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistario_12
       rect:
         serializedVersion: 2
         x: 0
         y: 25
-        width: 30
+        width: 32
         height: 25
       alignment: 9
-      pivot: {x: 0.37879688, y: 0.06366852}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b60c844f0caf8f950800000000000000
-      internalID: 6483207370238902379
+      spriteID: f11646d2d44c170b0800000000000000
+      internalID: -5732585014912851681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pistario_Attack_9
+      name: Pistario_13
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 25
-        width: 30
+        width: 32
         height: 25
       alignment: 9
-      pivot: {x: 0.3419089, y: 0.07631577}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78cf3b55c9efc0200800000000000000
-      internalID: 147772835202595975
+      spriteID: da0203526436fb960800000000000000
+      internalID: 7619918247456940205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pistario_Attack_10
+      name: Pistario_14
       rect:
         serializedVersion: 2
-        x: 60
+        x: 64
         y: 25
-        width: 30
+        width: 32
         height: 25
       alignment: 9
-      pivot: {x: 0.3629878, y: 0.07631577}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14d631bde9ea26810800000000000000
-      internalID: 1757158801931464001
+      spriteID: b92123707daed0110800000000000000
+      internalID: 1228896482601603739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pistario_Attack_11
+      name: Pistario_15
       rect:
         serializedVersion: 2
-        x: 90
+        x: 96
         y: 25
-        width: 30
+        width: 32
         height: 25
       alignment: 9
-      pivot: {x: 0.34881362, y: 0.069992214}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2c15e8f36245c960800000000000000
-      internalID: 7621570941539392556
+      spriteID: acb42ce1a795a7000800000000000000
+      internalID: 34438328195632074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pistario_Attack_12
+      name: Pistario_16
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 30
+        width: 32
         height: 25
       alignment: 9
-      pivot: {x: 0.3735272, y: 0.057345413}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d3cc273f8a500f70800000000000000
-      internalID: 9151414013969351633
+      spriteID: 11581129b39c23e00800000000000000
+      internalID: 1023101323057399057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pistario_Attack_13
+      name: Pistario_17
       rect:
         serializedVersion: 2
-        x: 30
+        x: 32
         y: 0
-        width: 30
+        width: 32
         height: 25
       alignment: 9
-      pivot: {x: 0.37879676, y: 0.10161089}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a19b4405df4a240800000000000000
-      internalID: 4802241623875983872
+      spriteID: 4c5545973bd5fb190800000000000000
+      internalID: -7944528192242166332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pistario_Attack_14
+      name: Pistario_18
       rect:
         serializedVersion: 2
-        x: 60
+        x: 64
         y: 0
-        width: 30
+        width: 32
         height: 25
       alignment: 9
-      pivot: {x: 0.3787969, y: 0.044698134}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0b235a2ba9496530800000000000000
-      internalID: 3848688356063128330
+      spriteID: dffd6afeb1c7d47c0800000000000000
+      internalID: -4085472827528519683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pistario_Attack_15
+      name: Pistario_19
       rect:
         serializedVersion: 2
-        x: 90
+        x: 96
         y: 0
-        width: 30
+        width: 32
         height: 25
       alignment: 9
-      pivot: {x: 0.38933614, y: 0.088963605}
+      pivot: {x: 0.3, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce826fe98159757b0800000000000000
-      internalID: -5235552108816226068
+      spriteID: 4939fd10281e18a80800000000000000
+      internalID: -8466237875986394220
       vertices: []
       indices: 
       edges: []
