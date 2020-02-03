@@ -8,6 +8,8 @@ public class Tower : Building {
 	private RangedAttacker _attacker;
 	private Animator _animator;
     private AudioManager _audioManager;
+    public float HealthBarOffsetBroken;
+    public float HealthBarOffsetWorking;
 
     public RangedAttacker Attacker {
 		get {
@@ -28,12 +30,14 @@ public class Tower : Building {
 		Attacker.enabled = true;
 		Animator.SetTrigger("Repair");
 		FlipSprite.GetComponent<SpriteRenderer>().material = Faction.UnitMat;
+		BarYOffset = HealthBarOffsetWorking;
 	}
 
 	protected override void OnBreak() {
 		Attacker.enabled = false;
 		Animator.SetTrigger("Break");
 		FlipSprite.GetComponent<SpriteRenderer>().material = Faction.UnitMat;
+		BarYOffset = HealthBarOffsetBroken;
 	}
 
 	protected override void OnStart() {

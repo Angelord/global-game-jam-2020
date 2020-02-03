@@ -164,6 +164,8 @@ MonoBehaviour:
   repairFX: {fileID: 0}
   repairFX_p2: {fileID: 0}
   FlipSprite: {fileID: 3274402828065561476}
+  HealthBarOffsetBroken: 1
+  HealthBarOffsetWorking: 2.3
 --- !u!95 &3274402828140805923
 Animator:
   serializedVersion: 3
