@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &3274402828140805922
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,6 +161,8 @@ MonoBehaviour:
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 0}
+  repairFX: {fileID: 0}
+  repairFX_p2: {fileID: 0}
   FlipSprite: {fileID: 3274402828065561476}
 --- !u!95 &3274402828140805923
 Animator:
@@ -277,7 +279,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &3274402829128823432
 GameObject:
   m_ObjectHideFlags: 0
