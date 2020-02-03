@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5431823543599924004}
   - component: {fileID: 5431823543599924005}
   - component: {fileID: 3087158282022518450}
-  - component: {fileID: 6260742512665455943}
   - component: {fileID: 3360738331523957185}
+  - component: {fileID: 5205867296957747594}
   m_Layer: 0
   m_Name: Scrap_Medium
   m_TagString: Scrap
@@ -123,22 +123,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 103adbf2a836d4738b64f1c162354152, type: 3}
   - {fileID: 21300000, guid: 59f99ef28f15f4577a2d5b3c0da081a9, type: 3}
   - {fileID: 21300000, guid: c4b46e9a9ce3346bb876b6875a404ed5, type: 3}
---- !u!70 &6260742512665455943
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5431823543599924006}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.006616988, y: 0.064556055}
-  m_Size: {x: 0.45473772, y: 0.12911277}
-  m_Direction: 1
 --- !u!114 &3360738331523957185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,3 +140,19 @@ MonoBehaviour:
   activateOnStart: 1
   _matIndex: 0
   _duration: 0
+--- !u!58 &5205867296957747594
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5431823543599924006}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.15625}
+  serializedVersion: 2
+  m_Radius: 0.2
