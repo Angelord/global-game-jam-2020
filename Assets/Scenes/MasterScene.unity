@@ -1394,8 +1394,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.12945294, y: 0.091099046}
-  m_Size: {x: 3.6691527, y: 0.22475938}
+  m_Offset: {x: -0.28, y: 0.2}
+  m_Size: {x: 3.4, y: 0.5}
   m_Direction: 1
 --- !u!4 &135975774 stripped
 Transform:
@@ -6421,8 +6421,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.032457806, y: 0.2054669}
-  m_Size: {x: 1.812501, y: 0.73039097}
+  m_Offset: {x: 0, y: 0.36}
+  m_Size: {x: 1.6, y: 0.6}
   m_Direction: 1
 --- !u!4 &608961251 stripped
 Transform:
@@ -7279,7 +7279,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.13360077, y: 0.34874254}
-  m_Size: {x: 3.565977, y: 0.87369245}
+  m_Size: {x: 3.3, y: 0.6}
   m_Direction: 1
 --- !u!4 &653832853 stripped
 Transform:
@@ -8961,6 +8961,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Junk_02 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 251600704017878436, guid: d5a8c89855a2143d58345627d312825f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 251600704017878436, guid: d5a8c89855a2143d58345627d312825f,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 251600704017878438, guid: d5a8c89855a2143d58345627d312825f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10134,6 +10144,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Junk_11 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6254617983792181427, guid: 451a02f492bf8b34d9fcf0c759f187c0,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451a02f492bf8b34d9fcf0c759f187c0, type: 3}
 --- !u!1 &897449254 stripped
@@ -10142,8 +10157,8 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 897449253}
   m_PrefabAsset: {fileID: 0}
---- !u!70 &897449255
-CapsuleCollider2D:
+--- !u!58 &897449255
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10155,9 +10170,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03146923, y: -0.009710667}
-  m_Size: {x: 1.8236079, y: 0.3402644}
-  m_Direction: 1
+  m_Offset: {x: 0, y: 0.35}
+  serializedVersion: 2
+  m_Radius: 0.7
 --- !u!4 &897449256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 462723375522381652, guid: 451a02f492bf8b34d9fcf0c759f187c0,
@@ -19286,8 +19301,8 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1666198474}
   m_PrefabAsset: {fileID: 0}
---- !u!70 &1666198476
-CapsuleCollider2D:
+--- !u!58 &1666198476
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19299,9 +19314,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.037734754, y: -0.48519903}
-  m_Size: {x: 1.8110472, y: 0.48740393}
-  m_Direction: 1
+  m_Offset: {x: 0, y: -0.3}
+  serializedVersion: 2
+  m_Radius: 0.56
 --- !u!4 &1666198477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
@@ -25519,6 +25534,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6367454570154920301, guid: fe85c6d3ba322fc409f87cae181d8cc7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9032824622016869970, guid: fe85c6d3ba322fc409f87cae181d8cc7,
         type: 3}
       propertyPath: m_Name
@@ -26301,8 +26321,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.12945294, y: 0.091099046}
-  m_Size: {x: 3.6691527, y: 0.22475938}
+  m_Offset: {x: -0.32, y: 0.22}
+  m_Size: {x: 3.4, y: 0.42}
   m_Direction: 1
 --- !u!4 &6735434343949879591 stripped
 Transform:
@@ -26526,7 +26546,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.01629565, y: 0.053128693}
-  m_Size: {x: 0.64359796, y: 0.2240676}
+  m_Size: {x: 0.64359796, y: 0.3}
   m_Direction: 1
 --- !u!4 &7241786536984177840 stripped
 Transform:
@@ -26710,12 +26730,12 @@ PrefabInstance:
     - target: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.507022
+      value: 3.41
       objectReference: {fileID: 0}
     - target: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3577433
+      value: 2.21
       objectReference: {fileID: 0}
     - target: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
         type: 3}
@@ -26789,7 +26809,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.037734754, y: -0.48519903}
-  m_Size: {x: 1.8110472, y: 0.48740393}
+  m_Size: {x: 1.8110472, y: 0.5}
   m_Direction: 1
 --- !u!4 &8178207351498748269 stripped
 Transform:
