@@ -2972,6 +2972,42 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2593383196192535644, guid: 2fefa95c4923aa24a96a677a3b13b63a,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Player 1
+
+
+        Move : WASD
+
+
+        Repair : R
+
+
+        Salvage
+        : T
+
+
+        Recall Units : Y'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593383196910241926, guid: 2fefa95c4923aa24a96a677a3b13b63a,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Player 2
+
+
+        Move : Arrow Keys
+
+
+        Repair : num 5
+
+
+        Salvage
+        : num 6
+
+
+        Recall Units : num +'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fefa95c4923aa24a96a677a3b13b63a, type: 3}
 --- !u!1001 &262098081
@@ -6860,32 +6896,32 @@ PrefabInstance:
     - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
         type: 3}
       propertyPath: HorizontalAxis
-      value: Horizontal_1
+      value: Horizontal_2
       objectReference: {fileID: 0}
     - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
         type: 3}
       propertyPath: VerticalAxis
-      value: Vertical_1
+      value: Vertical_2
       objectReference: {fileID: 0}
     - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
         type: 3}
       propertyPath: SalvageButton
-      value: Salvage_1
+      value: Salvage_2
       objectReference: {fileID: 0}
     - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
         type: 3}
       propertyPath: RepairButton
-      value: Repair_1
+      value: Repair_2
       objectReference: {fileID: 0}
     - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
         type: 3}
       propertyPath: UseButton
-      value: Use_1
+      value: Use_2
       objectReference: {fileID: 0}
     - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
         type: 3}
       propertyPath: RecallButton
-      value: Recall_1
+      value: Recall_2
       objectReference: {fileID: 0}
     - target: {fileID: 8015586945620854564, guid: 19ed24b6d601bec41bbf932b071e08ac,
         type: 3}
@@ -25593,6 +25629,36 @@ PrefabInstance:
       propertyPath: PlayerCamera
       value: 
       objectReference: {fileID: 1112256219}
+    - target: {fileID: 9032824622016869973, guid: fe85c6d3ba322fc409f87cae181d8cc7,
+        type: 3}
+      propertyPath: HorizontalAxis
+      value: Horizontal_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032824622016869973, guid: fe85c6d3ba322fc409f87cae181d8cc7,
+        type: 3}
+      propertyPath: VerticalAxis
+      value: Vertical_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032824622016869973, guid: fe85c6d3ba322fc409f87cae181d8cc7,
+        type: 3}
+      propertyPath: SalvageButton
+      value: Salvage_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032824622016869973, guid: fe85c6d3ba322fc409f87cae181d8cc7,
+        type: 3}
+      propertyPath: RepairButton
+      value: Repair_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032824622016869973, guid: fe85c6d3ba322fc409f87cae181d8cc7,
+        type: 3}
+      propertyPath: UseButton
+      value: Use_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032824622016869973, guid: fe85c6d3ba322fc409f87cae181d8cc7,
+        type: 3}
+      propertyPath: RecallButton
+      value: Recall_1
+      objectReference: {fileID: 0}
     - target: {fileID: 9032824622016869974, guid: fe85c6d3ba322fc409f87cae181d8cc7,
         type: 3}
       propertyPath: m_LocalPosition.x
