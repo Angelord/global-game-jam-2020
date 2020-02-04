@@ -245,6 +245,8 @@
             <e p="ScrapObjectSpawnedEvent.cs" t="Include" />
           </e>
           <e p="Faction.cs" t="Include" />
+          <e p="FadeOutSprite.cs" t="Include" />
+          <e p="FadeOutSpriteWithAnimation.cs" t="Include" />
           <e p="GameMaster.cs" t="Include" />
           <e p="Maggot.cs" t="Include" />
           <e p="MainThemesAudio.cs" t="Include" />
@@ -340,7 +342,7 @@
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
-    <e p="C:\Users\Angel\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Angel\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_global-game-jam-2020.-1139773448.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Almoxis\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Almoxis\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_global-game-jam-2020.-1139773448.00" t="ExcludeRecursive" />
   </component>
 </project>
