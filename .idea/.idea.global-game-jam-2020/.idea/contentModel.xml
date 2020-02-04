@@ -234,6 +234,7 @@
           </e>
           <e p="Construct.cs" t="Include" />
           <e p="Creature.cs" t="Include" />
+          <e p="DevControls.cs" t="Include" />
           <e p="Events" t="Include">
             <e p="ConstructRepairedEvent.cs" t="Include" />
             <e p="ConstructSalvagedEvent.cs" t="Include" />

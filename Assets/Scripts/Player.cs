@@ -28,7 +28,7 @@ public class Player : ScrapBehaviour {
 	private Animator _animator;
     private AudioManager _audioManager;
 
-    public int WinCount { get => _faction.wins; }
+    public int WinCount { get => _faction.Wins; }
 
 	public PlayerSenses Senses => _senses;
 
@@ -164,8 +164,8 @@ public class Player : ScrapBehaviour {
 	}
 
 	private void HandlePlayerDiedEvent(PlayerDiedEvent diedEvent) {
-		if (diedEvent.Player != this) {
-			_faction.wins++;
+		if (diedEvent.Player.Faction != Faction) {
+			_faction.Wins++;
 		}
 	}
 }

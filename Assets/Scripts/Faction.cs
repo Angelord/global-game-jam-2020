@@ -1,11 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "Fraction", menuName = "Scrapper/Fraction", order = 1)]
 public class Faction : ScriptableObject {
+	
 	public Color Color;
+	
 	public Material UnitMat;
-
-	public int wins = 0;
+	
+	public int Wins = 0;
 	
 	private static Faction _neutral;
 
@@ -22,5 +25,9 @@ public class Faction : ScriptableObject {
 	
 	public bool IsEnemy(Faction other) {
 		return other != this;
+	}
+
+	private void OnEnable() {
+		Wins = 0;
 	}
 }
