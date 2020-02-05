@@ -107,26 +107,22 @@ public class Creature : Construct {
 		_steeringCalculator.AttackOn = _state == UnitState.Attacking;
 		_steeringCalculator.FollowOn = _state == UnitState.Following;
 		
-		Vector2 moveForce = _steeringCalculator.CalculateSteeringForce();
+		Vector2 moveForce = _steeringCalculator.Calculate();
 
 		Move(moveForce);
 	}
 
+	private void OnDrawGizmos() {
+		if(Broken) return;
+		
+		Gizmos.color = Color.yellow;
+		
+		Vector2 moveForce = _steeringCalculator.Calculate();
+		
+		Gizmos.DrawWireSphere(transform.position, _steering.ObstacleAvoidanceRange);
 
-//	private void OnDrawGizmos() {
-//		if(Broken) return;
-//		
-//		Vector2 steeringDir = ObstacleAvoidance();
-//		
-//		Gizmos.color = steeringDir.magnitude <= 0.01f ? Color.blue : Color.magenta;
-//		
-//		Gizmos.DrawWireSphere(transform.position, _steering.ObstacleAvoidanceRange);
-//		
-//		Gizmos.color = Color.yellow;
-//		
-//		Gizmos.DrawLine(transform.position, transform.position + (Vector3)steeringDir);
-//	}
-
+		Gizmos.DrawLine(transform.position, transform.position + (Vector3)moveForce);
+	}
 
 	private void SetFlip(bool left) {
 		Vector3 scale = _sprite.transform.localScale;

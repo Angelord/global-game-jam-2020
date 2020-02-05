@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 435926520232919433}
   - component: {fileID: -101288245397946952}
   - component: {fileID: -2532978031602538199}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Scrap_Large
   m_TagString: Scrap
   m_Icon: {fileID: 0}
@@ -98,12 +98,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 21
+  BarYOffset: 1
   armorPercent: 0
   isDead: 0
   DestroyOnDeath: 1
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 0}
+  repairFX: {fileID: 0}
+  repairFX_p2: {fileID: 0}
 --- !u!70 &435926520232919433
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

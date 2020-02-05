@@ -22,6 +22,8 @@ public class SteeringCalculator {
 	private readonly Predicate<ScrapBehaviour> _objectAffectsCohesion;
 	private Vector2 _accumForce;
 
+	private float ObstacleAvoidanceRange { get { return _footColliderRadius + _stats.ObstacleAvoidanceRange; } }
+
 	public SteeringCalculator(SteeringStats stats, Senses senses, float footColliderRadius, Predicate<ScrapBehaviour> objectAffectsSeparation, Predicate<ScrapBehaviour> objectAffectsCohesion) {
 		_stats = stats;
 		_senses = senses;
@@ -30,29 +32,42 @@ public class SteeringCalculator {
 		_objectAffectsCohesion = objectAffectsCohesion;
 	}
 
-	public Vector2 CalculateSteeringForce() {
+	public Vector2 Calculate() {
+
+		CalculateSteeringForce();
+		
+		if(!ObstacleAvoidanceOn) {
+			return _accumForce;
+		}
+
+		Vector2 obstacleAvoidance = ObstacleAvoidance(_accumForce);
+
+		if ((_accumForce + obstacleAvoidance).magnitude > MovementSpeed) {
+			Debug.Log("Reducing to  " + Mathf.Clamp(MovementSpeed - obstacleAvoidance.magnitude, 0.0f, MovementSpeed));
+			_accumForce = _accumForce.normalized * Mathf.Clamp(MovementSpeed - obstacleAvoidance.magnitude, 0.0f, MovementSpeed);
+		}
+		
+		return _accumForce + obstacleAvoidance;
+	}
+
+	private void CalculateSteeringForce() {
 		_accumForce = Vector2.zero;
-//		if (ObstacleAvoidanceOn && !AccumulateForce(ObstacleAvoidance(CalculateSteeringForce()))) {
-//			return _accumForce;
-//		}
 
 		if (SeparationOn && !AccumulateForce(Separation())) {
-			return _accumForce;
+			return;
 		}
 
 		if (AttackOn && !AccumulateForce(Attack())) {
-			return _accumForce;
+			return;
 		}
 		
 		if(FollowOn && !AccumulateForce(Follow())) {
-			return _accumForce;
+			return;
 		}
 
 		if (CohesionOn && !AccumulateForce(Cohesion())) {
-			return _accumForce;
+			return;
 		}
-
-		return _accumForce;
 	}
 	
 	private bool AccumulateForce(Vector2 toAdd) {
@@ -72,20 +87,18 @@ public class SteeringCalculator {
 		return true;
 	}
 	
-//	private Vector2 ObstacleAvoidance(Vector2 desiredMovement) {
-//		
-//		int layerMask = _steering.ObstacleLayers;
-//
-//		RaycastHit2D hit = Physics2D.Raycast(transform.position, desiredMovement, _steering.ObstacleAvoidanceRange, layerMask);
-//            
-//		if (!hit) { return Vector2.zero; }
-//		
-//		Debug.Log("HIT " + hit.collider.gameObject.name);
-//            
-//		float penetrationDepth = Mathf.Clamp(1.0f - hit.distance / _steering.ObstacleAvoidanceRange, 0.0f, 1.0f) + 0.2f;
-//		
-//		return _steering.ObstacleAvoidance * penetrationDepth * hit.normal;
-//	}
+	private Vector2 ObstacleAvoidance(Vector2 desiredMovement) {
+		
+		int layerMask = _stats.ObstacleLayers;
+
+		RaycastHit2D hit = Physics2D.Raycast(Position, desiredMovement.normalized, ObstacleAvoidanceRange, layerMask);
+            
+		if (!hit) { return Vector2.zero; }
+		
+		float penetrationDepth = Mathf.Clamp(1.3f - hit.distance / ObstacleAvoidanceRange, 0.0f, 1.0f);
+
+		return _stats.ObstacleAvoidance * penetrationDepth * MovementSpeed * Vector2.Perpendicular(desiredMovement);
+	}
 
 	private Vector2 Follow() {
 		float minDistance = Owner.FootCollider.radius + _footColliderRadius + _stats.MinFillowDistance;
@@ -122,9 +135,7 @@ public class SteeringCalculator {
 
 			speed = Mathf.Min(speed, MovementSpeed);
 
-			Vector2 desiredVel = (toTarget / distance) * speed;
-
-			return desiredVel;
+			return toTarget.normalized * speed;
 		}
 
 		return Vector2.zero;
@@ -158,9 +169,20 @@ public class SteeringCalculator {
 			if (!_objectAffectsSeparation(neighbour)) { continue; }
 
 			Vector2 fromNeighbour = (Vector3)Position - neighbour.transform.position;
-			steeringForce += fromNeighbour.normalized / fromNeighbour.magnitude;
+
+			float magnitude = fromNeighbour.magnitude;
+
+			if (magnitude > _stats.SeparationRange) { continue; }
+
+			float proximityMultiplier = Mathf.Clamp(1.0f - (fromNeighbour.magnitude - _footColliderRadius) / _stats.SeparationRange, 0.0f, 1.0f);
+			
+			steeringForce += fromNeighbour.normalized * proximityMultiplier;
 		}
-		
-		return steeringForce * _stats.Separation;
+
+		if (steeringForce.magnitude > 1.0f) {
+			steeringForce.Normalize();
+		}
+
+		return _stats.Separation * MovementSpeed * steeringForce;
 	}
 }

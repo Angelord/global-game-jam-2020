@@ -5677,7 +5677,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1335
+    m_Bits: 7479
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -6081,7 +6081,7 @@ PrefabInstance:
     - target: {fileID: 3274402828140805922, guid: e9928b217daa7da4ba64189961d6c126,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3274402828140805950, guid: e9928b217daa7da4ba64189961d6c126,
         type: 3}
@@ -8289,7 +8289,7 @@ PrefabInstance:
     - target: {fileID: 3274402828140805922, guid: e9928b217daa7da4ba64189961d6c126,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3274402828140805950, guid: e9928b217daa7da4ba64189961d6c126,
         type: 3}
@@ -10206,7 +10206,7 @@ PrefabInstance:
     - target: {fileID: 3274402828140805922, guid: e9928b217daa7da4ba64189961d6c126,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3274402828140805950, guid: e9928b217daa7da4ba64189961d6c126,
         type: 3}
@@ -12565,7 +12565,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1591
+    m_Bits: 7735
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -13372,7 +13372,7 @@ PrefabInstance:
     - target: {fileID: 3274402828140805922, guid: e9928b217daa7da4ba64189961d6c126,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3274402828140805950, guid: e9928b217daa7da4ba64189961d6c126,
         type: 3}
@@ -17879,7 +17879,7 @@ PrefabInstance:
     - target: {fileID: 3274402828140805922, guid: e9928b217daa7da4ba64189961d6c126,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3274402828140805950, guid: e9928b217daa7da4ba64189961d6c126,
         type: 3}
