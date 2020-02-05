@@ -20,14 +20,12 @@ public class Creature : Construct {
 	private SpriteRenderer _sprite;
 	
 	private Rigidbody2D _rigidbody;
-
-	private CircleCollider2D _footCollider;
 	
 	private Attacker _attacker;
 
 	private Senses _senses;
 
-	private Vector2 _accumForce;
+	private SteeringCalculator _steeringCalculator;
 
 	private Animator _animator;
 
@@ -54,12 +52,15 @@ public class Creature : Construct {
 	protected override void OnStart() {
 		_attacker = GetComponentInChildren<Attacker>();
 		_rigidbody = GetComponent<Rigidbody2D>();
-		_footCollider = GetComponent<CircleCollider2D>();
 		_sprite = GetComponentInChildren<SpriteRenderer>();
 		_senses = GetComponentInChildren<Senses>();
 		_animator = GetComponent<Animator>();
 
 		_sprite.material = Faction.UnitMat;
+		
+		CircleCollider2D footCollider = GetComponent<CircleCollider2D>();
+		
+		_steeringCalculator = new SteeringCalculator(_steering, _senses, footCollider.radius, ObjectAffectsSeparation, ObjectAffectsCohesion);
 	}
 
 	private void Update() {
@@ -94,62 +95,38 @@ public class Creature : Construct {
 			return;
 		}
 
-		_accumForce = Vector2.zero;
-
-		CalculateSteeringForce();
-
-		Move(_accumForce);
-	}
-
-	private void CalculateSteeringForce() {
-		if (!AccumulateForce(Separation())) {
-			return;
-		}
-		
-		if ((_state == UnitState.Attacking && !AccumulateForce(Attack())) ||
-			(_state == UnitState.Following && !AccumulateForce(Follow()))) {
-			return;
-		}
-
-		AccumulateForce(Cohesion());
-	}
-
-	private bool AccumulateForce(Vector2 toAdd) {
-        
-        float magCurrent = _accumForce.magnitude;
-
-        float magRemaining = MovementSpeed - magCurrent;
-        if (magRemaining <= 0.0f) { return false; }
-
-        float magToAdd = toAdd.magnitude;
-        if (magToAdd > magRemaining) {
-	        _accumForce += toAdd.normalized * magRemaining;
-            return false;
-        }
-     
-        _accumForce += toAdd;
-        return true;
-    }
-
-	private Vector2 Follow() {
-		float minDistance = Owner.FootCollider.radius + _footCollider.radius + _steering.MinFillowDistance;
-		float multiplierBonus = _steering.Follow + (Owner.Recalling ? _steering.RecallBonus : 0.0f);
-		return Arrive(Owner.transform.position, minDistance, _steering.FollowDecceleration) * multiplierBonus;
-	}
-
-	private Vector2 Attack() {
-		if (_attacker.CurrentTarget == null) {
+		if (_attacker.CurrentTarget == null && _state == UnitState.Attacking) {
 			_state = UnitState.Following;
-			return Follow();
 		}
 
-		if (Attacker.TargetIsInRange()) {
-			return Vector2.zero;
-		}
+		_steeringCalculator.Position = transform.position;
+		_steeringCalculator.AttackRange = Attacker.Range;
+		_steeringCalculator.AttackTarget = Attacker.CurrentTarget;
+		_steeringCalculator.Owner = Owner;
+		_steeringCalculator.MovementSpeed = MovementSpeed;
+		_steeringCalculator.AttackOn = _state == UnitState.Attacking;
+		_steeringCalculator.FollowOn = _state == UnitState.Following;
+		
+		Vector2 moveForce = _steeringCalculator.CalculateSteeringForce();
 
-		float minDistance = Attacker.Range;
-		return Arrive(Attacker.CurrentTarget.transform.position, minDistance, _steering.FollowDecceleration) * _steering.Follow;
+		Move(moveForce);
 	}
+
+
+//	private void OnDrawGizmos() {
+//		if(Broken) return;
+//		
+//		Vector2 steeringDir = ObstacleAvoidance();
+//		
+//		Gizmos.color = steeringDir.magnitude <= 0.01f ? Color.blue : Color.magenta;
+//		
+//		Gizmos.DrawWireSphere(transform.position, _steering.ObstacleAvoidanceRange);
+//		
+//		Gizmos.color = Color.yellow;
+//		
+//		Gizmos.DrawLine(transform.position, transform.position + (Vector3)steeringDir);
+//	}
+
 
 	private void SetFlip(bool left) {
 		Vector3 scale = _sprite.transform.localScale;
@@ -196,72 +173,7 @@ public class Creature : Construct {
 		});
 		_sprite.material = Faction.UnitMat;
 	}
-
-	private Vector2 Seek(Vector2 target) {
-		
-		Vector2 desiredVel = (target - (Vector2)transform.position).normalized * MovementSpeed;
-
-		return desiredVel;
-	}
-
-	private Vector2 Arrive(Vector2 target, float minDistance, float decceleration) {
-		
-		Vector2 toTarget = target - (Vector2)transform.position;
-
-		float distance = toTarget.magnitude;
-
-		if (distance > 0.0f) {
-
-			float speed = (distance - minDistance) / decceleration;
-
-			if (speed <= 0.0f) {
-				return Vector2.zero;
-			}
-
-			speed = Mathf.Min(speed, MovementSpeed);
-
-			Vector2 desiredVel = (toTarget / distance) * speed;
-
-			return desiredVel;
-		}
-
-		return Vector2.zero;
-	}
-
-	private Vector2 Cohesion() {
-		Vector2 centerOfMass = Vector2.zero;
-
-		int count = 0;
-		foreach (var neigh in _senses.ObjectsInRange) {
-			if(!ObjectAffectsCohesion(neigh)) continue;
-			count++;
-			centerOfMass += (Vector2)neigh.transform.position;
-		}
-
-		if (count == 0) {
-			return Vector2.zero;
-		}
-
-		centerOfMass /= count;
-
-		return Seek(centerOfMass);
-	}
-
-	private Vector2 Separation() {
-		
-		Vector2 steeringForce = Vector2.zero;
-
-		foreach (var neighbour in _senses.ObjectsInRange) {
-
-			if (!ObjectAffectsSeparation(neighbour)) { continue; }
-
-			Vector2 fromNeighbour = transform.position - neighbour.transform.position;
-			steeringForce += fromNeighbour.normalized / fromNeighbour.magnitude;
-		}
-		
-		return steeringForce * _steering.Separation;
-	}
-
+	
 	private bool ObjectAffectsSeparation(ScrapBehaviour behaviour) {
 		return !Owner.Faction.IsEnemy(behaviour.Faction);
 	}

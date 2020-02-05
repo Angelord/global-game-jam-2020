@@ -268,6 +268,7 @@
           <e p="ShaderMaster.cs" t="Include" />
           <e p="Sound.cs" t="Include" />
           <e p="SpriteChooser.cs" t="Include" />
+          <e p="SteeringCalculator.cs" t="Include" />
           <e p="SteeringStats.cs" t="Include" />
           <e p="Tower.cs" t="Include" />
           <e p="UnitSpawner.cs" t="Include" />

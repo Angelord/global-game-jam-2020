@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 3274402828140805948}
   - component: {fileID: 3274402828140805923}
   - component: {fileID: 3274402828140805951}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Krepost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
