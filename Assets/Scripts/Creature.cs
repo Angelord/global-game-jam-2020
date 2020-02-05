@@ -142,10 +142,11 @@ public class Creature : Construct {
 			_animator.SetBool("Moving", true);
 		}
 		else {
+			direction = Vector2.zero;
 			_animator.SetBool("Moving", false);
 		}
 		
-		_rigidbody.AddForce(direction - _rigidbody.velocity, ForceMode2D.Force);
+		_rigidbody.AddForce(direction - _rigidbody.velocity * 0.5f, ForceMode2D.Impulse);
 	}
 
 	protected override void OnOwnerCommand(PlayerCommand command) {

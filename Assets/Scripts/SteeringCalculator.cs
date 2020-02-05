@@ -157,7 +157,7 @@ public class SteeringCalculator {
 
 		centerOfMass /= count;
 
-		return Seek(centerOfMass);
+		return Seek(centerOfMass) * _stats.Cohesion;
 	}
 
 	private Vector2 Separation() {
@@ -170,13 +170,7 @@ public class SteeringCalculator {
 
 			Vector2 fromNeighbour = (Vector3)Position - neighbour.transform.position;
 
-			float magnitude = fromNeighbour.magnitude;
-
-			if (magnitude > _stats.SeparationRange) { continue; }
-
-			float proximityMultiplier = Mathf.Clamp(1.0f - (fromNeighbour.magnitude - _footColliderRadius) / _stats.SeparationRange, 0.0f, 1.0f);
-			
-			steeringForce += fromNeighbour.normalized * proximityMultiplier;
+			steeringForce += fromNeighbour.normalized / fromNeighbour.magnitude;
 		}
 
 		if (steeringForce.magnitude > 1.0f) {

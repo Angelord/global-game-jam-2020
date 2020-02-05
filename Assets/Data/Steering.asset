@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Steering
   m_EditorClassIdentifier: 
   ObstacleAvoidance: 1
-  Cohesion: 0.7
-  Separation: 1.1
-  Follow: 1
+  Cohesion: 0
+  Separation: 0.42
+  Follow: 0.7
   RecallBonus: 0.3
-  SeparationRange: 1.5
+  SeparationRange: 1.2
   ObstacleAvoidanceRange: 1
   ObstacleLayers:
     serializedVersion: 2
     m_Bits: 7168
-  MinFillowDistance: 1
-  FollowDecceleration: 0.3
+  MinFillowDistance: 0.6
+  FollowDecceleration: 0.6
