@@ -183,15 +183,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 13
+  BarYOffset: 1
   armorPercent: 50
   isDead: 0
   DestroyOnDeath: 1
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 7300804457808948310, guid: 170f9288243614fb48169bdc57ac6f9a, type: 3}
+  repairFX: {fileID: 0}
+  repairFX_p2: {fileID: 0}
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 197083155824485735}
-  MovementSpeed: 4.2
+  MovementSpeed: 2.1
 --- !u!114 &4645967725002731312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,6 +216,7 @@ MonoBehaviour:
   Projectile: {fileID: 7830425388499362709, guid: 6a754a2e33d7f7c44969154dbb7501d9,
     type: 3}
   barrel: {fileID: 2083398213567683985}
+  TeamColorProjectile: 0
 --- !u!50 &2435486191390415332
 Rigidbody2D:
   serializedVersion: 4
