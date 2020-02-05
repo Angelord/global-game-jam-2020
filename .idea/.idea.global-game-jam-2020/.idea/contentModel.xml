@@ -216,7 +216,6 @@
         <e p="Editor" t="Include">
           <e p="PixelArtImporter.cs" t="Include" />
         </e>
-        <e p="GoBackHack.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AnimationAutoDestroy.cs" t="Include" />
           <e p="Attacker.cs" t="Include" />
@@ -271,6 +270,7 @@
           <e p="SteeringCalculator.cs" t="Include" />
           <e p="SteeringStats.cs" t="Include" />
           <e p="Tower.cs" t="Include" />
+          <e p="TriggerAnimationOnStart.cs" t="Include" />
           <e p="UnitSpawner.cs" t="Include" />
           <e p="UsableBuilding.cs" t="Include" />
           <e p="UserInterface" t="Include">
@@ -285,6 +285,7 @@
             <e p="RepairGUI.cs" t="Include" />
             <e p="SalvageGUI.cs" t="Include" />
             <e p="ScoreGUI.cs" t="Include" />
+            <e p="ShowroomGUI.cs" t="Include" />
           </e>
         </e>
         <e p="Shaders" t="Include">
