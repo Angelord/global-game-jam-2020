@@ -319,14 +319,8 @@ MonoBehaviour:
   armorPercent: 0
   isDead: 0
   DestroyOnDeath: 0
-  _faction: {fileID: 11400000, guid: 99969bd06bfea474da2ce8006138cc21, type: 2}
+  _faction: {fileID: 11400000, guid: 7d0070d7a5c5d7f45930a9bec314e69f, type: 2}
   Stats: {fileID: 11400000, guid: aa005770e63f7c744afc9d7892e8a0ce, type: 2}
-  HorizontalAxis: Horizontal_2
-  VerticalAxis: Vertical_2
-  SalvageButton: Salvage_2
-  RepairButton: Repair_2
-  UseButton: Use_2
-  RecallButton: Recall_2
   PlayerCamera: {fileID: 0}
   Sparks: {fileID: 1699756472}
   Body: {fileID: 2116731264536727101}
@@ -447,17 +441,17 @@ PrefabInstance:
     - target: {fileID: 2444383559153071699, guid: d4bf195747fcf444289d5259ca1a783e,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.07456
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 2444383559153071699, guid: d4bf195747fcf444289d5259ca1a783e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.64864
+      value: 1.648
       objectReference: {fileID: 0}
     - target: {fileID: 2444383559153071699, guid: d4bf195747fcf444289d5259ca1a783e,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.472
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5355944961141139900, guid: d4bf195747fcf444289d5259ca1a783e,
         type: 3}
