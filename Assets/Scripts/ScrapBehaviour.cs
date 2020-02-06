@@ -1,6 +1,7 @@
 ﻿using System;
 using Claw;
 using Claw.Chrono;
+using Scrapper;
 using UnityEngine;
 
 public abstract class ScrapBehaviour : MonoBehaviour {
@@ -11,6 +12,8 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 	
     [Range(0, 100)]
 	public float armorPercent = 0;
+	
+	private ColorBlink _damageBlink;
 
 	private float _curHealth;
 
@@ -28,6 +31,7 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 	
 	private void Awake() {
 		_curHealth = MaxHealth;
+		_damageBlink = GetComponent<ColorBlink>();
 		
 		CustomCoroutine.WaitThenExecute(0.01f, () => {
 			EventManager.TriggerEvent(new ScrapObjectSpawnedEvent(this));
@@ -41,6 +45,9 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 		OnTakeDamage();
 		if (_curHealth <= 0.0f) {
 			Die();
+		}
+		else {
+			_damageBlink?.Blink();
 		}
 	}
 	

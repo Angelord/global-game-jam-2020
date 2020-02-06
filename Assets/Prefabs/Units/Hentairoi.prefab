@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1600468165064748892}
   - component: {fileID: 8611832050150218124}
   - component: {fileID: 2275316791536897488}
+  - component: {fileID: 8382413521596655527}
   m_Layer: 0
   m_Name: Hentairoi
   m_TagString: Untagged
@@ -137,6 +138,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.2
+--- !u!114 &8382413521596655527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600468165064748893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57229e7d60754452bc5a2526760954bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RegularColor: {r: 1, g: 1, b: 1, a: 1}
+  TargetColor: {r: 1, g: 0, b: 0, a: 1}
+  Duration: 0.2
+  SpriteRenderer: {fileID: 1600468166318776312}
 --- !u!1 &1600468166318776314
 GameObject:
   m_ObjectHideFlags: 0

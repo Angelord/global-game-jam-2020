@@ -175,6 +175,7 @@ GameObject:
   - component: {fileID: 6981424964179171446}
   - component: {fileID: 96369764371787430}
   - component: {fileID: 7585905396162312954}
+  - component: {fileID: 8324036250730880891}
   m_Layer: 0
   m_Name: Shlurker
   m_TagString: Untagged
@@ -298,6 +299,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.2
+--- !u!114 &8324036250730880891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6981424964179171447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57229e7d60754452bc5a2526760954bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RegularColor: {r: 1, g: 1, b: 1, a: 1}
+  TargetColor: {r: 1, g: 0, b: 0, a: 1}
+  Duration: 0.2
+  SpriteRenderer: {fileID: 6981424965340932306}
 --- !u!1 &6981424965340932304
 GameObject:
   m_ObjectHideFlags: 0
