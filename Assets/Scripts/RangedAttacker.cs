@@ -7,15 +7,8 @@ public class RangedAttacker : Attacker {
 	public bool TeamColorProjectile = false;
 	
 	protected override void Attack(ScrapBehaviour target) {
-		Projectile proj = GameObject.Instantiate(Projectile, barrel.transform.position, Quaternion.identity).GetComponent<Projectile>();
+		IProjectile proj = GameObject.Instantiate(Projectile, barrel.transform.position, Quaternion.identity).GetComponent<IProjectile>();
 
-		if (TeamColorProjectile) {
-			proj.GetComponentInChildren<SpriteRenderer>().material = Construct.Owner.Faction.UnitMat;
-		}
-
-		proj.Initialize(target.transform, () => {
-			if (target == null || !target.Attackable) { return; }
-			target.TakeDamage(Damage);
-		});
+		proj.Initialize(target, Construct, Damage);
 	}
 }

@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731024274077896592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.017, y: 0.981, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1287505988909067236}
@@ -101,16 +101,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7441027978608637932, guid: 122de04fe904c094fb7cdb77f1b3ebb2,
+  m_Sprite: {fileID: -4427313421195731488, guid: 122de04fe904c094fb7cdb77f1b3ebb2,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.46875, y: 0.53125}
+  m_Size: {x: 1.75, y: 1.59375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!1 &1287505989827681090
@@ -190,6 +190,8 @@ MonoBehaviour:
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 3314953862076795691, guid: 766c7adc74ed6415cac2cce3bbc4a2bf, type: 3}
+  repairFX: {fileID: 0}
+  repairFX_p2: {fileID: 0}
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 5988598870480507152}
   MovementSpeed: 4
@@ -209,11 +211,12 @@ MonoBehaviour:
   Damage: 36.6
   Range: 2.2
   HasAttackAnimation: 1
-  AttackOnAnimationTrigger: 0
+  AttackOnAnimationTrigger: 1
   AudioDataObject: {fileID: 11400000, guid: d73908dde52a34045bb9e774c4c4e39d, type: 2}
-  Projectile: {fileID: 7830425388499362709, guid: 5da78dc9fde43f344bd66806c2fb169d,
+  Projectile: {fileID: 7830425388499362709, guid: 86019f71d17b489499658ac9621bfc59,
     type: 3}
   barrel: {fileID: 731024274077896592}
+  TeamColorProjectile: 0
 --- !u!50 &8100705991585934739
 Rigidbody2D:
   serializedVersion: 4

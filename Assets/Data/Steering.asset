@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5a6b249541464190540ef26e506e87, type: 3}
   m_Name: Steering
   m_EditorClassIdentifier: 
-  ObstacleAvoidance: 1
+  ObstacleAvoidance: 0.95
   Cohesion: 0
   Separation: 0.4
   Follow: 0.7
@@ -24,4 +24,4 @@ MonoBehaviour:
     m_Bits: 7168
   MinFillowDistance: 0.55
   FollowDecceleration: 0.58
-  AttackDecceleration: 0.2
+  AttackDecceleration: 0.15

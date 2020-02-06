@@ -108,7 +108,7 @@ public class SteeringCalculator {
 	private Vector2 Attack() {
 
 		float minDistance = AttackRange;
-		return Arrive(AttackTarget.transform.position, minDistance * 0.6f, _stats.AttackDecceleration) * _stats.Attack;
+		return Arrive(AttackTarget.transform.position, minDistance * 0.82f, _stats.AttackDecceleration) * _stats.Attack;
 	}
 
 	private Vector2 Seek(Vector2 target) {

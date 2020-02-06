@@ -247,6 +247,7 @@
           <e p="FadeOutSprite.cs" t="Include" />
           <e p="FadeOutSpriteWithAnimation.cs" t="Include" />
           <e p="GameMaster.cs" t="Include" />
+          <e p="IProjectile.cs" t="Include" />
           <e p="Maggot.cs" t="Include" />
           <e p="MainThemesAudio.cs" t="Include" />
           <e p="MeleeAttacker.cs" t="Include" />
@@ -287,6 +288,8 @@
             <e p="ScoreGUI.cs" t="Include" />
             <e p="ShowroomGUI.cs" t="Include" />
           </e>
+          <e p="ZaratiushaMiniProjectile.cs" t="Include" />
+          <e p="ZaratiushaProjectile.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
           <e p="Sprites-Team-Color.shader" t="Include" />
