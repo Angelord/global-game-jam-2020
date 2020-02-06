@@ -28,6 +28,8 @@ public class Creature : Construct {
 	private SteeringCalculator _steeringCalculator;
 
 	private Animator _animator;
+	
+	private static readonly int AnimMoving = Animator.StringToHash("Moving");
 
 	public override bool Salvageable => Broken;
 
@@ -139,11 +141,11 @@ public class Creature : Construct {
 		
 		if (direction.sqrMagnitude > MovementSpeed * 0.08f) {
 			SetFlip(_rigidbody.velocity.x < 0.0f);
-			_animator.SetBool("Moving", true);
+			_animator.SetBool(AnimMoving, true);
 		}
 		else {
 			direction = Vector2.zero;
-			_animator.SetBool("Moving", false);
+			_animator.SetBool(AnimMoving, false);
 		}
 		
 		_rigidbody.AddForce(direction - _rigidbody.velocity * 0.5f, ForceMode2D.Impulse);
@@ -163,11 +165,13 @@ public class Creature : Construct {
 
 	protected override void OnRepair() {
 		base.OnRepair();
+		
 		_scrapEffect.SetActive(false);
 		
 		CustomCoroutine.WaitOneFrameThenExecute(() => {
 			Attacker.enabled = true;
 		});
+		
 		_sprite.material = Faction.UnitMat;
 	}
 	
