@@ -260,6 +260,7 @@
           <e p="PlayerStats.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
           <e p="RangedAttacker.cs" t="Include" />
+          <e p="ReadOnlyDrawer.cs" t="Include" />
           <e p="RecallCommand.cs" t="Include" />
           <e p="ScrapBehaviour.cs" t="Include" />
           <e p="ScrapLerpAlpha.cs" t="Include" />

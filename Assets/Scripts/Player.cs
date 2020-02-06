@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections;
 using Claw;
+using Unity.Collections;
 using UnityEngine;
+
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : ScrapBehaviour {
 
 	[SerializeField] private Faction _faction;
 	public PlayerStats Stats;
-	public string HorizontalAxis = "Horizontal_1";
-	public string VerticalAxis = "Vertical_1";
-	public string SalvageButton = "Salvage_1";
-	public string RepairButton = "Repair_1";
-	public string UseButton = "Use_1";
-	public string RecallButton = "Recall_1";
 	public Camera PlayerCamera;
 	public SpriteRenderer Sparks;
 	public SpriteRenderer Body;
@@ -42,6 +38,8 @@ public class Player : ScrapBehaviour {
 
 	public bool Recalling { get { return Time.time - _lastRecall <= Stats.RecallDuration; } }
 
+	private InputSet Inputs { get { return _faction.InputSet; } }
+
 	protected override void OnDie() {
 		EventManager.TriggerEvent(new PlayerDiedEvent(this));
 		gameObject.SetActive(false);
@@ -65,7 +63,9 @@ public class Player : ScrapBehaviour {
 
 	private void Update() {
 
-		if (Input.GetButton(RepairButton) || Input.GetButton(SalvageButton) || Input.GetButton(UseButton)) {
+		if (Input.GetButton(Inputs.RepairButton) || 
+		    Input.GetButton(Inputs.SalvageButton) || 
+		    Input.GetButton(Inputs.UseButton)) {
 			_animator.SetBool("Working", true);
 		}
 		else {
@@ -74,25 +74,25 @@ public class Player : ScrapBehaviour {
 
 		Sparks.color = _animator.GetBool("Working") ? Faction.Color : new Color(0.0f, 0.0f, 0.0f, 0.0f);
 
-		if (Input.GetButtonDown(RepairButton)) {
+		if (Input.GetButtonDown(Inputs.RepairButton)) {
 			Construct repairable = _senses.GetRepairTarget();
 			if (repairable != null) {
 				Repair(repairable);
 			}
 		}
-		else if (Input.GetButtonDown(SalvageButton)) {
+		else if (Input.GetButtonDown(Inputs.SalvageButton)) {
 			Construct salvage = _senses.GetSalvageTarget();
 			if (salvage != null) {
 				Salvage(salvage);
 			}
 		}
-		else if (Input.GetButtonDown(UseButton)) {
+		else if (Input.GetButtonDown(Inputs.UseButton)) {
 			ScrapBehaviour usable = _senses.GetUseTarget();
 			if (usable != null) {
 				Use(usable);
 			}
 		}
-		else if (Input.GetButtonDown(RecallButton)) {
+		else if (Input.GetButtonDown(Inputs.RecallButton)) {
 			Recall();
 		}
 	}
@@ -147,8 +147,8 @@ public class Player : ScrapBehaviour {
 	private void FixedUpdate() {
 
 		Vector2 moveDir = Vector2.zero;
-		moveDir.x = Input.GetAxis(HorizontalAxis);
-		moveDir.y = -Input.GetAxis(VerticalAxis);
+		moveDir.x = Input.GetAxis(Inputs.HorizontalAxis);
+		moveDir.y = -Input.GetAxis(Inputs.VerticalAxis);
 
 		if (moveDir.magnitude > 0.1f) {
 			moveDir.Normalize();

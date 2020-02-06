@@ -103,7 +103,7 @@ public abstract class Construct : ScrapBehaviour {
 
 	protected virtual void OnRepair() {
 
-		var a = Instantiate(Owner.Faction.repairFx, transform);
+		var a = Instantiate(Owner.Faction.RepairEffect, transform);
 		a.transform.parent = null;
 
 		//TODO : Change sprites, play some animation, etc...

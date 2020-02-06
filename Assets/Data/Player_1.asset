@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Color: {r: 0, g: 1, b: 0.48655796, a: 1}
   UnitMat: {fileID: 2100000, guid: f1dd56e8dd9e1ae4cb229145b8ed9b72, type: 2}
-  Wins: 0
-  repairFx: {fileID: 2114964003914073592, guid: 676212c6cc33e48de8eaccdafe801db0,
+  Wins: 1
+  RepairEffect: {fileID: 2114964003914073592, guid: 676212c6cc33e48de8eaccdafe801db0,
     type: 3}
+  Index: 1
+  InputSet:
+    HorizontalAxis: Horizontal_1
+    VerticalAxis: Vertical_1
+    SalvageButton: Salvage_1
+    RepairButton: Repair_1
+    UseButton: Use_1
+    RecallButton: Recall_1
