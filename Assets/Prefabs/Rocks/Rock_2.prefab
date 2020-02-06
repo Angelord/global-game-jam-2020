@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6564017486715186054}
   - component: {fileID: 6885422749686695570}
   - component: {fileID: 6637367059099132683}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!70 &6637367059099132683
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -95,6 +95,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.061461046, y: 0.42922384}
-  m_Size: {x: 1.3930928, y: 0.2739878}
+  m_Offset: {x: -0.1, y: 0.1}
+  m_Size: {x: 1.1, y: 0.32}
   m_Direction: 1

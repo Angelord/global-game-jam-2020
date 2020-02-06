@@ -139,6 +139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -213,6 +218,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -364,6 +374,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -428,20 +443,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 1093044967437637458, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_Name
       value: Rock_7 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
@@ -561,6 +566,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
@@ -751,11 +761,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Junk_06 (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 774534381202790705, guid: f94ce94158770c24480702ae546c13df,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5477644989993587331, guid: f94ce94158770c24480702ae546c13df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -834,28 +839,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 101361907}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &101361909 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 774534381202790705, guid: f94ce94158770c24480702ae546c13df,
-    type: 3}
-  m_PrefabInstance: {fileID: 101361907}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &101361910
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101361909}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.07491415, y: 0.6401984}
-  m_Size: {x: 2.6836324, y: 0.7613286}
-  m_Direction: 1
 --- !u!1001 &104195911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -917,6 +900,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
@@ -1031,35 +1019,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Junk_12 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 8937015616208466299, guid: 106308a8cf373064793b707be934b5ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 106308a8cf373064793b707be934b5ea, type: 3}
---- !u!1 &116857355 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8937015616208466299, guid: 106308a8cf373064793b707be934b5ea,
-    type: 3}
-  m_PrefabInstance: {fileID: 116857354}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &116857356
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116857355}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.037734754, y: -0.48519903}
-  m_Size: {x: 1.8110472, y: 0.48740393}
-  m_Direction: 1
 --- !u!4 &116857357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
@@ -1077,6 +1038,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -1153,6 +1119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1223,11 +1194,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1317,6 +1283,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 6492548898772452298, guid: 3d2356f32c3dec5428e308dcefbdc9f0,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8300652758409397206, guid: 3d2356f32c3dec5428e308dcefbdc9f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1463,6 +1434,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1531,6 +1507,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -1602,20 +1583,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 1093044967437637458, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_Name
       value: Rock_7 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
@@ -1681,11 +1652,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1787,6 +1753,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -1862,6 +1833,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -1955,6 +1931,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -2030,20 +2011,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 1093044967437637458, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_Name
       value: Rock_7 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
@@ -2119,6 +2090,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -2239,6 +2215,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -2269,6 +2250,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -2334,20 +2320,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 1093044967437637458, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_Name
       value: Rock_7 (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
@@ -2563,35 +2539,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Junk_12 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 8937015616208466299, guid: 106308a8cf373064793b707be934b5ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 106308a8cf373064793b707be934b5ea, type: 3}
---- !u!1 &227917383 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8937015616208466299, guid: 106308a8cf373064793b707be934b5ea,
-    type: 3}
-  m_PrefabInstance: {fileID: 227917382}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &227917384
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227917383}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.037734754, y: -0.48519903}
-  m_Size: {x: 1.8110472, y: 0.48740393}
-  m_Direction: 1
 --- !u!4 &227917385 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
@@ -2611,6 +2560,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -2747,6 +2701,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -2821,6 +2780,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
@@ -3072,20 +3036,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 1093044967437637458, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_Name
       value: Rock_7 (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
@@ -3173,6 +3127,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -3314,6 +3273,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 316447611857736734, guid: 3a918e98c71aeca4e8a5f5ffbf9158ac,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4343827975285332063, guid: 3a918e98c71aeca4e8a5f5ffbf9158ac,
         type: 3}
       propertyPath: m_Name
@@ -3442,6 +3406,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1218553395}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &346181612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 346181613}
+  m_Layer: 0
+  m_Name: SteeringHints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &346181613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346181612}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &359100035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3524,6 +3518,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 678675533803657476, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5272780878415817342, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
         type: 3}
       propertyPath: m_Name
@@ -3645,6 +3644,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -3971,6 +3975,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4040,6 +4049,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4104,6 +4118,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 1336457688268793281, guid: fd6b81963c8a31640b702a32611002a6,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1823508136293884061, guid: fd6b81963c8a31640b702a32611002a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4225,6 +4244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -4432,6 +4456,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -4457,6 +4486,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4552,6 +4586,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -4762,6 +4801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
@@ -5103,6 +5147,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 678675533803657476, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5272780878415817342, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
         type: 3}
       propertyPath: m_Name
@@ -5350,6 +5399,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -5535,6 +5589,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -5559,6 +5618,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -5785,6 +5849,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5854,6 +5923,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5922,6 +5996,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -5993,6 +6072,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -6254,6 +6338,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 2823845674689177969, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
       propertyPath: m_Name
@@ -6343,6 +6432,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -6492,6 +6586,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 316447611857736734, guid: 3a918e98c71aeca4e8a5f5ffbf9158ac,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4343827975285332063, guid: 3a918e98c71aeca4e8a5f5ffbf9158ac,
         type: 3}
       propertyPath: m_Name
@@ -6609,6 +6708,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 6492548898772452298, guid: 3d2356f32c3dec5428e308dcefbdc9f0,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8300652758409397206, guid: 3d2356f32c3dec5428e308dcefbdc9f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6726,6 +6830,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -6795,6 +6904,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -6875,6 +6989,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6939,6 +7058,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -7213,6 +7337,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7283,6 +7412,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -7364,6 +7498,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 678675533803657476, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5272780878415817342, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
         type: 3}
       propertyPath: m_Name
@@ -7536,6 +7675,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -7566,6 +7710,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -7692,6 +7841,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -7712,6 +7866,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -7792,6 +7951,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7860,6 +8024,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -7931,6 +8100,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -8055,6 +8229,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -8073,6 +8252,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -8142,6 +8326,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -8261,6 +8450,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
@@ -8425,6 +8619,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8569,6 +8768,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6254617983792181427, guid: 451a02f492bf8b34d9fcf0c759f187c0,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451a02f492bf8b34d9fcf0c759f187c0, type: 3}
 --- !u!1 &743382218 stripped
@@ -8616,6 +8820,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -8773,6 +8982,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8837,6 +9051,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -8922,6 +9141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -9128,11 +9352,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 4725199394370554863, guid: b2fc13e9ff3674c418bdba2982e93e19,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5909137227355185974, guid: b2fc13e9ff3674c418bdba2982e93e19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9327,11 +9546,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9431,6 +9645,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -9744,6 +9963,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9808,6 +10032,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 316447611857736734, guid: 3a918e98c71aeca4e8a5f5ffbf9158ac,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4343827975285332063, guid: 3a918e98c71aeca4e8a5f5ffbf9158ac,
         type: 3}
       propertyPath: m_Name
@@ -9930,6 +10159,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4725199394370554863, guid: b2fc13e9ff3674c418bdba2982e93e19,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5909137227355185974, guid: b2fc13e9ff3674c418bdba2982e93e19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10172,6 +10406,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
@@ -10502,6 +10741,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -10588,6 +10832,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10657,6 +10906,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10725,6 +10979,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -10796,20 +11055,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 1093044967437637458, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_Name
       value: Rock_7 (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
@@ -10880,6 +11129,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10949,11 +11203,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_6 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6586195387839044292, guid: 73c82d66a8e228a4a9ecf8a181272a78,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7392074684038269706, guid: 73c82d66a8e228a4a9ecf8a181272a78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11009,11 +11258,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8225672474098180466, guid: 73c82d66a8e228a4a9ecf8a181272a78,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73c82d66a8e228a4a9ecf8a181272a78, type: 3}
 --- !u!1001 &947785344
@@ -11187,6 +11431,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 678675533803657476, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5272780878415817342, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
         type: 3}
       propertyPath: m_Name
@@ -11455,6 +11704,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4241
       objectReference: {fileID: 0}
+    - target: {fileID: 256374069225045567, guid: 74b4b557aaeee7648b93ec290fbfea49,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3394493117752040254, guid: 74b4b557aaeee7648b93ec290fbfea49,
         type: 3}
       propertyPath: m_Name
@@ -11517,12 +11771,12 @@ PrefabInstance:
     - target: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.922977
+      value: -24.12
       objectReference: {fileID: 0}
     - target: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.287743
+      value: 12.49
       objectReference: {fileID: 0}
     - target: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
         type: 3}
@@ -11589,35 +11843,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Junk_12 (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 8937015616208466299, guid: 106308a8cf373064793b707be934b5ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 106308a8cf373064793b707be934b5ea, type: 3}
---- !u!1 &982591939 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8937015616208466299, guid: 106308a8cf373064793b707be934b5ea,
-    type: 3}
-  m_PrefabInstance: {fileID: 982591938}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &982591940
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 982591939}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.037734754, y: -0.48519903}
-  m_Size: {x: 1.8110472, y: 0.48740393}
-  m_Direction: 1
 --- !u!4 &982591941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
@@ -11771,6 +11998,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11835,11 +12067,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11935,6 +12162,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 6492548898772452298, guid: 3d2356f32c3dec5428e308dcefbdc9f0,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8300652758409397206, guid: 3d2356f32c3dec5428e308dcefbdc9f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12107,6 +12339,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -12137,6 +12374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -12202,6 +12444,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 1336457688268793281, guid: fd6b81963c8a31640b702a32611002a6,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1823508136293884061, guid: fd6b81963c8a31640b702a32611002a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12405,20 +12652,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 2823845674689177969, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
       propertyPath: m_Name
       value: Rock_5 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8130796836046802621, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
@@ -12654,11 +12891,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Junk_06 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 774534381202790705, guid: f94ce94158770c24480702ae546c13df,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5477644989993587331, guid: f94ce94158770c24480702ae546c13df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12731,28 +12963,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f94ce94158770c24480702ae546c13df, type: 3}
---- !u!1 &1133199594 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 774534381202790705, guid: f94ce94158770c24480702ae546c13df,
-    type: 3}
-  m_PrefabInstance: {fileID: 1133199593}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &1133199595
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133199594}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.07491415, y: 0.6401984}
-  m_Size: {x: 2.6836324, y: 0.7613286}
-  m_Direction: 1
 --- !u!4 &1133199596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5477644989993587331, guid: f94ce94158770c24480702ae546c13df,
@@ -12770,6 +12980,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -12890,6 +13105,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -12904,30 +13124,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 1093044967437637458, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_Name
       value: Rock_7 (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.665
+      value: -0.48
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.667
+      value: 3.31
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
@@ -12989,8 +13199,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2446461
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -1141896383519585585, guid: aa81146919d4aeb428318002fc51cc00, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa81146919d4aeb428318002fc51cc00, type: 3}
 --- !u!4 &1140682772 stripped
 Transform:
@@ -13103,6 +13312,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13167,6 +13381,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 1336457688268793281, guid: fd6b81963c8a31640b702a32611002a6,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1823508136293884061, guid: fd6b81963c8a31640b702a32611002a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13288,6 +13507,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -13465,6 +13689,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -13721,6 +13950,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 678675533803657476, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5272780878415817342, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
         type: 3}
       propertyPath: m_Name
@@ -13844,20 +14078,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 2823845674689177969, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
       propertyPath: m_Name
       value: Rock_5 (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8130796836046802621, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
@@ -14044,6 +14268,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14118,6 +14347,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -14454,6 +14688,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14593,6 +14832,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -14804,6 +15048,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -14828,6 +15077,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -14893,6 +15147,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -14984,6 +15243,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -15210,6 +15474,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15280,20 +15549,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 1093044967437637458, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_Name
       value: Rock_7 (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
@@ -15364,6 +15623,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15432,6 +15696,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -15603,6 +15872,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15667,6 +15941,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 6492548898772452298, guid: 3d2356f32c3dec5428e308dcefbdc9f0,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8300652758409397206, guid: 3d2356f32c3dec5428e308dcefbdc9f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16001,6 +16280,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -16113,11 +16397,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Junk_06 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 774534381202790705, guid: f94ce94158770c24480702ae546c13df,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5477644989993587331, guid: f94ce94158770c24480702ae546c13df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16175,28 +16454,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f94ce94158770c24480702ae546c13df, type: 3}
---- !u!1 &1387036621 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 774534381202790705, guid: f94ce94158770c24480702ae546c13df,
-    type: 3}
-  m_PrefabInstance: {fileID: 1387036620}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &1387036622
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387036621}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.07491415, y: 0.6401984}
-  m_Size: {x: 2.6836324, y: 0.7613286}
-  m_Direction: 1
 --- !u!4 &1387036623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5477644989993587331, guid: f94ce94158770c24480702ae546c13df,
@@ -16210,6 +16467,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -16339,6 +16601,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
@@ -16521,6 +16788,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16595,6 +16867,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -16721,6 +16998,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -16739,6 +17021,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -16804,6 +17091,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -16934,6 +17226,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -16952,6 +17249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -17021,6 +17323,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -17141,6 +17448,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -17167,6 +17479,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 316447611857736734, guid: 3a918e98c71aeca4e8a5f5ffbf9158ac,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4343827975285332063, guid: 3a918e98c71aeca4e8a5f5ffbf9158ac,
         type: 3}
       propertyPath: m_Name
@@ -17289,6 +17606,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17353,11 +17675,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 4725199394370554863, guid: b2fc13e9ff3674c418bdba2982e93e19,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5909137227355185974, guid: b2fc13e9ff3674c418bdba2982e93e19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17451,6 +17768,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -18046,6 +18368,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -18202,6 +18529,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 1336457688268793281, guid: fd6b81963c8a31640b702a32611002a6,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1823508136293884061, guid: fd6b81963c8a31640b702a32611002a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18579,20 +18911,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 2823845674689177969, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
       propertyPath: m_Name
       value: Rock_5 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8130796836046802621, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
@@ -18728,6 +19050,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -18834,6 +19161,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18903,6 +19235,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18971,6 +19308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -19047,6 +19389,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19115,6 +19462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -19335,6 +19687,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19549,6 +19906,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 1336457688268793281, guid: fd6b81963c8a31640b702a32611002a6,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1823508136293884061, guid: fd6b81963c8a31640b702a32611002a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19670,6 +20032,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -19810,35 +20177,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Junk_12 (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 8937015616208466299, guid: 106308a8cf373064793b707be934b5ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 106308a8cf373064793b707be934b5ea, type: 3}
---- !u!1 &1666198475 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8937015616208466299, guid: 106308a8cf373064793b707be934b5ea,
-    type: 3}
-  m_PrefabInstance: {fileID: 1666198474}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &1666198476
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666198475}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3}
-  serializedVersion: 2
-  m_Radius: 0.56
 --- !u!4 &1666198477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
@@ -19852,20 +20192,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 1093044967437637458, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_Name
       value: Rock_7 (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
@@ -20013,6 +20343,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -20037,6 +20372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -20106,6 +20446,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -20194,6 +20539,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20263,6 +20613,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20327,11 +20682,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20425,6 +20775,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -20565,20 +20920,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 2823845674689177969, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
       propertyPath: m_Name
       value: Rock_5 (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8130796836046802621, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
@@ -20738,6 +21083,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -21109,6 +21459,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -21135,6 +21490,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 678675533803657476, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5272780878415817342, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
         type: 3}
       propertyPath: m_Name
@@ -21321,6 +21681,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -21414,20 +21779,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 2823845674689177969, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
       propertyPath: m_Name
       value: Rock_5 (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8130796836046802621, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
@@ -21644,6 +21999,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -21664,6 +22024,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -21791,6 +22156,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -22092,6 +22462,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22286,6 +22661,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -22392,6 +22772,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22456,11 +22841,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22611,6 +22991,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -22649,6 +23034,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 3023573958274659630, guid: a5f7be9d559772e4690beff53b778c4e,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4637287698169323730, guid: a5f7be9d559772e4690beff53b778c4e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22771,6 +23161,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22841,11 +23236,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22906,11 +23296,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_3 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6637366710202774064, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96e117e7094abbf4aa0dd74cce2cd1a4, type: 3}
 --- !u!4 &1888441642 stripped
@@ -22926,6 +23311,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -23001,20 +23391,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 1093044967437637458, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_Name
       value: Rock_7 (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
@@ -23323,6 +23703,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -23347,6 +23732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -23512,6 +23902,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23586,6 +23981,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -23704,6 +24104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -23899,6 +24304,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -23923,6 +24333,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -24043,6 +24458,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -24123,6 +24543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
@@ -24224,6 +24649,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24324,6 +24754,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap_Small (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24388,6 +24823,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -24467,6 +24907,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -24810,6 +25255,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -24879,6 +25329,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -24954,6 +25409,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1188285280}
     m_Modifications:
+    - target: {fileID: 1284730679844951208, guid: 8e79262f57d214f609aabad862bd4bca,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1284730679844951210, guid: 8e79262f57d214f609aabad862bd4bca,
         type: 3}
       propertyPath: m_Name
@@ -25023,11 +25483,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25129,11 +25584,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25233,6 +25683,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -25427,6 +25882,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -25451,6 +25911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -25532,6 +25997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap_Small (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617322223903176154, guid: 37fc04913038c43d2b8273ed0e9c9377,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4617322223903176157, guid: 37fc04913038c43d2b8273ed0e9c9377,
         type: 3}
@@ -25753,6 +26223,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431823543599924004, guid: 8b978f5c37a844f7a99133760a723e0b,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5431823543599924006, guid: 8b978f5c37a844f7a99133760a723e0b,
         type: 3}
       propertyPath: m_Name
@@ -25773,20 +26248,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 2823845674689177969, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
       propertyPath: m_Name
       value: Rock_5 (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8130796836046802621, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
@@ -25960,6 +26425,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 3023573958274659630, guid: a5f7be9d559772e4690beff53b778c4e,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4637287698169323730, guid: a5f7be9d559772e4690beff53b778c4e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26260,11 +26730,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 2823845674689177969, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7376905937610629528, guid: 79591ad788ccb4948a0d8c2f41ba26fb,
         type: 3}
       propertyPath: m_Name
@@ -26344,6 +26809,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4725199394370554863, guid: b2fc13e9ff3674c418bdba2982e93e19,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5909137227355185974, guid: b2fc13e9ff3674c418bdba2982e93e19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26498,6 +26968,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5592291801259193744, guid: f94ce94158770c24480702ae546c13df,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f94ce94158770c24480702ae546c13df, type: 3}
 --- !u!1 &4456520534372468562 stripped
@@ -26615,6 +27090,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6254617983792181427, guid: 451a02f492bf8b34d9fcf0c759f187c0,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451a02f492bf8b34d9fcf0c759f187c0, type: 3}
 --- !u!1 &4488753480347479216 stripped
@@ -26726,6 +27206,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 1336457688268793281, guid: fd6b81963c8a31640b702a32611002a6,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1823508136293884061, guid: fd6b81963c8a31640b702a32611002a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26828,21 +27313,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: -8367444904063766398, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: -8367444904063766398, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 710136212122822694, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1509173114732403891, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26903,11 +27373,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_3
       objectReference: {fileID: 0}
-    - target: {fileID: 6637366710202774064, guid: 96e117e7094abbf4aa0dd74cce2cd1a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96e117e7094abbf4aa0dd74cce2cd1a4, type: 3}
 --- !u!1001 &6735434343949879588
@@ -26917,6 +27382,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 6492548898772452298, guid: 3d2356f32c3dec5428e308dcefbdc9f0,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8300652758409397206, guid: 3d2356f32c3dec5428e308dcefbdc9f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27034,6 +27504,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 678675533803657476, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5272780878415817342, guid: d29d7d5835807dc4ba0cc970d94d7d9c,
         type: 3}
       propertyPath: m_Name
@@ -27221,6 +27696,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2199
       objectReference: {fileID: 0}
+    - target: {fileID: 256374069225045567, guid: 74b4b557aaeee7648b93ec290fbfea49,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3394493117752040254, guid: 74b4b557aaeee7648b93ec290fbfea49,
         type: 3}
       propertyPath: m_Name
@@ -27268,20 +27748,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1781804101}
     m_Modifications:
-    - target: {fileID: 1093044967437637458, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
       propertyPath: m_Name
       value: Rock_7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2452273836966806817, guid: aa81146919d4aeb428318002fc51cc00,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8512574098144022868, guid: aa81146919d4aeb428318002fc51cc00,
         type: 3}
@@ -27352,21 +27822,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_1
       objectReference: {fileID: 0}
-    - target: {fileID: 2016066598816280437, guid: 90fd977a6284d5c4e94534f3dbc67ed1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2555405581992342930, guid: 90fd977a6284d5c4e94534f3dbc67ed1,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2555405581992342930, guid: 90fd977a6284d5c4e94534f3dbc67ed1,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3454131646576282225, guid: 90fd977a6284d5c4e94534f3dbc67ed1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27422,11 +27877,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5091098618836253278, guid: 90fd977a6284d5c4e94534f3dbc67ed1,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90fd977a6284d5c4e94534f3dbc67ed1, type: 3}
 --- !u!114 &8015586945288438948 stripped
@@ -27514,35 +27964,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Junk_12
       objectReference: {fileID: 0}
-    - target: {fileID: 8937015616208466299, guid: 106308a8cf373064793b707be934b5ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 106308a8cf373064793b707be934b5ea, type: 3}
---- !u!1 &8178207351498748267 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8937015616208466299, guid: 106308a8cf373064793b707be934b5ea,
-    type: 3}
-  m_PrefabInstance: {fileID: 8178207351498748266}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &8178207351498748268
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8178207351498748267}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.037734754, y: -0.48519903}
-  m_Size: {x: 1.8110472, y: 0.5}
-  m_Direction: 1
 --- !u!4 &8178207351498748269 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4825155413771091488, guid: 106308a8cf373064793b707be934b5ea,
@@ -27635,11 +28058,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_6
       objectReference: {fileID: 0}
-    - target: {fileID: 6586195387839044292, guid: 73c82d66a8e228a4a9ecf8a181272a78,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7392074684038269706, guid: 73c82d66a8e228a4a9ecf8a181272a78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27710,11 +28128,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2341
       objectReference: {fileID: 0}
-    - target: {fileID: 8225672474098180466, guid: 73c82d66a8e228a4a9ecf8a181272a78,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73c82d66a8e228a4a9ecf8a181272a78, type: 3}
 --- !u!1001 &8804358129685154743
@@ -27728,11 +28141,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_2
-      objectReference: {fileID: 0}
-    - target: {fileID: 362316854520298250, guid: ae62516a572c7504ca074972c3f0edbd,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6564017486715186054, guid: ae62516a572c7504ca074972c3f0edbd,
         type: 3}
@@ -27789,11 +28197,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6885422749686695570, guid: ae62516a572c7504ca074972c3f0edbd,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae62516a572c7504ca074972c3f0edbd, type: 3}
 --- !u!1001 &9002124840441209413
@@ -27803,6 +28206,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232897098}
     m_Modifications:
+    - target: {fileID: 316447611857736734, guid: 3a918e98c71aeca4e8a5f5ffbf9158ac,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4343827975285332063, guid: 3a918e98c71aeca4e8a5f5ffbf9158ac,
         type: 3}
       propertyPath: m_Name

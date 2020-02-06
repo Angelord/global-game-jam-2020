@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5909137227355185974}
   - component: {fileID: 4725199394370554863}
   - component: {fileID: 108762618090048347}
-  - component: {fileID: 7533774166764233136}
-  m_Layer: 0
+  - component: {fileID: 8796464318101130397}
+  m_Layer: 10
   m_Name: Rock_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!70 &108762618090048347
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -96,11 +96,11 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.8749145, y: 0.5959663}
-  m_Size: {x: 0.656136, y: 0.31405452}
+  m_Offset: {x: 0.78, y: 0.2}
+  m_Size: {x: 0.55, y: 0.3}
   m_Direction: 1
---- !u!70 &7533774166764233136
-CapsuleCollider2D:
+--- !u!58 &8796464318101130397
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -112,6 +112,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.8951705, y: 0.33586153}
-  m_Size: {x: 0.33968607, y: 0.4096213}
-  m_Direction: 0
+  m_Offset: {x: -0.91, y: -0.1}
+  serializedVersion: 2
+  m_Radius: 0.17

@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5477644989993587331}
   - component: {fileID: 5592291801259193744}
-  m_Layer: 0
+  - component: {fileID: 9192682310014820364}
+  m_Layer: 10
   m_Name: Junk_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,4 +81,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
+--- !u!70 &9192682310014820364
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774534381202790705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 2.32, y: 0.5}
+  m_Direction: 1
