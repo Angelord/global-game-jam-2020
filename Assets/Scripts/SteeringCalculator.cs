@@ -43,7 +43,6 @@ public class SteeringCalculator {
 		Vector2 obstacleAvoidance = ObstacleAvoidance(_accumForce);
 
 		if ((_accumForce + obstacleAvoidance).magnitude > MovementSpeed) {
-			Debug.Log("Reducing to  " + Mathf.Clamp(MovementSpeed - obstacleAvoidance.magnitude, 0.0f, MovementSpeed));
 			_accumForce = _accumForce.normalized * Mathf.Clamp(MovementSpeed - obstacleAvoidance.magnitude, 0.0f, MovementSpeed);
 		}
 		
@@ -53,14 +52,14 @@ public class SteeringCalculator {
 	private void CalculateSteeringForce() {
 		_accumForce = Vector2.zero;
 
-		if (SeparationOn && !AccumulateForce(Separation())) {
-			return;
-		}
-
 		if (AttackOn && !AccumulateForce(Attack())) {
 			return;
 		}
 		
+		if (SeparationOn && !AccumulateForce(Separation())) {
+			return;
+		}
+
 		if(FollowOn && !AccumulateForce(Follow())) {
 			return;
 		}
@@ -109,7 +108,7 @@ public class SteeringCalculator {
 	private Vector2 Attack() {
 
 		float minDistance = AttackRange;
-		return Arrive(AttackTarget.transform.position, minDistance, _stats.FollowDecceleration) * _stats.Follow;
+		return Arrive(AttackTarget.transform.position, minDistance * 0.6f, _stats.AttackDecceleration) * _stats.Attack;
 	}
 
 	private Vector2 Seek(Vector2 target) {
