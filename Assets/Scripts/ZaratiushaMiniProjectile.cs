@@ -30,9 +30,11 @@ public class ZaratiushaMiniProjectile : Projectile {
 		Vector2 curTarget = _deviating ? _deviationTarget : (Vector2)Target.transform.position;
 		
 		Vector2 moveDir = curTarget - (Vector2)transform.position;
-		
-		moveDir.Normalize();
-		
+
+		if (moveDir.magnitude > 1.0f) {
+			moveDir.Normalize();
+		}
+
 		transform.Translate(Time.deltaTime * Speed * moveDir);
 	}
 }

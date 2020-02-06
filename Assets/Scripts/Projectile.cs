@@ -32,7 +32,7 @@ public class Projectile : MonoBehaviour, IProjectile {
 		
 		MoveTowardsTarget();
 		
-		if (Vector2.Distance(_target.transform.position, transform.position) <= 0.08f) {
+		if (Vector2.Distance(_target.transform.position, transform.position) <= 0.18f) {
 
 			if (_target.Attackable) {
 				_target.TakeDamage(_damage);
@@ -47,7 +47,11 @@ public class Projectile : MonoBehaviour, IProjectile {
 	protected virtual void MoveTowardsTarget() {
 		
 		Vector2 moveDir = _target.transform.position - transform.position;
-		moveDir.Normalize();
+
+		if (moveDir.magnitude > 1.0f) {
+			moveDir.Normalize();
+		}
+
 		transform.Translate(Time.deltaTime * Speed * moveDir);
 	}
 }
