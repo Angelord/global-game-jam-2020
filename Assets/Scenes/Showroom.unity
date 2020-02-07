@@ -264,6 +264,11 @@ PrefabInstance:
       propertyPath: m_Text
       value: Agile Cavalry
       objectReference: {fileID: 0}
+    - target: {fileID: 5172754897514935087, guid: bfc2d57427524874180c0b800c21184d,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6858220866179607137, guid: bfc2d57427524874180c0b800c21184d,
         type: 3}
       propertyPath: m_Text
@@ -824,25 +829,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TriggerName: Pistario
---- !u!1 &1110581992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1110581992, guid: bfc2d57427524874180c0b800c21184d,
-    type: 3}
-  m_PrefabInstance: {fileID: 7859661174767000544}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1110581997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110581992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bcf8a6003270ea4798f9e14919c3114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TriggerName: Gunner
 --- !u!1 &1502717258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,26 +1651,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1629064104}
     m_Modifications:
-    - target: {fileID: 1110581993, guid: bfc2d57427524874180c0b800c21184d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1110581993, guid: bfc2d57427524874180c0b800c21184d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -160
-      objectReference: {fileID: 0}
-    - target: {fileID: 1110581993, guid: bfc2d57427524874180c0b800c21184d, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 1110581993, guid: bfc2d57427524874180c0b800c21184d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1110581993, guid: bfc2d57427524874180c0b800c21184d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1344522078196458825, guid: bfc2d57427524874180c0b800c21184d,
         type: 3}
       propertyPath: m_LocalPosition.x
