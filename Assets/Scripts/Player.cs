@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections;
+using System.Linq;
 using Claw;
-using Unity.Collections;
 using UnityEngine;
-
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : ScrapBehaviour {
@@ -11,7 +10,7 @@ public class Player : ScrapBehaviour {
 	[SerializeField] private Faction _faction;
 	public PlayerStats Stats;
 	public Camera PlayerCamera;
-	public SpriteRenderer Sparks;
+	[FormerlySerializedAs("Sparks")] public SpriteRenderer SparksSprite;
 	public SpriteRenderer Body;
 
 	public event Action<PlayerCommand> OnCommand;
@@ -20,9 +19,11 @@ public class Player : ScrapBehaviour {
 	private Rigidbody2D _rigidbody;
 	private CircleCollider2D _footCollider;
 	private PlayerSenses _senses;
-	private float _lastRecall;
+	private float _lastRecallTime;
 	private Animator _animator;
     private AudioManager _audioManager;
+    private PlayerAction[] _actions;
+    private PlayerAction _currentAction;
 
     public int WinCount { get => _faction.Wins; }
 
@@ -36,9 +37,11 @@ public class Player : ScrapBehaviour {
 
 	public CircleCollider2D FootCollider => _footCollider;
 
-	public bool Recalling { get { return Time.time - _lastRecall <= Stats.RecallDuration; } }
+	public float LastRecallTime => _lastRecallTime;
+	
+	public bool Recalling => Time.time - _lastRecallTime <= Stats.RecallDuration;
 
-	private InputSet Inputs { get { return _faction.InputSet; } }
+	private InputSet Inputs => _faction.InputSet;
 
 	protected override void OnDie() {
 		EventManager.TriggerEvent(new PlayerDiedEvent(this));
@@ -53,7 +56,16 @@ public class Player : ScrapBehaviour {
 		_animator = GetComponent<Animator>();
 
 		Body.material = Faction.UnitMat;
-		
+
+		_actions = new PlayerAction[] {
+			new RepairAction(this),
+			new SalvageAction(this),
+			new RecallAction(this),
+			new NoAction(this), 
+		};
+
+		_currentAction = _actions.Last();
+
 		EventManager.AddListener<PlayerDiedEvent>(HandlePlayerDiedEvent);
 	}
 
@@ -63,51 +75,54 @@ public class Player : ScrapBehaviour {
 
 	private void Update() {
 
-		if (Input.GetButton(Inputs.RepairButton) || 
-		    Input.GetButton(Inputs.SalvageButton) || 
-		    Input.GetButton(Inputs.UseButton)) {
+		if (!_currentAction.IsDone) {
+			
 			_animator.SetBool("Working", true);
-		}
-		else {
-			_animator.SetBool("Working", false);
-		}
-
-		Sparks.color = _animator.GetBool("Working") ? Faction.Color : new Color(0.0f, 0.0f, 0.0f, 0.0f);
-
-		if (Input.GetButtonDown(Inputs.RepairButton)) {
-			Construct repairable = _senses.GetRepairTarget();
-			if (repairable != null) {
-				Repair(repairable);
-			}
-		}
-		else if (Input.GetButtonDown(Inputs.SalvageButton)) {
-			Construct salvage = _senses.GetSalvageTarget();
-			if (salvage != null) {
-				Salvage(salvage);
-			}
-		}
-		else if (Input.GetButtonDown(Inputs.UseButton)) {
-			ScrapBehaviour usable = _senses.GetUseTarget();
-			if (usable != null) {
-				Use(usable);
-			}
-		}
-		else if (Input.GetButtonDown(Inputs.RecallButton)) {
-			Recall();
-		}
-	}
-
-	private void Repair(Construct target) {
-		Debug.Log("REPAIR");
-		if (_scrap < target.RepairCost) {
-			// TODO add beep sound
+			SparksSprite.color = Faction.Color;
+			
+			_currentAction.Update();
+			
 			return;
 		}
 
-		// TODO add repair sound
+		_animator.SetBool("Working", false);
+		SparksSprite.color = Color.clear;
+
+		foreach (var playerAction in _actions) {
+			if (!playerAction.ReadyToUse()) continue;
+			
+			_currentAction = playerAction;
+			playerAction.Begin();
+			
+			return;
+		}
+	}
+
+	public void Repair(Construct target) {
+
 		_scrap -= target.RepairCost;
-        _audioManager.Play("repair_sound");
-        target.Repair(this);
+        
+		_audioManager.Play("repair_sound");
+        
+		target.Repair(this);
+	}
+
+	public void Salvage(Construct target) {
+		
+		float salvageAmount = target.Salvage();
+		
+		_scrap += salvageAmount;
+		
+		_audioManager.Play("collect_scrap");
+		
+		Debug.Log("SALVAGED " + salvageAmount);
+	}
+
+	public void Recall() {
+
+		_lastRecallTime = Time.time;
+
+		OnCommand?.Invoke(new RecallCommand());
 	}
 
 	protected override void OnTakeDamage() {
@@ -118,30 +133,6 @@ public class Player : ScrapBehaviour {
 		}
 
 		PlayerCamera.transform.parent.GetComponent<PerlinShake>().PlayShake();
-	}
-
-
-	private void Salvage(Construct target) {
-		float salvageAmount = target.Salvage();
-		_scrap += salvageAmount;
-        _audioManager.Play("collect_scrap");
-        Debug.Log("SALVAGED " + salvageAmount);
-	}
-
-	private void Use(ScrapBehaviour target) {
-		Debug.Log("USING");
-	}
-
-	private void Recall() {
-		Debug.Log("RECALL");
-
-		if (Time.time - _lastRecall < Stats.RecallFrequency) {
-			return;
-		}
-
-		_lastRecall = Time.time;
-
-		OnCommand?.Invoke(new RecallCommand());
 	}
 
 	private void FixedUpdate() {
