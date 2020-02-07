@@ -272,7 +272,7 @@ PrefabInstance:
     - target: {fileID: 6858220866179607137, guid: bfc2d57427524874180c0b800c21184d,
         type: 3}
       propertyPath: m_Text
-      value: Hentairoi
+      value: Hentario
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfc2d57427524874180c0b800c21184d, type: 3}
