@@ -230,7 +230,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.88
 --- !u!114 &8015586944456003758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
   _faction: {fileID: 11400000, guid: 7d0070d7a5c5d7f45930a9bec314e69f, type: 2}
   Stats: {fileID: 11400000, guid: aa005770e63f7c744afc9d7892e8a0ce, type: 2}
   PlayerCamera: {fileID: 0}
-  Sparks: {fileID: 1699756472}
+  SparksSprite: {fileID: 1699756472}
   Body: {fileID: 2116731264536727101}
   _scrap: 0
 --- !u!58 &8015586945620854568

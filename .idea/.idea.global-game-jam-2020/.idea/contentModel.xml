@@ -254,8 +254,14 @@
           <e p="Maggot.cs" t="Include" />
           <e p="MainThemesAudio.cs" t="Include" />
           <e p="MeleeAttacker.cs" t="Include" />
-          <e p="NoAction.cs" t="Include" />
-          <e p="Player.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="NoAction.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="RecallAction.cs" t="Include" />
+            <e p="RecallCommand.cs" t="Include" />
+            <e p="RepairAction.cs" t="Include" />
+            <e p="SalvageAction.cs" t="Include" />
+          </e>
           <e p="PlayerAction.cs" t="Include" />
           <e p="PlayerCommand.cs" t="Include" />
           <e p="PlayerSenses.cs" t="Include" />
@@ -263,10 +269,6 @@
           <e p="Projectile.cs" t="Include" />
           <e p="RangedAttacker.cs" t="Include" />
           <e p="ReadOnlyDrawer.cs" t="Include" />
-          <e p="RecallAction.cs" t="Include" />
-          <e p="RecallCommand.cs" t="Include" />
-          <e p="RepairAction.cs" t="Include" />
-          <e p="SalvageAction.cs" t="Include" />
           <e p="ScrapBehaviour.cs" t="Include" />
           <e p="ScrapLerpAlpha.cs" t="Include" />
           <e p="ScrapperCameraConstraints.cs" t="Include" />
@@ -284,6 +286,7 @@
           <e p="UnitSpawner.cs" t="Include" />
           <e p="UsableBuilding.cs" t="Include" />
           <e p="UserInterface" t="Include">
+            <e p="ActionProgressGUI.cs" t="Include" />
             <e p="CommonGUI.cs" t="Include" />
             <e p="FloatingText.cs" t="Include" />
             <e p="GameOverGUI.cs" t="Include" />

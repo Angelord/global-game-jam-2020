@@ -15,4 +15,5 @@ MonoBehaviour:
   MovementSpeed: 2
   RecallFrequency: 4
   RecallDuration: 1.5
-  Health: 100
+  RepairRate: 22
+  SalvageRate: 14

@@ -13,6 +13,10 @@ public class Senses : MonoBehaviour {
 
 	public List<ScrapBehaviour> ObjectsInRange => _objectsInRange;
 
+	public bool IsVisible(ScrapBehaviour obj) {
+		return _objectsInRange.Contains(obj);
+	}
+
 	public ScrapBehaviour GetAttackTarget(Faction faction) {
 		return GetClosestMatch((scrap) => faction.IsEnemy(scrap.Faction) && scrap.Attackable);
 	}

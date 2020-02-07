@@ -6,6 +6,8 @@ public abstract class PlayerAction {
 
     public bool IsDone => _isDone;
 
+    public virtual float Progress => 0.0f;
+    
     protected Player Player => _player;
 
     protected PlayerSenses Senses => _player.Senses;
@@ -24,7 +26,7 @@ public abstract class PlayerAction {
 	
     protected void End() { _isDone = true; }
 	
-    public abstract bool ReadyToUse();
+    public abstract bool IsReadyToUse();
 
     protected abstract void OnBegin();
 

@@ -2,7 +2,7 @@ public class NoAction : PlayerAction {
 	
     public NoAction(Player player) : base(player) { End(); }
 
-    public override bool ReadyToUse() { return true; }
+    public override bool IsReadyToUse() { return true; }
 
     protected override void OnBegin() { End(); }
 

@@ -31,6 +31,8 @@ public class Player : ScrapBehaviour {
 
 	public float Scrap => _scrap;
 
+	public PlayerAction CurrentAction => _currentAction;
+	
 	public override Faction Faction => _faction;
 
 	public override bool Attackable => true;
@@ -89,7 +91,7 @@ public class Player : ScrapBehaviour {
 		SparksSprite.color = Color.clear;
 
 		foreach (var playerAction in _actions) {
-			if (!playerAction.ReadyToUse()) continue;
+			if (!playerAction.IsReadyToUse()) continue;
 			
 			_currentAction = playerAction;
 			playerAction.Begin();

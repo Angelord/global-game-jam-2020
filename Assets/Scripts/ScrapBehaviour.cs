@@ -26,7 +26,7 @@ public abstract class ScrapBehaviour : MonoBehaviour {
 	public virtual bool Attackable => false;
 	
 	public virtual float RepairCost => MaxHealth - _curHealth;
-
+	
 	public float CurHealth { get => _curHealth; set => _curHealth = value; }
 	
 	private void Awake() {

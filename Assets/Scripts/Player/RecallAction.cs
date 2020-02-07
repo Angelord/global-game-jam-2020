@@ -5,7 +5,7 @@ public class RecallAction : PlayerAction {
     public RecallAction(Player player) : base(player) {
     }
 
-    public override bool ReadyToUse() {
+    public override bool IsReadyToUse() {
         if (Time.time - Player.LastRecallTime < Stats.RecallFrequency) {
             return false;
         }
