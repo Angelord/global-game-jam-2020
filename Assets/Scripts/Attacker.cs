@@ -57,10 +57,10 @@ public abstract class Attacker : MonoBehaviour {
 
 	private void OnDisable() {
 		_currentTarget = null;
+		_attacking = false;
 	}
 
-    private void ResetTarget()
-    {
+    private void ResetTarget() {
 		_currentTarget = _senses.GetAttackTarget(_construct.Faction);
 	}
 

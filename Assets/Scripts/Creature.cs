@@ -51,7 +51,7 @@ public class Creature : Construct {
 		_state = UnitState.Following;
 	}
 
-	protected override void OnStart() {
+	protected override void PreStart() {
 		_attacker = GetComponentInChildren<Attacker>();
 		_rigidbody = GetComponent<Rigidbody2D>();
 		_sprite = GetComponentInChildren<SpriteRenderer>();

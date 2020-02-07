@@ -1,7 +1,4 @@
-﻿// Creatures, Buildings etc...
-
-using System;
-using Claw;
+﻿using Claw;
 using UnityEngine;
 
 public abstract class Construct : ScrapBehaviour {
@@ -21,17 +18,12 @@ public abstract class Construct : ScrapBehaviour {
 	public override Faction Faction { get { return Owner == null ? Faction.Neutral : Owner.Faction; } }
 
 	public GameObject breakFx;
-	public GameObject repairFX;
-	public GameObject repairFX_p2;
-
-	private bool skipBreak = false;
-
+	
 	private void Start() {
-		OnStart();
+		PreStart();
+
 		if (Broken) {
-			Break();
-			skipBreak = true;
-			OnBreak();
+			Break(false);
 		}
 		else if(Owner != null) {
 			Owner.OnCommand += OnOwnerCommand;
@@ -43,8 +35,6 @@ public abstract class Construct : ScrapBehaviour {
 	private void OnDestroy() {
 		EventManager.RemoveListener<PlayerDiedEvent>(HandlePlayerDiedEvent);
 	}
-
-	public virtual void Use() { }
 	
 	private void HandlePlayerDiedEvent(PlayerDiedEvent playerDiedEvent) {
 		if (playerDiedEvent.Player == Owner) {
@@ -60,31 +50,32 @@ public abstract class Construct : ScrapBehaviour {
 		}
 
 		CurHealth = MaxHealth;
+		
 		Broken = false;
+		
+		Instantiate(Owner.Faction.RepairEffect, transform.position, Quaternion.identity);
+
 		OnRepair();
 	}
 
 	public float Salvage() {
-
-		OnSalvage();
-
+		
 		EventManager.TriggerEvent(new ConstructSalvagedEvent(this, CurHealth));
 
 		Die();
 
+		OnSalvage();
+		
 		return CurHealth;
 	}
-
-	protected virtual void OnStart() { }
-
+	
 	protected override void OnTakeDamage() {
 		if (CurHealth <= MaxHealth * BREAK_PERCENTAGE) {
 			Break();
-			OnBreak();
 		}
 	}
 
-	private void Break() {
+	private void Break(bool spawnParticles = true) {
 		CurHealth = MaxHealth * BREAK_PERCENTAGE;
 		Broken = true;
 
@@ -92,37 +83,23 @@ public abstract class Construct : ScrapBehaviour {
 			Owner.OnCommand -= OnOwnerCommand;
 		}
 		Owner = null;
-	}
-
-	protected virtual void OnSalvage() {
-
-		// TODO : Spawn some particles
-
-		// TODO : Throw event
-	}
-
-	protected virtual void OnRepair() {
-
-		var a = Instantiate(Owner.Faction.RepairEffect, transform);
-		a.transform.parent = null;
-
-		//TODO : Change sprites, play some animation, etc...
-	}
-
-	protected virtual void OnBreak() {
-        if(skipBreak)
-        {
-			skipBreak = false;
-			return;
-        }
-
-		if (breakFx != null)
-        {
+		
+		if (spawnParticles && breakFx != null) {
 			Instantiate(breakFx, transform);
 		}
-
-		// TODO : Throw event
+		
+		OnBreak();
 	}
+	
+	public virtual void Use() { }
+
+	protected virtual void PreStart() { }
+
+	protected virtual void OnSalvage() { }
+
+	protected virtual void OnRepair() { }
+
+	protected virtual void OnBreak() { }
 
 	protected virtual void OnOwnerCommand(PlayerCommand command) { }
 }

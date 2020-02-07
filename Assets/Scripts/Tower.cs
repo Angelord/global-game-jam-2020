@@ -10,6 +10,7 @@ public class Tower : Building {
     private AudioManager _audioManager;
     public float HealthBarOffsetBroken;
     public float HealthBarOffsetWorking;
+    private static readonly int AnimBoolBroken = Animator.StringToHash("Broken");
 
     public RangedAttacker Attacker {
 		get {
@@ -28,20 +29,20 @@ public class Tower : Building {
 	protected override void OnRepair() {
 		base.OnRepair();
 		Attacker.enabled = true;
-		Animator.SetTrigger("Repair");
+		Animator.SetBool(AnimBoolBroken, false);
 		FlipSprite.GetComponent<SpriteRenderer>().material = Faction.UnitMat;
 		BarYOffset = HealthBarOffsetWorking;
 	}
 
 	protected override void OnBreak() {
 		Attacker.enabled = false;
-		Animator.SetTrigger("Break");
+		Animator.SetBool(AnimBoolBroken, true);
 		FlipSprite.GetComponent<SpriteRenderer>().material = Faction.UnitMat;
 		BarYOffset = HealthBarOffsetBroken;
 	}
 
-	protected override void OnStart() {
-		base.OnStart();
+	protected override void PreStart() {
+		base.PreStart();
 		_audioManager = FindObjectOfType<AudioManager>();
 	}
 	
@@ -55,8 +56,7 @@ public class Tower : Building {
 
 		FlipSprite.localScale = diff > 0.0f ? new Vector3(1.0f, 1.0f, 1.0f) : new Vector3(-1.0f, 1.0f, 1.0f);
 
-        if(_audioManager != null)
-        {
+        if(_audioManager != null) {
             _audioManager.Play("tower_attack");
         }
 
