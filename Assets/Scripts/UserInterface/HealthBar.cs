@@ -6,7 +6,6 @@ public class HealthBar : MonoBehaviour {
 
 	private static readonly Color BrokenColor = new Color(0.63f, 0.5f, 0.4f);
 
-	public float YOffset = 100.0f;
 	public Slider Bar;
 	public Image BarFill;
 
@@ -25,7 +24,7 @@ public class HealthBar : MonoBehaviour {
 		_target = scrapBehaviour;
 	}
 	
-	private void Update() {
+	private void LateUpdate() {
 		if(_target == null) return;
 
 		Vector3 offset = new Vector3(0.0f, _target.BarYOffset, 0.0f);
