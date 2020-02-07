@@ -96,7 +96,19 @@ public class SteeringCalculator {
 		
 		float penetrationDepth = Mathf.Clamp(1.3f - hit.distance / ObstacleAvoidanceRange, 0.0f, 1.0f);
 
-		return _stats.ObstacleAvoidance * penetrationDepth * MovementSpeed * Vector2.Perpendicular(desiredMovement);
+		Vector2 avoidanceDirLeft = Vector2.Perpendicular(desiredMovement);
+		Vector2 avoidanceDirRight = -avoidanceDirLeft;
+
+		Vector2 avoidanceDir = Vector2.zero;
+
+		if (Vector2.Distance(Position + avoidanceDirLeft, Owner.transform.position) < Vector2.Distance(Position + avoidanceDirRight, Owner.transform.position) ) {
+			avoidanceDir = avoidanceDirLeft;
+		}
+		else {
+			avoidanceDir = avoidanceDirRight;
+		}
+
+		return _stats.ObstacleAvoidance * penetrationDepth * MovementSpeed * avoidanceDir;
 	}
 
 	private Vector2 Follow() {
