@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -101288245397946952}
   - component: {fileID: -2532978031602538199}
   - component: {fileID: 5187168139509702040}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Scrap_Large
   m_TagString: Scrap
   m_Icon: {fileID: 0}
