@@ -274,7 +274,8 @@ PrefabInstance:
       propertyPath: m_Text
       value: Hentario
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1110581997, guid: bfc2d57427524874180c0b800c21184d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bfc2d57427524874180c0b800c21184d, type: 3}
 --- !u!224 &412126236 stripped
 RectTransform:
@@ -310,6 +311,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: fa3e618bf1a410a438fd78ac4bcab277,
         type: 3}
+    - target: {fileID: 1110581997, guid: bfc2d57427524874180c0b800c21184d, type: 3}
+      propertyPath: TriggerName
+      value: Rakabat
+      objectReference: {fileID: 0}
     - target: {fileID: 1344522078196458825, guid: bfc2d57427524874180c0b800c21184d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -438,25 +443,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 541188267}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &541188269 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1110581992, guid: bfc2d57427524874180c0b800c21184d,
-    type: 3}
-  m_PrefabInstance: {fileID: 541188267}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &541188270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 541188269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bcf8a6003270ea4798f9e14919c3114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TriggerName: Rakabat
 --- !u!1 &915958956
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,7 +788,8 @@ PrefabInstance:
       propertyPath: m_Text
       value: Pistario
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1110581997, guid: bfc2d57427524874180c0b800c21184d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bfc2d57427524874180c0b800c21184d, type: 3}
 --- !u!224 &967616394 stripped
 RectTransform:
@@ -1137,6 +1124,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -4427313421195731488, guid: 122de04fe904c094fb7cdb77f1b3ebb2,
         type: 3}
+    - target: {fileID: 1110581997, guid: bfc2d57427524874180c0b800c21184d, type: 3}
+      propertyPath: TriggerName
+      value: Zaratyusha
+      objectReference: {fileID: 0}
     - target: {fileID: 1344522078196458825, guid: bfc2d57427524874180c0b800c21184d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1267,25 +1258,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1704859469}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1704859471 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1110581992, guid: bfc2d57427524874180c0b800c21184d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1704859469}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1704859472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704859471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bcf8a6003270ea4798f9e14919c3114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TriggerName: Zaratyusha
 --- !u!1 &1867473907
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,6 +1392,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -5106136752002842845, guid: 46e0dba0b3f372340804d5a24eef4bd6,
         type: 3}
+    - target: {fileID: 1110581997, guid: bfc2d57427524874180c0b800c21184d, type: 3}
+      propertyPath: TriggerName
+      value: Shlurker
+      objectReference: {fileID: 0}
     - target: {fileID: 1344522078196458825, guid: bfc2d57427524874180c0b800c21184d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1548,25 +1524,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1885206171}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1885206173 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1110581992, guid: bfc2d57427524874180c0b800c21184d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1885206171}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1885206174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885206173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bcf8a6003270ea4798f9e14919c3114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TriggerName: Shlurker
 --- !u!1 &2074515925
 GameObject:
   m_ObjectHideFlags: 0
