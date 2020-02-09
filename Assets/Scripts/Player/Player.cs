@@ -8,6 +8,8 @@ using UnityEngine.Serialization;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : ScrapBehaviour {
 
+	private static readonly int AnimBoolWorking = Animator.StringToHash("Working");
+
 	[SerializeField] private Faction _faction;
 	public PlayerStats Stats;
 	public Camera PlayerCamera;
@@ -91,7 +93,7 @@ public class Player : ScrapBehaviour {
 
 		if (!_currentAction.IsDone) {
 			
-			_animator.SetBool("Working", true);
+			_animator.SetBool(AnimBoolWorking, true);
 			SparksSprite.color = Faction.Color;
 			
 			_currentAction.Update();
@@ -99,7 +101,13 @@ public class Player : ScrapBehaviour {
 			return;
 		}
 
-		_animator.SetBool("Working", false);
+		if (Input.GetButton(Inputs.RepairButton) || Input.GetButton(Inputs.SalvageButton)) {
+			_animator.SetBool(AnimBoolWorking, true);
+		}
+		else {
+			_animator.SetBool(AnimBoolWorking, false);
+		}
+		
 		SparksSprite.color = Color.clear;
 
 		foreach (var playerAction in _actions) {
