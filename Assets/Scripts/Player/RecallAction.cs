@@ -14,8 +14,6 @@ public class RecallAction : PlayerAction {
     }
 
     protected override void OnBegin() {
-        Debug.Log("Using Action : RECALL");
-
         Player.Recall();
         End();
     }

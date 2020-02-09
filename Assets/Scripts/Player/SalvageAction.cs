@@ -18,8 +18,6 @@ public class SalvageAction : PlayerAction {
     }
 
     protected override void OnBegin() {
-        Debug.Log("Using Action : SALVAGE");
-
         _duration = 0.0f;
     }
 

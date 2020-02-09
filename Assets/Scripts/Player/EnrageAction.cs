@@ -15,8 +15,6 @@ public class EnrageAction : PlayerAction {
     }
 
     protected override void OnBegin() {
-        Debug.Log("Using Action : ENRAGE");
-
         Player.Enrage();
         End();
     }

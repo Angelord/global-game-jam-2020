@@ -136,8 +136,6 @@ public class Player : ScrapBehaviour {
 		_scrap += salvageAmount;
 		
 		_audioManager.Play("collect_scrap");
-		
-		Debug.Log("SALVAGED " + salvageAmount);
 	}
 
 	public void Recall() {

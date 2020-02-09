@@ -18,8 +18,6 @@ public class RepairAction : PlayerAction {
     }
 
     protected override void OnBegin() {
-        Debug.Log("Using Action : REPAIR");
-
         _duration = 0.0f;
     }
 
