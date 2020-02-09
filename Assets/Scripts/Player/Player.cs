@@ -9,6 +9,7 @@ using UnityEngine.Serialization;
 public class Player : ScrapBehaviour {
 
 	private static readonly int AnimBoolWorking = Animator.StringToHash("Working");
+	private static readonly int AnimBoolMoving = Animator.StringToHash("Moving");
 
 	[SerializeField] private Faction _faction;
 	public PlayerStats Stats;
@@ -177,12 +178,12 @@ public class Player : ScrapBehaviour {
 
 		if (moveDir.magnitude > 0.1f) {
 			moveDir.Normalize();
-			_animator.SetBool("Moving", true);
+			_animator.SetBool(AnimBoolMoving, true);
 			Body.transform.localScale =
 				moveDir.x > 0.0f ? new Vector3(1.0f, 1.0f, 1.0f) : new Vector3(-1.0f, 1.0f, 1.0f);
 		}
 		else {
-			_animator.SetBool("Moving", false);
+			_animator.SetBool(AnimBoolMoving, false);
 		}
 
 		_rigidbody.AddForce(moveDir * Stats.MovementSpeed - _rigidbody.velocity * 0.9f, ForceMode2D.Impulse);
