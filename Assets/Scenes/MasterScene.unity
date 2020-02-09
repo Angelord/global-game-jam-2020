@@ -3197,42 +3197,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2593383196192535644, guid: 2fefa95c4923aa24a96a677a3b13b63a,
-        type: 3}
-      propertyPath: m_Text
-      value: 'Player 1
-
-
-        Move : WASD
-
-
-        Repair : R
-
-
-        Salvage
-        : T
-
-
-        Recall Units : Y'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2593383196910241926, guid: 2fefa95c4923aa24a96a677a3b13b63a,
-        type: 3}
-      propertyPath: m_Text
-      value: 'Player 2
-
-
-        Move : Arrow Keys
-
-
-        Repair : num 5
-
-
-        Salvage
-        : num 6
-
-
-        Recall Units : num +'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fefa95c4923aa24a96a677a3b13b63a, type: 3}
 --- !u!1001 &262098081

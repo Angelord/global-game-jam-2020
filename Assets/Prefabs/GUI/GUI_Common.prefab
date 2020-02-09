@@ -1031,14 +1031,17 @@ MonoBehaviour:
     Move : WASD
 
 
-    Repair : J
+    Repair : R
 
 
-    Salvage : H
+    Salvage : T
 
 
     Recall
-    Units : L'
+    Units : Y
+
+
+    Order Attack : U'
 --- !u!1 &2593383196597875024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,11 +1278,14 @@ MonoBehaviour:
     Move : Arrow Keys
 
 
-    Repair : 8
+    Repair : num 5
 
 
-    Salvage : 7
+    Salvage :
+    num 6
 
 
-    Recall
-    Units : 6'
+    Recall Units : num +
+
+
+    Order Attack : num 9'
