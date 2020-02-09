@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Construct))]
 public abstract class Attacker : MonoBehaviour {
 
-	private static readonly int AttackTrigger = Animator.StringToHash("Attack");
+	private static readonly int AnimBoolAttacking = Animator.StringToHash("Attacking");
 
 	public float AttackRate;
 	public float Damage;
@@ -18,18 +18,33 @@ public abstract class Attacker : MonoBehaviour {
 	private ScrapBehaviour _currentTarget;
 	private float _lastAttack;
 	private Animator _animator;
-	private bool _attacking;
     private AudioManager _audioManager;
 
     public ScrapBehaviour CurrentTarget => _currentTarget;
 
-	public bool Attacking => _attacking;
+	public bool PlayingAttackAnim => _animator.GetBool(AnimBoolAttacking);
 
 	public Construct Construct { get => _construct; }
 
+	private void OnValidate() {
+		HasAttackAnimation = HasAttackAnimation || AttackOnAnimationTrigger;
+	}
+
 	public bool TargetIsInRange() {
 		if (_currentTarget == null) return false;
-		return Vector2.Distance(_currentTarget.transform.position, transform.position) <= Range;
+		return ObjectIsInRange(_currentTarget);
+	}
+	
+	private bool TargetIsValid() {
+		return _currentTarget != null && _currentTarget.Attackable && _construct.Faction.IsEnemy(_currentTarget.Faction);
+	}
+
+	public bool ObjectIsInRange(ScrapBehaviour obj) {
+		return Vector2.Distance(obj.transform.position, transform.position) <= Range;
+	}
+
+	public void CancelAttack() {
+		_animator.SetBool(AnimBoolAttacking, false);
 	}
 
 	private void Start() {
@@ -56,89 +71,91 @@ public abstract class Attacker : MonoBehaviour {
 	}
 
 	private void OnDisable() {
+		if (_animator != null) {
+			CancelAttack();
+		}
+
 		_currentTarget = null;
-		_attacking = false;
 	}
 
     private void ResetTarget() {
-		_currentTarget = _senses.GetAttackTarget(_construct.Faction);
-	}
+		ScrapBehaviour newTarget = _senses.GetAttackTarget(_construct.Faction);
+
+		if (newTarget != null && newTarget != _currentTarget) {
+			if(PlayingAttackAnim || TargetIsInRange()) return;
+			
+			Debug.Log("Changing target");
+			
+			CancelAttack();
+			_currentTarget = newTarget;
+		}
+    }
 
 	private void Update() {
 
 		if (_currentTarget == null) { return; }
 
-		if (_currentTarget.Faction == _construct.Faction) {
-			_currentTarget = null;
-			return;
-		}
-
-		if (!_currentTarget.Attackable || !TargetIsInRange()) {
-
+		if (!TargetIsValid()) {
+			
 			_currentTarget = _senses.GetAttackTarget(_construct.Faction);
-
+			
 			return;
 		}
 
-		if (Time.time - _lastAttack >= AttackRate) {
-
+		if (!PlayingAttackAnim && Time.time - _lastAttack >= AttackRate && TargetIsInRange()) {
+			_lastAttack = Time.time;
+			
 			if (!AttackOnAnimationTrigger) {
 				Attack(_currentTarget);
 			}
 
 			if (HasAttackAnimation) {
-				_animator.SetTrigger(AttackTrigger);
-				_attacking = true;
-                OnAttack();
+				_animator.SetBool(AnimBoolAttacking, true);
+				PlayAttackSound();
 			}
-
-			_lastAttack = Time.time;
 		}
 	}
 
-    private void OnAttack()
-    {
-        if (AudioDataObject == null)
-        {
-            return;
-        }
-        switch(AudioDataObject.Race)
-        {
-            case CreatureType.Gunner:
-                _audioManager.Play("gunner_attack");
-                break;
-            case CreatureType.Hentairoi:
-                _audioManager.Play("hentairoi_attack");
-                break;
-            case CreatureType.Pistario:
-                _audioManager.Play("pistario_attack");
-                break;
-            case CreatureType.Rakabat:
-                _audioManager.Play("rakabat_attack");
-                break;
-            case CreatureType.Shlurker:
-                _audioManager.Play("shlurker_attack");
-                break;
-            case CreatureType.Zaratiusha:
-                _audioManager.Play("zaratiusha_attack");
-                break;
-            default:
-                return;
-        }
-    }
+	public void OnAttackAnimationClimax() {
+		if (!TargetIsValid()) { return; }
 
-    public void OnAttackAnimationClimax() {
-		if(CurrentTarget == null) return;
-		
 		Attack(CurrentTarget);
 	}
 
 	public void OnAttackAnimationOver() {
-		_attacking = false;
+		_animator.SetBool(AnimBoolAttacking, false);
+	}
+	
+	private void PlayAttackSound() {
+        
+		if (AudioDataObject == null) { return; }
+		
+		switch(AudioDataObject.Race) {
+			case CreatureType.Gunner:
+				_audioManager.Play("gunner_attack");
+				break;
+			case CreatureType.Hentairoi:
+				_audioManager.Play("hentairoi_attack");
+				break;
+			case CreatureType.Pistario:
+				_audioManager.Play("pistario_attack");
+				break;
+			case CreatureType.Rakabat:
+				_audioManager.Play("rakabat_attack");
+				break;
+			case CreatureType.Shlurker:
+				_audioManager.Play("shlurker_attack");
+				break;
+			case CreatureType.Zaratiusha:
+				_audioManager.Play("zaratiusha_attack");
+				break;
+			default:
+				return;
+		}
 	}
 
 	protected abstract void Attack(ScrapBehaviour target);
-
+	
 	private void OnDrawGizmosSelected() {
 
 		Gizmos.color = Color.red;

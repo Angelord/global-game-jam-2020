@@ -128,7 +128,6 @@ public class Player : ScrapBehaviour {
 	}
 
 	protected override void OnTakeDamage() {
-		Debug.Log("SHAKE CAMERA");
         _audioManager.Play("player_gets_hit");
 		if (PlayerCamera == null) {
 			Debug.Log("NO CAMERA DETECTED");

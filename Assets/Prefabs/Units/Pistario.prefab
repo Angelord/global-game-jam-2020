@@ -221,8 +221,6 @@ MonoBehaviour:
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 7300804457808948310, guid: 170f9288243614fb48169bdc57ac6f9a, type: 3}
-  repairFX: {fileID: 0}
-  repairFX_p2: {fileID: 0}
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 7896383245795488187}
   MovementSpeed: 2

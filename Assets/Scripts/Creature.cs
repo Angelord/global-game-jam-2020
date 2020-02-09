@@ -15,7 +15,7 @@ public class Creature : Construct {
 	
 	public float MovementSpeed = 1.0f;
 	
-	private UnitState _state = UnitState.Following;
+	public UnitState _state = UnitState.Following;
 	
 	private SpriteRenderer _sprite;
 	
@@ -49,6 +49,7 @@ public class Creature : Construct {
 
 	public void Recall() {
 		_state = UnitState.Following;
+		Attacker.CancelAttack();
 	}
 
 	protected override void PreStart() {
@@ -66,39 +67,41 @@ public class Creature : Construct {
 	}
 
 	private void Update() {
-		if(Broken) {
-			_rigidbody.velocity *= 0.5f;
+		if (Broken) { return; }
+
+		Attacker.enabled = !Owner.Recalling;
+
+		if (_state == UnitState.Attacking) {
+
+			if (_attacker.CurrentTarget != null) { return; }
+			
+			_state = UnitState.Following;
 		}
-		
-		if (_state == UnitState.Following) {
+		else if (_state == UnitState.Following) {
+			
 			if (_attacker.CurrentTarget == null) { return; }
 
-			if (Owner && Owner.Recalling) { return; }
+			if (Owner.Recalling) { return; }
 
-			if (!_attacker.TargetIsInRange()) {
-
-				_state = UnitState.Attacking;
-			}
+			_state = UnitState.Attacking;
 		}
 	}
 
 	private void FixedUpdate() {
-		if(Owner == null) return;
-		if(Broken) return;
-
-		Attacker.enabled = !Owner.Recalling;
-
-		if (Attacker.Attacking) {
+		if (Broken) {
+			_rigidbody.velocity *= 0.5f;
+			return;
+		}
+		
+		if (Attacker.PlayingAttackAnim) {
+			
 			_rigidbody.velocity = Vector2.zero;
+			
 			if (Attacker.CurrentTarget != null) {
 				SetFlip(transform.position.x - Attacker.CurrentTarget.transform.position.x > 0.0f);
 			}
 
 			return;
-		}
-
-		if (_attacker.CurrentTarget == null && _state == UnitState.Attacking) {
-			_state = UnitState.Following;
 		}
 
 		_steeringCalculator.Position = transform.position;
@@ -112,18 +115,6 @@ public class Creature : Construct {
 		Vector2 moveForce = _steeringCalculator.Calculate();
 
 		Move(moveForce);
-	}
-
-	private void OnDrawGizmos() {
-		if(Broken) return;
-		
-		Gizmos.color = Color.yellow;
-		
-		Vector2 moveForce = _steeringCalculator.Calculate();
-		
-		Gizmos.DrawWireSphere(transform.position, _steering.ObstacleAvoidanceRange);
-
-		Gizmos.DrawLine(transform.position, transform.position + (Vector3)moveForce);
 	}
 
 	private void SetFlip(bool left) {
@@ -181,5 +172,17 @@ public class Creature : Construct {
 
 	private bool ObjectAffectsCohesion(ScrapBehaviour behaviour) {
 		return behaviour != Owner && !Owner.Faction.IsEnemy(behaviour.Faction);
+	}
+	
+	private void OnDrawGizmos() {
+		if(Broken) return;
+		
+		Gizmos.color = Color.yellow;
+		
+		Vector2 moveForce = _steeringCalculator.Calculate();
+		
+		Gizmos.DrawWireSphere(transform.position, _steering.ObstacleAvoidanceRange);
+
+		Gizmos.DrawLine(transform.position, transform.position + (Vector3)moveForce);
 	}
 }

@@ -24,4 +24,4 @@ MonoBehaviour:
     m_Bits: 3072
   MinFillowDistance: 0.55
   FollowDecceleration: 0.58
-  AttackDecceleration: 0.15
+  AttackDecceleration: 0.1
