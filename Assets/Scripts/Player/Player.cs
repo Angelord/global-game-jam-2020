@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Claw;
+using Claw.Chrono;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -10,16 +11,17 @@ public class Player : ScrapBehaviour {
 	[SerializeField] private Faction _faction;
 	public PlayerStats Stats;
 	public Camera PlayerCamera;
-	[FormerlySerializedAs("Sparks")] public SpriteRenderer SparksSprite;
+	public SpriteRenderer SparksSprite;
 	public SpriteRenderer Body;
-
+	public PlayerParticleEffect RecallEffect;
+	
 	public event Action<PlayerCommand> OnCommand;
 
 	[SerializeField] private float _scrap;
 	private Rigidbody2D _rigidbody;
 	private CircleCollider2D _footCollider;
 	private PlayerSenses _senses;
-	private float _lastRecallTime;
+	private float _lastRecallTime = float.MinValue;
 	private Animator _animator;
     private AudioManager _audioManager;
     private PlayerAction[] _actions;
@@ -56,7 +58,9 @@ public class Player : ScrapBehaviour {
 		_footCollider = GetComponent<CircleCollider2D>();
 		_senses = GetComponentInChildren<PlayerSenses>();
 		_animator = GetComponent<Animator>();
-
+		
+		RecallEffect.Initialize(this);
+		
 		Body.material = Faction.UnitMat;
 
 		_actions = new PlayerAction[] {
@@ -123,6 +127,8 @@ public class Player : ScrapBehaviour {
 	public void Recall() {
 
 		_lastRecallTime = Time.time;
+		
+		RecallEffect.Show(Stats.RecallDuration);
 
 		OnCommand?.Invoke(new RecallCommand());
 	}
