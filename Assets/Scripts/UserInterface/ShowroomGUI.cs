@@ -2,10 +2,8 @@
 using UnityEngine.SceneManagement;
 
 public class ShowroomGUI : MonoBehaviour {
-    
-    private void Start() {
-        Time.timeScale = 1;
-    }
+
+    public GameObject CommonGUI;
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return)) {
@@ -14,6 +12,7 @@ public class ShowroomGUI : MonoBehaviour {
     }
 
     public void BackToMain() {
-        SceneManager.LoadScene("MasterScene");
+        CommonGUI.SetActive(true);
+        gameObject.SetActive(false);
     }
 }

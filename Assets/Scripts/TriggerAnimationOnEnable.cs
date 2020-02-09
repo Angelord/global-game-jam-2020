@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-public class TriggerAnimationOnStart : MonoBehaviour {
+public class TriggerAnimationOnEnable : MonoBehaviour {
 
     public string TriggerName;
 
-    private void Start() {
+    private void OnEnable() {
         GetComponent<Animator>().SetTrigger(TriggerName);
     }
 }

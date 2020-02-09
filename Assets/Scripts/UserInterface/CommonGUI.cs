@@ -11,6 +11,8 @@ using UnityEngine.UI;
 public class CommonGUI : MonoBehaviour {
 
 	public LerpAlpha BackgroundAlpha;
+	public GameObject CreditsGUI;
+	public GameObject UnitsGUI;
 
 	public void OnStartButtonClick() {
 		GameMaster.Find().StartGame();
@@ -27,10 +29,12 @@ public class CommonGUI : MonoBehaviour {
 	}
 
 	public void OnShowroomButtonClick() {
-		SceneManager.LoadScene("Showroom");
+		UnitsGUI.SetActive(true);
+		gameObject.SetActive(false);
 	}
 
 	public void OnCreditsButtonClick() {
-		SceneManager.LoadScene("Credits");
+		CreditsGUI.SetActive(true);
+		gameObject.SetActive(false);
 	}
 }
