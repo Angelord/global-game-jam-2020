@@ -11,26 +11,26 @@ using UnityEngine.UI;
 public class CommonGUI : MonoBehaviour {
 
 	public LerpAlpha BackgroundAlpha;
-	
+
 	public void OnStartButtonClick() {
 		GameMaster.Find().StartGame();
-		
+
 		BackgroundAlpha.IntendedAlpha = 0.0f;
-		
+
 		CustomCoroutine.WaitThenExecute(0.1f, () => {
 			this.gameObject.SetActive(false);
 		});
 	}
 
-	public void OnQuitButtonClick()
-	{
+	public void OnQuitButtonClick() {
 		Application.Quit();
 	}
 
-	public void OnShowroomButtonClick()
-	{
+	public void OnShowroomButtonClick() {
 		SceneManager.LoadScene("Showroom");
 	}
 
-
+	public void OnCreditsButtonClick() {
+		SceneManager.LoadScene("Credits");
+	}
 }
