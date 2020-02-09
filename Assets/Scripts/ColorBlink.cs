@@ -41,6 +41,8 @@ namespace Scrapper {
 				time += Time.deltaTime;
 				yield return 0;
 			}
+
+			SpriteRenderer.color = RegularColor;
 			
 			_blinking = false;
 		}
