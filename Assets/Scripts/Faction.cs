@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+public class ReadOnlyFieldAttribute : PropertyAttribute { }
+
 [System.Serializable]
 public class InputSet {
 	

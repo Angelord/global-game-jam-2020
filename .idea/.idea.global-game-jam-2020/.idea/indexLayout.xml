@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ContentModelUserStore">
     <attachedFolders>
-      <Path>../../../Users/Almoxis/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.1.7</Path>
       <Path>../../../Users/Angel/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.1.7</Path>
     </attachedFolders>
     <explicitIncludes>
@@ -19,6 +18,7 @@
       <Path>Library/PackageCache/com.unity.timeline@1.2.10</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
+      <Path>../../../Users/Almoxis/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.postprocessing@2.1.7</Path>
     </explicitIncludes>
     <explicitExcludes>
       <Path>.git</Path>

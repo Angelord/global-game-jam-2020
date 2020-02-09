@@ -1,10 +1,6 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-public class ReadOnlyFieldAttribute : PropertyAttribute {
- 
-}
-
 [CustomPropertyDrawer(typeof(ReadOnlyFieldAttribute))]
 public class ReadOnlyDrawer : PropertyDrawer
 {
