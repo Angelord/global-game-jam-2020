@@ -1,3 +1,3 @@
 ﻿public abstract class PlayerCommand {
-	public abstract void Execute(Creature creature);
+	public abstract void Execute(Creature unit);
 }

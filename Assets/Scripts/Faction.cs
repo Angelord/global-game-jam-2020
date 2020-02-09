@@ -15,6 +15,8 @@ public class InputSet {
 	
 	public string RecallButton;
 
+	public string EnrageButton;
+	
 	public void SetIndex(int index) {
 		HorizontalAxis = "Horizontal_" + index;
 		VerticalAxis = "Vertical_" + index;
@@ -22,6 +24,7 @@ public class InputSet {
 		RepairButton = "Repair_" + index;
 		UseButton = "Use_" + index;
 		RecallButton = "Recall_" + index;
+		EnrageButton = "Enrage_" + index;
 	}
 }
 

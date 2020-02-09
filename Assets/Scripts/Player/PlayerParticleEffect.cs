@@ -4,6 +4,10 @@ using UnityEngine;
 [RequireComponent(typeof(ParticleSystem))]
 public class PlayerParticleEffect : MonoBehaviour {
 
+    public float PlaySpeed = 1.3f;
+    public float BoostSpeed = 2.0f;
+    public float HideSpeed = 2.0f;
+    public float InitialBoostDuration = 0.2f;
     private ParticleSystem _particleSystem;
     private float timeRemaining = 0.0f;
 	
@@ -17,11 +21,26 @@ public class PlayerParticleEffect : MonoBehaviour {
     }
 
     public void Show(float duration) {
-     
-        timeRemaining += duration;
 
-        _particleSystem.playbackSpeed = 1.3f;
-        _particleSystem.Play();
+
+        if (timeRemaining <= 0.0f) { // If not already playing
+            Invoke("EndInitialBoost", InitialBoostDuration);
+            _particleSystem.playbackSpeed = BoostSpeed;
+            _particleSystem.Play();
+        }
+
+        timeRemaining += duration;
+    }
+
+    public void Stop() {
+        timeRemaining = 0.0f;
+        CancelInvoke("EndInitialBoost");
+        _particleSystem.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+        _particleSystem.playbackSpeed = HideSpeed;
+    }
+
+    private void EndInitialBoost() {
+        _particleSystem.playbackSpeed = PlaySpeed;
     }
 
     private void Update() {
@@ -29,10 +48,7 @@ public class PlayerParticleEffect : MonoBehaviour {
         
         timeRemaining -= Time.deltaTime;
         if (timeRemaining <= 0.0f) {
-            timeRemaining = 0.0f;
-
-            _particleSystem.Stop(false, ParticleSystemStopBehavior.StopEmitting);
-            _particleSystem.playbackSpeed = 1.8f;
+            Stop();
         }
     }
 }

@@ -52,6 +52,10 @@ public class Creature : Construct {
 		Attacker.CancelAttack();
 	}
 
+	public void Enrage() {
+		// TODO : implement
+	}
+
 	protected override void PreStart() {
 		_attacker = GetComponentInChildren<Attacker>();
 		_rigidbody = GetComponent<Rigidbody2D>();

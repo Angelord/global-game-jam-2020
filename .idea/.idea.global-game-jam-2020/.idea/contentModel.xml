@@ -255,8 +255,10 @@
           <e p="MainThemesAudio.cs" t="Include" />
           <e p="MeleeAttacker.cs" t="Include" />
           <e p="Player" t="Include">
+            <e p="EnrageAction.cs" t="Include" />
             <e p="NoAction.cs" t="Include" />
             <e p="Player.cs" t="Include" />
+            <e p="PlayerParticleEffect.cs" t="Include" />
             <e p="RecallAction.cs" t="Include" />
             <e p="RecallCommand.cs" t="Include" />
             <e p="RepairAction.cs" t="Include" />

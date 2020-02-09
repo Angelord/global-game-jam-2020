@@ -14,7 +14,8 @@ public class Player : ScrapBehaviour {
 	public SpriteRenderer SparksSprite;
 	public SpriteRenderer Body;
 	public PlayerParticleEffect RecallEffect;
-	
+	public PlayerParticleEffect EnrageEffect;
+
 	public event Action<PlayerCommand> OnCommand;
 
 	[SerializeField] private float _scrap;
@@ -22,6 +23,7 @@ public class Player : ScrapBehaviour {
 	private CircleCollider2D _footCollider;
 	private PlayerSenses _senses;
 	private float _lastRecallTime = float.MinValue;
+	private float _lastEnrageTime = float.MinValue;
 	private Animator _animator;
     private AudioManager _audioManager;
     private PlayerAction[] _actions;
@@ -42,9 +44,13 @@ public class Player : ScrapBehaviour {
 	public CircleCollider2D FootCollider => _footCollider;
 
 	public float LastRecallTime => _lastRecallTime;
-	
+
+	public float LastEnrageTime => _lastEnrageTime;
+
 	public bool Recalling => Time.time - _lastRecallTime <= Stats.RecallDuration;
 
+	public bool Enraging => Time.time - _lastEnrageTime <= Stats.EnrageDuration;
+	
 	private InputSet Inputs => _faction.InputSet;
 
 	protected override void OnDie() {
@@ -60,6 +66,7 @@ public class Player : ScrapBehaviour {
 		_animator = GetComponent<Animator>();
 		
 		RecallEffect.Initialize(this);
+		EnrageEffect.Initialize(this);
 		
 		Body.material = Faction.UnitMat;
 
@@ -67,7 +74,8 @@ public class Player : ScrapBehaviour {
 			new RepairAction(this),
 			new SalvageAction(this),
 			new RecallAction(this),
-			new NoAction(this), 
+			new EnrageAction(this), 
+			new NoAction(this)
 		};
 
 		_currentAction = _actions.Last();
@@ -127,10 +135,21 @@ public class Player : ScrapBehaviour {
 	public void Recall() {
 
 		_lastRecallTime = Time.time;
+		_lastEnrageTime = float.MinValue;
 		
-		RecallEffect.Show(Stats.RecallDuration);
+		EnrageEffect?.Stop();
+		RecallEffect?.Show(Stats.RecallDuration);
 
 		OnCommand?.Invoke(new RecallCommand());
+	}
+
+	public void Enrage() {
+		
+		_lastEnrageTime = Time.time;
+		_lastRecallTime = float.MinValue;
+		
+		RecallEffect?.Stop();
+		EnrageEffect?.Show(Stats.EnrageDuration);
 	}
 
 	protected override void OnTakeDamage() {
