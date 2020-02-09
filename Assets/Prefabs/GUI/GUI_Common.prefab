@@ -1279,17 +1279,17 @@ MonoBehaviour:
     Move : Arrow Keys
 
 
-    Repair : num 5
+    Repair : num 4
 
 
     Salvage :
-    num 6
+    num 5
 
 
-    Recall Units : num +
+    Recall Units : num 6
 
 
-    Order Attack : num 9'
+    Order Attack : num +'
 --- !u!1 &6306348595212958814
 GameObject:
   m_ObjectHideFlags: 0
