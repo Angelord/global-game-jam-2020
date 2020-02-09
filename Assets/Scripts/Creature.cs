@@ -28,6 +28,10 @@ public class Creature : Construct {
 	private SteeringCalculator _steeringCalculator;
 
 	private Animator _animator;
+
+	private float _baseSight;
+
+	private bool _enraged;
 	
 	private static readonly int AnimMoving = Animator.StringToHash("Moving");
 
@@ -53,7 +57,8 @@ public class Creature : Construct {
 	}
 
 	public void Enrage() {
-		// TODO : implement
+		_senses.Range = _baseSight * Owner.Stats.EnrageSightMultiplier;
+		_enraged = true;
 	}
 
 	protected override void PreStart() {
@@ -63,6 +68,8 @@ public class Creature : Construct {
 		_senses = GetComponentInChildren<Senses>();
 		_animator = GetComponent<Animator>();
 
+		_baseSight = _senses.Range;
+		
 		_sprite.material = Faction.UnitMat;
 		
 		CircleCollider2D footCollider = GetComponent<CircleCollider2D>();
@@ -73,22 +80,12 @@ public class Creature : Construct {
 	private void Update() {
 		if (Broken) { return; }
 
+		if (_enraged && !Owner.Enraging) {
+			_enraged = false;
+			_senses.Range = _baseSight;
+		}
+
 		Attacker.enabled = !Owner.Recalling;
-
-		if (_state == UnitState.Attacking) {
-
-			if (_attacker.CurrentTarget != null) { return; }
-			
-			_state = UnitState.Following;
-		}
-		else if (_state == UnitState.Following) {
-			
-			if (_attacker.CurrentTarget == null) { return; }
-
-			if (Owner.Recalling) { return; }
-
-			_state = UnitState.Attacking;
-		}
 	}
 
 	private void FixedUpdate() {
@@ -97,6 +94,8 @@ public class Creature : Construct {
 			return;
 		}
 		
+		DetermineState();
+
 		if (Attacker.PlayingAttackAnim) {
 			
 			_rigidbody.velocity = Vector2.zero;
@@ -119,6 +118,24 @@ public class Creature : Construct {
 		Vector2 moveForce = _steeringCalculator.Calculate();
 
 		Move(moveForce);
+	}
+
+	private void DetermineState() {
+		
+		if (_state == UnitState.Attacking) {
+
+			if (_attacker.CurrentTarget != null) { return; }
+			
+			_state = UnitState.Following;
+		}
+		else if (_state == UnitState.Following) {
+			
+			if (_attacker.CurrentTarget == null) { return; }
+
+			if (Owner.Recalling) { return; }
+
+			_state = UnitState.Attacking;
+		}
 	}
 
 	private void SetFlip(bool left) {

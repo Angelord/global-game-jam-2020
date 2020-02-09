@@ -150,6 +150,8 @@ public class Player : ScrapBehaviour {
 		
 		RecallEffect?.Stop();
 		EnrageEffect?.Show(Stats.EnrageDuration);
+		
+		OnCommand?.Invoke(new EnrageCommand());
 	}
 
 	protected override void OnTakeDamage() {

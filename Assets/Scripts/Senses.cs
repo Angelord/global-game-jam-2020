@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using Claw;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(CircleCollider2D))]
 public class Senses : MonoBehaviour {
 
+	private CircleCollider2D _collider;
 	private readonly List<ScrapBehaviour> _objectsInRange = new List<ScrapBehaviour>();
 
 	public event Action<ScrapBehaviour> OnObjectEnter;
 	public event Action<ScrapBehaviour> OnObjectExit;
 
 	public List<ScrapBehaviour> ObjectsInRange => _objectsInRange;
+
+	private void Awake() {
+		_collider = GetComponent<CircleCollider2D>();
+	}
+
+	public float Range { get { return _collider.radius; } set { _collider.radius = value; } }
 
 	public bool IsVisible(ScrapBehaviour obj) {
 		return _objectsInRange.Contains(obj);

@@ -8,6 +8,7 @@ public class PlayerStats : ScriptableObject {
 	public float RecallDuration = 1.5f;
 	public float EnrageFrequency = 2.0f;
 	public float EnrageDuration = 1.2f;
+	public float EnrageSightMultiplier = 1.8f;
 	public float RepairRate = 5.0f;
 	public float SalvageRate = 5.0f;
 }

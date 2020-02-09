@@ -17,5 +17,6 @@ MonoBehaviour:
   RecallDuration: 2.4
   EnrageFrequency: 1.2
   EnrageDuration: 1
+  EnrageSightMultiplier: 2
   RepairRate: 22
   SalvageRate: 14

@@ -22,7 +22,7 @@ public abstract class Attacker : MonoBehaviour {
 
     public ScrapBehaviour CurrentTarget => _currentTarget;
 
-	public bool PlayingAttackAnim => _animator.GetBool(AnimBoolAttacking);
+	public bool PlayingAttackAnim => _animator && _animator.GetBool(AnimBoolAttacking);
 
 	public Construct Construct { get => _construct; }
 
@@ -66,6 +66,7 @@ public abstract class Attacker : MonoBehaviour {
 
 	private void OnObjectExit(ScrapBehaviour obj) {
 		if (_currentTarget == obj) {
+			CancelAttack();
 			_currentTarget = _senses.GetAttackTarget(_construct.Faction);
 		}
 	}
@@ -84,9 +85,6 @@ public abstract class Attacker : MonoBehaviour {
 		if (newTarget != null && newTarget != _currentTarget) {
 			if(PlayingAttackAnim || TargetIsInRange()) return;
 			
-			Debug.Log("Changing target");
-			
-			CancelAttack();
 			_currentTarget = newTarget;
 		}
     }
