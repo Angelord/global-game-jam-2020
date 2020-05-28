@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{56A33454-0805-4918-869E-2FB50B73EFD1}" SchemaVersion="97" RootDocumentID="{3533D902-3116-47E8-983D-7620C9D523F9}">
+	<SoundcasterSessions>
+		<WorkUnit Name="Scrapyard_Soundcaster" ID="{56A33454-0805-4918-869E-2FB50B73EFD1}" OwnerID="{3533D902-3116-47E8-983D-7620C9D523F9}" PersistMode="Nested">
+			<ChildrenList>
+				<SoundcasterSession Name="Music" ID="{E84B6A85-D7CD-4E88-929B-6FF5681B7DFB}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Explore_Music" ID="{240D2340-E2AD-4D6C-B93E-7A20E21D307F}" WorkUnitID="{9AB91A0A-E1CC-4C60-82D8-FC12708D4EE8}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Wobble" ID="{2195BFA1-D01B-41BA-A120-E0C34A8EA013}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Robot_Res" ID="{A658E3E9-F24F-45F8-8A9A-0B4203817E5C}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Battle_Music" ID="{0D8AC2C3-F559-445A-8CDF-A91CBDD14DA7}" WorkUnitID="{9AB91A0A-E1CC-4C60-82D8-FC12708D4EE8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Big_Robot_Shot" ID="{F7A2D7A9-098C-452F-96DC-A64CD59FAD3D}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Extractor" ID="{C2C5563B-CC58-4ADE-ACE6-24B95E8DE547}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Big_Robot_Shot_AREA" ID="{B8A05266-3FC9-46B1-BF4B-BBB1475219CB}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stone_Collect" ID="{E4E9CCB6-81E2-4DE0-A7FF-D348BA0B65DE}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Steps" ID="{5B526453-611B-4D5F-8800-EF618C018503}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Small_Robot_Shot" ID="{2C931687-3698-4A80-89A5-0CF4BF578606}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Play" ID="{E249E4D1-A308-4B42-A94E-987B8566BEC8}"/>
+						<CurrentStateRef Name="Explore_State" ID="{3EA0CC89-BF10-4069-A704-CA0F5EB5B90E}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

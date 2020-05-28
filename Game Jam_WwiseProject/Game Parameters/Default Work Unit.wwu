@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9CB1A802-2E12-4934-9B77-CE724F7B87A2}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{9CB1A802-2E12-4934-9B77-CE724F7B87A2}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Scrapyard_Parameters" ID="{0070A3CE-6471-4F58-B9C7-91DF1F7BB0AE}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

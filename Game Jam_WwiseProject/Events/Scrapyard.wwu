@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C2339973-B42C-40CB-BBBA-0E9C5C9B91A4}" SchemaVersion="97" RootDocumentID="{77DEB9DE-D891-4F92-B090-3627E1A98B0A}">
+	<Events>
+		<WorkUnit Name="Scrapyard" ID="{C2339973-B42C-40CB-BBBA-0E9C5C9B91A4}" OwnerID="{77DEB9DE-D891-4F92-B090-3627E1A98B0A}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{12CBAE93-08D8-49F9-9B2D-1122EBA9C0E2}" ShortID="492982407">
+					<ChildrenList>
+						<Event Name="Big_Robot_Missiles_Res" ID="{BD559EB9-8A20-4343-9137-05E47BB910EB}">
+							<ChildrenList>
+								<Action Name="" ID="{5F642763-49A6-4E1B-A6C6-251A75D6D451}" ShortID="6723267">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Big_Robot_Res_02" ID="{826A8B17-582F-4562-BC44-0ABAE9B1052A}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Steps" ID="{23D68176-8086-4DEA-982B-F2D78BB19821}">
+							<ChildrenList>
+								<Action Name="" ID="{6CF21800-00A2-4451-A22D-CECACC9801F9}" ShortID="906279421">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Steps" ID="{5B526453-611B-4D5F-8800-EF618C018503}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Wobble" ID="{47D5DB0F-4DE6-42D2-8485-6A0689B4109D}">
+							<ChildrenList>
+								<Action Name="" ID="{1BCF9B2E-7D31-4760-BDD3-D35DE8E18EE0}" ShortID="943317164">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wobble" ID="{2195BFA1-D01B-41BA-A120-E0C34A8EA013}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stone_Collect" ID="{D0681D66-897C-4C73-BA41-9A5AA7106BA5}">
+							<ChildrenList>
+								<Action Name="" ID="{54C6EA00-A167-4BF2-AB42-689386F43F5E}" ShortID="758643122">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stone_Collect" ID="{E4E9CCB6-81E2-4DE0-A7FF-D348BA0B65DE}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Robot_Res" ID="{0F7A1E09-6148-4751-BCED-4637028492E9}">
+							<ChildrenList>
+								<Action Name="" ID="{F7566C43-493A-4B6B-8DCC-9E7F5B4D7506}" ShortID="64171213">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Robot_Res" ID="{A658E3E9-F24F-45F8-8A9A-0B4203817E5C}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Small_Robot_Shot" ID="{89A06105-FDA3-48CD-8D6E-CD5E69BC0969}">
+							<ChildrenList>
+								<Action Name="" ID="{BFD2E574-8E93-4E57-9C62-C0FEBEF5E25E}" ShortID="349462535">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Small_Robot_Shot" ID="{2C931687-3698-4A80-89A5-0CF4BF578606}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Extractor" ID="{E714DDC8-4C1B-4992-8DC2-B119FE875306}">
+							<ChildrenList>
+								<Action Name="" ID="{DB9C6501-7CC7-4E06-9C78-5737A6D8420A}" ShortID="651412496">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Extractor" ID="{C2C5563B-CC58-4ADE-ACE6-24B95E8DE547}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Big_Robot_Squid_Res" ID="{72B4EFB7-756C-457C-A9D7-817EB8B39CAF}">
+							<ChildrenList>
+								<Action Name="" ID="{317B400E-C726-4D2C-8582-DD91385B966E}" ShortID="915862729">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Big_Robot_Res_01" ID="{D3D2DA6A-3142-4338-BCFA-2CA14E77DE00}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Big_Robot_Shot" ID="{DD3FABA1-C1CC-458B-944D-447DDFF44029}">
+							<ChildrenList>
+								<Action Name="" ID="{85827404-16CE-4ADA-B736-DEECD18F157F}" ShortID="862575160">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Big_Robot_Shot" ID="{F7A2D7A9-098C-452F-96DC-A64CD59FAD3D}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Big_Robot_Shot_Area" ID="{26533DEC-8DE8-4436-84CE-918FAA5E7717}">
+							<ChildrenList>
+								<Action Name="" ID="{728D26B5-02F8-4CD4-8951-1D2080465F07}" ShortID="847579832">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Big_Robot_Shot_Area" ID="{812AAB8E-72F1-4728-A210-4B2C0CE1BB56}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{0E4DEB11-4716-4826-A3C3-E48DF9F6E0A4}" ShortID="654847283">
+					<ChildrenList>
+						<Event Name="Music_Start" ID="{AA4F5E99-3CA2-4AA2-A893-7ACD622DF1B9}">
+							<ChildrenList>
+								<Action Name="" ID="{B95871E4-6E62-47E7-99B3-A73EFD660E39}" ShortID="574108628">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{DD43DC47-F64F-4D88-94CC-FAF6B427D466}" WorkUnitID="{9AB91A0A-E1CC-4C60-82D8-FC12708D4EE8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8B988ACB-5E6A-4B42-8CB8-11F951CEB059}" ShortID="738745549">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Explore_State" ID="{3EA0CC89-BF10-4069-A704-CA0F5EB5B90E}" WorkUnitID="{B7C45FD7-6EB1-451E-A2BB-9E5270E277A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

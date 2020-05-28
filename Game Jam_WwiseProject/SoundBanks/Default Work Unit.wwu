@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B44B89A9-971E-43FC-8B4D-65FB6A6D7975}" SchemaVersion="97">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{B44B89A9-971E-43FC-8B4D-65FB6A6D7975}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Scrapyard_Level_1" ID="{57F2A27A-D8EC-4707-973C-1CB1F1F0BAD8}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Scrapyard" ID="{C2339973-B42C-40CB-BBBA-0E9C5C9B91A4}" WorkUnitID="{C2339973-B42C-40CB-BBBA-0E9C5C9B91A4}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

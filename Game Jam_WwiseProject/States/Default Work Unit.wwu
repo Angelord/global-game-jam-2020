@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{15F483EA-7EDA-4669-BE0F-10E8808B07D6}" SchemaVersion="97">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{15F483EA-7EDA-4669-BE0F-10E8808B07D6}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Scrapyard_States" ID="{B7C45FD7-6EB1-451E-A2BB-9E5270E277A5}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

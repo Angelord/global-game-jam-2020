@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B7C45FD7-6EB1-451E-A2BB-9E5270E277A5}" SchemaVersion="97" RootDocumentID="{15F483EA-7EDA-4669-BE0F-10E8808B07D6}">
+	<States>
+		<WorkUnit Name="Scrapyard_States" ID="{B7C45FD7-6EB1-451E-A2BB-9E5270E277A5}" OwnerID="{15F483EA-7EDA-4669-BE0F-10E8808B07D6}" PersistMode="Nested">
+			<ChildrenList>
+				<StateGroup Name="Music_State" ID="{F77DD127-8142-4D04-AFE8-11578963DF60}">
+					<ChildrenList>
+						<State Name="None" ID="{4573030A-76A1-4B04-8DA8-7D442D17B469}"/>
+						<State Name="Battle_State" ID="{A1A5C8D9-BC96-4490-86AA-CE7A7CD835C2}"/>
+						<State Name="Explore_State" ID="{3EA0CC89-BF10-4069-A704-CA0F5EB5B90E}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Game_Menu" ID="{8E31341E-9D63-4B5C-A79D-0E86471C25FC}">
+					<ChildrenList>
+						<State Name="None" ID="{42D58833-87D6-45A2-B719-3BD8A7393422}"/>
+						<State Name="Play" ID="{E249E4D1-A308-4B42-A94E-987B8566BEC8}"/>
+						<State Name="Pause" ID="{38567CFD-6FA7-4A56-85E4-0740A5ED436C}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

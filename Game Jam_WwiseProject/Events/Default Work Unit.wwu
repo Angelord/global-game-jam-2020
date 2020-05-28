@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{77DEB9DE-D891-4F92-B090-3627E1A98B0A}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{77DEB9DE-D891-4F92-B090-3627E1A98B0A}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Scrapyard" ID="{C2339973-B42C-40CB-BBBA-0E9C5C9B91A4}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
