@@ -9,7 +9,7 @@ public class PlayerParticleEffect : MonoBehaviour {
     public float HideSpeed = 2.0f;
     public float InitialBoostDuration = 0.2f;
     private ParticleSystem _particleSystem;
-    private float timeRemaining = 0.0f;
+    private bool _playing;
 	
     public void Initialize(Player player) {
         
@@ -20,20 +20,19 @@ public class PlayerParticleEffect : MonoBehaviour {
         _particleSystem.Stop(false, ParticleSystemStopBehavior.StopEmittingAndClear);
     }
 
-    public void Show(float duration) {
-
-
-        if (timeRemaining <= 0.0f) { // If not already playing
-            Invoke("EndInitialBoost", InitialBoostDuration);
-            _particleSystem.playbackSpeed = BoostSpeed;
-            _particleSystem.Play();
-        }
-
-        timeRemaining += duration;
+    public void Show() {
+        if (_playing) return;
+        
+        Invoke("EndInitialBoost", InitialBoostDuration);
+        _particleSystem.playbackSpeed = BoostSpeed;
+        _particleSystem.Play();
+        _playing = true;
     }
 
     public void Stop() {
-        timeRemaining = 0.0f;
+        if (!_playing) return;
+        
+        _playing = false;
         CancelInvoke("EndInitialBoost");
         _particleSystem.Stop(false, ParticleSystemStopBehavior.StopEmitting);
         _particleSystem.playbackSpeed = HideSpeed;
@@ -41,14 +40,5 @@ public class PlayerParticleEffect : MonoBehaviour {
 
     private void EndInitialBoost() {
         _particleSystem.playbackSpeed = PlaySpeed;
-    }
-
-    private void Update() {
-        if(timeRemaining <= 0.0f) return;
-        
-        timeRemaining -= Time.deltaTime;
-        if (timeRemaining <= 0.0f) {
-            Stop();
-        }
     }
 }

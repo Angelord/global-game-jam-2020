@@ -27,7 +27,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Wobble" ID="{47D5DB0F-4DE6-42D2-8485-6A0689B4109D}">
+						<Event Name="Wobble_On" ID="{47D5DB0F-4DE6-42D2-8485-6A0689B4109D}">
 							<ChildrenList>
 								<Action Name="" ID="{1BCF9B2E-7D31-4760-BDD3-D35DE8E18EE0}" ShortID="943317164">
 									<ReferenceList>
@@ -115,6 +115,54 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Wobble_Off" ID="{2212ED63-3F5F-416A-AD64-EAE31AF00D9F}">
+							<ChildrenList>
+								<Action Name="" ID="{078614E8-726E-48D5-AE9F-1CD868FF7B2D}" ShortID="289061497">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wobble" ID="{2195BFA1-D01B-41BA-A120-E0C34A8EA013}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Cancel_Repair" ID="{18561475-2AB0-452A-96CE-EC092D8CDCF1}">
+							<ChildrenList>
+								<Action Name="" ID="{F1A9F8B1-FB78-4F76-A982-E8ED50C454EB}" ShortID="585553534">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Robot_Res" ID="{A658E3E9-F24F-45F8-8A9A-0B4203817E5C}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6E34131B-B311-45C6-8AF0-7F8CD1A79655}" ShortID="291618661">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Big_Robot_Res_01" ID="{D3D2DA6A-3142-4338-BCFA-2CA14E77DE00}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EB169E0F-40E3-4451-9415-DAE3BE2BAA96}" ShortID="57437009">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Big_Robot_Res_02" ID="{826A8B17-582F-4562-BC44-0ABAE9B1052A}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{0E4DEB11-4716-4826-A3C3-E48DF9F6E0A4}" ShortID="654847283">
@@ -135,6 +183,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Explore_State" ID="{3EA0CC89-BF10-4069-A704-CA0F5EB5B90E}" WorkUnitID="{B7C45FD7-6EB1-451E-A2BB-9E5270E277A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{637893F8-A46D-4979-BBE8-74FE454A3BC6}" ShortID="248963875">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pause" ID="{38567CFD-6FA7-4A56-85E4-0740A5ED436C}" WorkUnitID="{B7C45FD7-6EB1-451E-A2BB-9E5270E277A5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

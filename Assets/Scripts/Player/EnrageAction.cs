@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class EnrageAction : PlayerAction {
@@ -7,18 +6,21 @@ public class EnrageAction : PlayerAction {
     }
 
     public override bool IsReadyToUse() {
-        if (Time.time - Player.LastEnrageTime < Stats.EnrageFrequency) {
-            return false;
-        }
-        
-        return Input.GetButtonDown(InputSet.EnrageButton);
+        return !Player.Recalling && !Player.Enraging && Input.GetButton(InputSet.EnrageButton);
     }
 
     protected override void OnBegin() {
-        Player.Enrage();
-        End();
+     
+        Player.StartEnrage();
     }
 
     protected override void OnUpdate() {
+        
+        if (Input.GetButtonUp(InputSet.EnrageButton)) {
+            
+            Player.StopEnrage();
+            
+            End();
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using Claw;
 using UnityEngine;
 
 [RequireComponent(typeof(Construct))]
@@ -11,7 +12,7 @@ public abstract class Attacker : MonoBehaviour {
 	public float Range;
 	public bool HasAttackAnimation;
 	public bool AttackOnAnimationTrigger = false;
-	public AudioData AudioDataObject;
+	public AudioData AudioData;
 
     private Construct _construct;
 	private Senses _senses;
@@ -109,13 +110,14 @@ public abstract class Attacker : MonoBehaviour {
 
 			if (HasAttackAnimation) {
 				_animator.SetBool(AnimBoolAttacking, true);
-				PlayAttackSound();
 			}
 		}
 	}
 
 	public void OnAttackAnimationClimax() {
 		if (!TargetIsValid()) { return; }
+
+		EventManager.TriggerEvent(new AttackerAttackedEvent(this));
 
 		Attack(CurrentTarget);
 	}
@@ -124,34 +126,6 @@ public abstract class Attacker : MonoBehaviour {
 		_animator.SetBool(AnimBoolAttacking, false);
 	}
 	
-	private void PlayAttackSound() {
-        
-		if (AudioDataObject == null) { return; }
-		
-		switch(AudioDataObject.Race) {
-			case CreatureType.Gunner:
-				_audioManager.Play("gunner_attack");
-				break;
-			case CreatureType.Hentairoi:
-				_audioManager.Play("hentairoi_attack");
-				break;
-			case CreatureType.Pistario:
-				_audioManager.Play("pistario_attack");
-				break;
-			case CreatureType.Rakabat:
-				_audioManager.Play("rakabat_attack");
-				break;
-			case CreatureType.Shlurker:
-				_audioManager.Play("shlurker_attack");
-				break;
-			case CreatureType.Zaratiusha:
-				_audioManager.Play("zaratiusha_attack");
-				break;
-			default:
-				return;
-		}
-	}
-
 	protected abstract void Attack(ScrapBehaviour target);
 	
 	private void OnDrawGizmosSelected() {

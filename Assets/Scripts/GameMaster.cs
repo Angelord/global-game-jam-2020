@@ -28,6 +28,7 @@ public class GameMaster : MonoBehaviour {
 
 	public void StartGame() {
 		Time.timeScale = 1.0f;
+		EventManager.TriggerEvent(new GameStartedEvent());
 	}
 
 	private void HandlePlayerDiedEvent(PlayerDiedEvent diedEvent) {

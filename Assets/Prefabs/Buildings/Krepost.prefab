@@ -136,7 +136,7 @@ MonoBehaviour:
   Range: 5
   HasAttackAnimation: 1
   AttackOnAnimationTrigger: 1
-  AudioDataObject: {fileID: 0}
+  AudioData: {fileID: 11400000, guid: 4f4a284f1df27fe45956a719c57cdb30, type: 2}
   Projectile: {fileID: 7830425388499362709, guid: 230e2771eacbd494fa32ef02a5e483f5,
     type: 3}
   barrel: {fileID: 3274402829128823432}
@@ -161,8 +161,6 @@ MonoBehaviour:
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 0}
-  repairFX: {fileID: 0}
-  repairFX_p2: {fileID: 0}
   FlipSprite: {fileID: 3274402828065561476}
   HealthBarOffsetBroken: 1
   HealthBarOffsetWorking: 2.3

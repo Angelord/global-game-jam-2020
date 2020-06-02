@@ -18,15 +18,22 @@ public class Player : ScrapBehaviour {
 	public SpriteRenderer Body;
 	public PlayerParticleEffect RecallEffect;
 	public PlayerParticleEffect EnrageEffect;
+	[SerializeField] private float _scrap;
+
+	[Header("Wwise Events")]
+	public AK.Wwise.Event SalvageScrapAudioEvent;
+	public AK.Wwise.Event SalvageRobotAudioEvent;
+	public AK.Wwise.Event CommandStartAudioEvent;
+	public AK.Wwise.Event CommandStopAudioEvent;
+	public AK.Wwise.Event StepEvent;
 
 	public event Action<PlayerCommand> OnCommand;
 
-	[SerializeField] private float _scrap;
 	private Rigidbody2D _rigidbody;
 	private CircleCollider2D _footCollider;
 	private PlayerSenses _senses;
-	private float _lastRecallTime = float.MinValue;
-	private float _lastEnrageTime = float.MinValue;
+	private bool _enraging = false;
+	private bool _recalling = false;
 	private Animator _animator;
     private AudioManager _audioManager;
     private PlayerAction[] _actions;
@@ -46,13 +53,9 @@ public class Player : ScrapBehaviour {
 
 	public CircleCollider2D FootCollider => _footCollider;
 
-	public float LastRecallTime => _lastRecallTime;
+	public bool Recalling => _recalling;
 
-	public float LastEnrageTime => _lastEnrageTime;
-
-	public bool Recalling => Time.time - _lastRecallTime <= Stats.RecallDuration;
-
-	public bool Enraging => Time.time - _lastEnrageTime <= Stats.EnrageDuration;
+	public bool Enraging => _enraging;
 	
 	private InputSet Inputs => _faction.InputSet;
 
@@ -124,9 +127,7 @@ public class Player : ScrapBehaviour {
 	public void Repair(Construct target) {
 
 		_scrap -= target.RepairCost;
-        
-		_audioManager.Play("repair_sound");
-        
+		
 		target.Repair(this);
 	}
 
@@ -135,30 +136,37 @@ public class Player : ScrapBehaviour {
 		float salvageAmount = target.Salvage();
 		
 		_scrap += salvageAmount;
-		
-		_audioManager.Play("collect_scrap");
 	}
 
-	public void Recall() {
-
-		_lastRecallTime = Time.time;
-		_lastEnrageTime = float.MinValue;
-		
-		EnrageEffect?.Stop();
-		RecallEffect?.Show(Stats.RecallDuration);
-
+	public void StartRecall() {
+		_recalling = true;
+		CommandStartAudioEvent.Post(gameObject);
+		RecallEffect.Show();
 		OnCommand?.Invoke(new RecallCommand());
 	}
 
-	public void Enrage() {
-		
-		_lastEnrageTime = Time.time;
-		_lastRecallTime = float.MinValue;
-		
-		RecallEffect?.Stop();
-		EnrageEffect?.Show(Stats.EnrageDuration);
-		
+	public void StartEnrage() {
+		_enraging = true;
+		CommandStartAudioEvent.Post(gameObject);
+		EnrageEffect.Show();
 		OnCommand?.Invoke(new EnrageCommand());
+	}
+
+	public void StopRecall() {
+		_recalling = false;
+		CommandStopAudioEvent.Post(gameObject);
+		RecallEffect.Stop();
+	}
+	
+	public void StopEnrage() {
+		_enraging = false;
+		CommandStopAudioEvent.Post(gameObject);
+		EnrageEffect.Stop();
+	}
+
+	// Animation event
+	public void OnAnimationStep() {
+		StepEvent.Post(gameObject);
 	}
 
 	protected override void OnTakeDamage() {

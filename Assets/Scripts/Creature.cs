@@ -1,4 +1,5 @@
-﻿using Claw.Chrono;
+﻿using Claw;
+using Claw.Chrono;
 using UnityEngine;
 
 public enum UnitState {
@@ -50,6 +51,8 @@ public class Creature : Construct {
 			return _attacker;
 		}
 	}
+
+	public override AudioData AudioData => Attacker.AudioData;
 
 	public void Recall() {
 		_state = UnitState.Following;

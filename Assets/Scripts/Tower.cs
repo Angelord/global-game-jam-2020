@@ -12,6 +12,8 @@ public class Tower : Building {
     public float HealthBarOffsetWorking;
     private static readonly int AnimBoolBroken = Animator.StringToHash("Broken");
 
+    public override AudioData AudioData => Attacker.AudioData;
+
     public RangedAttacker Attacker {
 		get {
 			if (_attacker == null) _attacker = GetComponent<RangedAttacker>();

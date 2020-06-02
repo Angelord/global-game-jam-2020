@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8857299a46b5abf41a845d3ba882a89f, type: 3}
+  m_Name: 3EA0CC89-BF10-4069-A704-CA0F5EB5B90E
+  m_EditorClassIdentifier: 
+  objectName: Explore_State
+  id: 290796184
+  guid: 3EA0CC89-BF10-4069-A704-CA0F5EB5B90E
+  WwiseStateGroupReference: {fileID: 11400000, guid: 752885d77480f2140b3527c7132e0358,
+    type: 2}

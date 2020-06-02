@@ -1,23 +1,25 @@
 using UnityEngine;
 
 public class RecallAction : PlayerAction {
-	
-    public RecallAction(Player player) : base(player) {
-    }
+    
+    public RecallAction(Player player) : base(player) { }
 
     public override bool IsReadyToUse() {
-        if (Time.time - Player.LastRecallTime < Stats.RecallFrequency) {
-            return false;
-        }
-
-        return Input.GetButtonDown(InputSet.RecallButton);
+        return !Player.Enraging && !Player.Recalling && Input.GetButton(InputSet.RecallButton);
     }
 
     protected override void OnBegin() {
-        Player.Recall();
-        End();
+        
+        Player.StartRecall();
     }
 
     protected override void OnUpdate() {
+        
+        if (Input.GetButtonUp(InputSet.RecallButton))  {
+            
+            Player.StopRecall();
+            
+            End();
+        }
     }
 }

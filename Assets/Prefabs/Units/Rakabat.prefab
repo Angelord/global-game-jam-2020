@@ -260,11 +260,10 @@ MonoBehaviour:
   Owner: {fileID: 0}
   Broken: 1
   breakFx: {fileID: 3314953862076795691, guid: 766c7adc74ed6415cac2cce3bbc4a2bf, type: 3}
-  repairFX: {fileID: 0}
-  repairFX_p2: {fileID: 0}
   _steering: {fileID: 11400000, guid: b397ec67b54e1e04fb4bde28e51002e7, type: 2}
   _scrapEffect: {fileID: 415802647807602484}
   MovementSpeed: 1.8
+  _state: 0
 --- !u!114 &5116334779426088295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +281,7 @@ MonoBehaviour:
   Range: 1.4
   HasAttackAnimation: 1
   AttackOnAnimationTrigger: 0
-  AudioDataObject: {fileID: 11400000, guid: affa01b7918c340438325cf1cf3bb407, type: 2}
+  AudioData: {fileID: 11400000, guid: affa01b7918c340438325cf1cf3bb407, type: 2}
 --- !u!50 &2789278006482129847
 Rigidbody2D:
   serializedVersion: 4

@@ -17,6 +17,8 @@ public abstract class Construct : ScrapBehaviour {
 
 	public override Faction Faction { get { return Owner == null ? Faction.Neutral : Owner.Faction; } }
 
+	public abstract AudioData AudioData { get; }
+
 	public GameObject breakFx;
 	
 	private void Start() {
@@ -54,7 +56,7 @@ public abstract class Construct : ScrapBehaviour {
 		Broken = false;
 		
 		Instantiate(Owner.Faction.RepairEffect, transform.position, Quaternion.identity);
-
+		
 		OnRepair();
 	}
 

@@ -329,6 +329,31 @@ MonoBehaviour:
   RecallEffect: {fileID: 8793217954817500604}
   EnrageEffect: {fileID: 6229080787712016672}
   _scrap: 0
+  SalvageScrapAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b39631a56c4287f47a7e551094cc2f38,
+      type: 2}
+  SalvageRobotAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8747fd77a35377747ae340f2262416dd,
+      type: 2}
+  CommandStartAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 113f02ebfe9948248a1832eacee11b7e,
+      type: 2}
+  CommandStopAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f49be14b6876ebf4aa88dda3d8351bc9,
+      type: 2}
+  StepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b7802a29f1ebd8841842399ef80d1afa,
+      type: 2}
 --- !u!58 &8015586945620854568
 CircleCollider2D:
   m_ObjectHideFlags: 0

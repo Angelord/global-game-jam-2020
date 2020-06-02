@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d68afcdbf426d8a45ac3594c9cde6f02, type: 3}
+  m_Name: 57F2A27A-D8EC-4707-973C-1CB1F1F0BAD8
+  m_EditorClassIdentifier: 
+  objectName: Scrapyard_Level_1
+  id: 1557155243
+  guid: 57F2A27A-D8EC-4707-973C-1CB1F1F0BAD8

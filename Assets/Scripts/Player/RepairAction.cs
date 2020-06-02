@@ -1,3 +1,4 @@
+using Claw;
 using UnityEngine;
 
 public class RepairAction : PlayerAction {
@@ -19,11 +20,15 @@ public class RepairAction : PlayerAction {
 
     protected override void OnBegin() {
         _duration = 0.0f;
+        
+        EventManager.TriggerEvent(new ConstructRepairStartedEvent(_target));
     }
 
     protected override void OnUpdate() {
         
         if (!ActionIsValid()) {
+            
+            EventManager.TriggerEvent(new ConstructRepairCancelledEvent());
             
             End();
             

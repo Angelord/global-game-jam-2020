@@ -20,7 +20,7 @@ public class CommonGUI : MonoBehaviour {
 		BackgroundAlpha.IntendedAlpha = 0.0f;
 
 		CustomCoroutine.WaitThenExecute(0.1f, () => {
-			this.gameObject.SetActive(false);
+			gameObject.SetActive(false);
 		});
 	}
 

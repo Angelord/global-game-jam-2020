@@ -29,6 +29,6 @@ public abstract class PlayerAction {
     public abstract bool IsReadyToUse();
 
     protected abstract void OnBegin();
-
+    
     protected abstract void OnUpdate();
 }

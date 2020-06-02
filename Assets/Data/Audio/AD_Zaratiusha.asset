@@ -12,4 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30e8994d4c13d648a60a7931905edfc, type: 3}
   m_Name: AD_Zaratiusha
   m_EditorClassIdentifier: 
-  Race: 5
+  RepairAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9be0de02b87bf3b40afcd4a6b59fcad3,
+      type: 2}
+  AttackAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f93adf0da84bdc848a079e125a2844e7,
+      type: 2}
