@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f9478a1b2e824489d057de2f764250, type: 3}
+  m_Name: 6B32337E-26D8-46E0-9877-CB9C23D2C5D5
+  m_EditorClassIdentifier: 
+  objectName: Gunner_Res
+  id: 1715372263
+  guid: 6B32337E-26D8-46E0-9877-CB9C23D2C5D5

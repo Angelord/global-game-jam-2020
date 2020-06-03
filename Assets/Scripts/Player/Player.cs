@@ -35,7 +35,6 @@ public class Player : ScrapBehaviour {
 	private bool _enraging = false;
 	private bool _recalling = false;
 	private Animator _animator;
-    private AudioManager _audioManager;
     private PlayerAction[] _actions;
     private PlayerAction _currentAction;
 
@@ -65,7 +64,6 @@ public class Player : ScrapBehaviour {
 	}
 
 	private void Start() {
-        _audioManager = FindObjectOfType<AudioManager>();
         _rigidbody = GetComponent<Rigidbody2D>();
 		_footCollider = GetComponent<CircleCollider2D>();
 		_senses = GetComponentInChildren<PlayerSenses>();
@@ -170,7 +168,6 @@ public class Player : ScrapBehaviour {
 	}
 
 	protected override void OnTakeDamage() {
-        _audioManager.Play("player_gets_hit");
 		if (PlayerCamera == null) {
 			Debug.Log("NO CAMERA DETECTED");
 		}

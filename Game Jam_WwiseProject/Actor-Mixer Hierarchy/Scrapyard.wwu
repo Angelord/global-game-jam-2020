@@ -18,6 +18,11 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-17</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -54,6 +59,11 @@
 									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-17</Value>
+							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -95,7 +105,7 @@
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>12</Value>
+								<Value>-4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -196,7 +206,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>3</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -316,7 +326,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>5</Value>
+								<Value>-5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -375,8 +385,15 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Robot_Res" ID="{A658E3E9-F24F-45F8-8A9A-0B4203817E5C}" ShortID="205671195">
+				<RandomSequenceContainer Name="Shlurker_Res" ID="{A658E3E9-F24F-45F8-8A9A-0B4203817E5C}" ShortID="205671195">
 					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{AAEDBE8F-973C-4EBD-A553-53D6CE4C4062}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="Lowpass" Type="int16">
 							<ModifierList>
 								<ModifierInfo>
@@ -403,6 +420,11 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -413,29 +435,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="SFX_Robot_Res_01" ID="{2691F692-030E-431C-B68C-B473DC3D9430}" ShortID="745849786">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SFX_Robot_Res_01" ID="{11A1C299-E72F-4482-BDF9-C30B8640467E}">
-									<Language>SFX</Language>
-									<AudioFile>SFX_Robot_Res_01.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1060303225"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SFX_Robot_Res_01" ID="{11A1C299-E72F-4482-BDF9-C30B8640467E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="SFX_Robot_Res_02" ID="{D8D192F8-F4FA-4E27-BE64-A9F2CBC8F4AD}" ShortID="86181700">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{99B483E2-E201-4965-A1FD-9F99144C0478}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
@@ -455,28 +464,6 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="SFX_Robot_Res_02" ID="{A351D78D-440A-48F1-94FF-85D05B9E7CF6}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="SFX_Robot_Res_03" ID="{01EDB32A-13B3-4CA4-A860-AEAB1195A942}" ShortID="390771391">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SFX_Robot_Res_03" ID="{E178E131-CEC8-4B2B-BFE5-9AE40A078F7A}">
-									<Language>SFX</Language>
-									<AudioFile>SFX_Robot_Res_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="980495220"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SFX_Robot_Res_03" ID="{E178E131-CEC8-4B2B-BFE5-9AE40A078F7A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -507,7 +494,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-1</Value>
+								<Value>-17</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -668,6 +655,11 @@
 									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -852,7 +844,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-1</Value>
+								<Value>-7</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -956,6 +948,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<BlendContainer Name="Big_Robot_Shot_AREA" ID="{B8A05266-3FC9-46B1-BF4B-BBB1475219CB}" ShortID="669266389">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
@@ -1358,6 +1357,338 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</BlendContainer>
+				<RandomSequenceContainer Name="Shruder_Melee_Attack" ID="{12E24BDA-AE55-493D-80B8-5BEA1EBE51CA}" ShortID="1038662578">
+					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B0B8FB8B-B77B-4BF4-AF08-9D783EDEBF63}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="152"/>
+											<Property Name="Min" Type="Real64" Value="-51"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Robot_Melee_01" ID="{A769B8C0-F808-466C-86F7-32D235604B9B}" ShortID="683143777">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0E59213E-D0DD-4B12-8592-116576D1F546}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Melee_01" ID="{65D5394A-6763-4944-8E2C-091D0D69BA8E}">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Melee_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="647593769"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Melee_01" ID="{65D5394A-6763-4944-8E2C-091D0D69BA8E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Melee_02" ID="{A73403B6-EBAD-4637-B2B8-FB7F9E484863}" ShortID="1028051421">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{43F2DF19-6F1F-4DDE-BCA0-0C036A874C2D}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Melee_02" ID="{587350BC-8CDB-494A-8F98-BDF7AF041992}">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Melee_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="286702351"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Melee_02" ID="{587350BC-8CDB-494A-8F98-BDF7AF041992}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<BlendContainer Name="Heileroi_Attack" ID="{4B81E4C4-72AB-45FF-94F7-B5AB81FAEF57}" ShortID="535292075">
+					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{489D05BF-34AE-4D50-8F5D-45121A18B681}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="42"/>
+											<Property Name="Min" Type="Real64" Value="-29"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-200</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D57C219E-0622-4DC8-B75C-15EA1A341D18}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="51"/>
+											<Property Name="Min" Type="Real64" Value="-76"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Robot_Melee_Heileroi_01" ID="{FB3F29E6-CC66-4466-8562-AFEE593E779F}" ShortID="227781459">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Melee_Heileroi_01" ID="{2280A363-551D-4127-B5D9-D56633EA098F}">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Melee_Heileroi_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="964420622"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Melee_Heileroi_01" ID="{2280A363-551D-4127-B5D9-D56633EA098F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<RandomSequenceContainer Name="Shlurker_Melee_Attack_Delay" ID="{67658FFD-A8D7-494D-B3D3-5D33C9FC0EA6}" ShortID="788223521">
+					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7CD6F349-F3ED-40DF-91A2-48B01A623E0E}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Robot_Melee_Delay_01" ID="{4DBC55B4-D83C-4984-8415-5CE9CBD3BC2D}" ShortID="326850699">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{16792775-3342-4E5C-BC79-0688CD407499}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Melee_01" ID="{37047C8C-F543-4BCC-ABB1-05050C17380F}">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Melee_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="647593769"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Melee_01" ID="{37047C8C-F543-4BCC-ABB1-05050C17380F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Robot_Melee_Delay_02" ID="{4795EC7B-9E1E-41C1-B9EB-9719CE339582}" ShortID="240161060">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FE3985B4-B2A6-4B22-8D0E-41E8B98D4811}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Robot_Melee_02" ID="{B692014D-A8A0-4B6A-9A15-B8FA13E794B3}">
+									<Language>SFX</Language>
+									<AudioFile>Robot_Melee_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="286702351"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Robot_Melee_02" ID="{B692014D-A8A0-4B6A-9A15-B8FA13E794B3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Gunner_Res" ID="{67A15650-BB4E-45E7-8DDE-AEEFBC12C90F}" ShortID="139126235">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_Robot_Res_01" ID="{7884425F-783D-4930-B59F-F0F64641E75A}" ShortID="92780572">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Robot_Res_01" ID="{000593B6-37F1-4BC8-BB6E-BE4BA56D7709}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Robot_Res_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1060303225"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Robot_Res_01" ID="{000593B6-37F1-4BC8-BB6E-BE4BA56D7709}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="SFX_Robot_Res_03" ID="{86A3F0F8-1232-404B-9B16-C26171A23C69}" ShortID="977622010">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{916385B0-6B6E-4BA9-B1F8-FED8A0A0BD0D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_Robot_Res_03" ID="{212596FA-BCB4-430A-ADDA-640954FCB025}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_Robot_Res_03.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="980495220"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_Robot_Res_03" ID="{212596FA-BCB4-430A-ADDA-640954FCB025}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

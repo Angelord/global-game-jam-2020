@@ -14,7 +14,7 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Robot_Res" ID="{A658E3E9-F24F-45F8-8A9A-0B4203817E5C}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+							<ObjectRef Name="Shlurker_Res" ID="{A658E3E9-F24F-45F8-8A9A-0B4203817E5C}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>

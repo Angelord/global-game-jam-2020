@@ -4,6 +4,13 @@
 		<WorkUnit Name="Scrapyard_Music" ID="{9AB91A0A-E1CC-4C60-82D8-FC12708D4EE8}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Music" ID="{DD43DC47-F64F-4D88-94CC-FAF6B427D466}" ShortID="1052749844">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5057651F-2CBA-4834-8CDF-23C39ADE2018}"/>

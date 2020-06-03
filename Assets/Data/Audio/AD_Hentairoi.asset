@@ -20,5 +20,5 @@ MonoBehaviour:
   AttackAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6c70e43eaf6e2ee4dab34a87287ccba2,
+    WwiseObjectReference: {fileID: 11400000, guid: cefe4aeffa2a1d348953bb1640c95aca,
       type: 2}

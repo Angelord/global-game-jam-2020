@@ -49,12 +49,15 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Robot_Res" ID="{0F7A1E09-6148-4751-BCED-4637028492E9}">
+						<Event Name="Schlurker_Res" ID="{0F7A1E09-6148-4751-BCED-4637028492E9}">
 							<ChildrenList>
 								<Action Name="" ID="{F7566C43-493A-4B6B-8DCC-9E7F5B4D7506}" ShortID="64171213">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Robot_Res" ID="{A658E3E9-F24F-45F8-8A9A-0B4203817E5C}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+											<ObjectRef Name="Shlurker_Res" ID="{A658E3E9-F24F-45F8-8A9A-0B4203817E5C}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -137,7 +140,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Robot_Res" ID="{A658E3E9-F24F-45F8-8A9A-0B4203817E5C}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+											<ObjectRef Name="Shlurker_Res" ID="{A658E3E9-F24F-45F8-8A9A-0B4203817E5C}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -158,6 +161,49 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_Big_Robot_Res_02" ID="{826A8B17-582F-4562-BC44-0ABAE9B1052A}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Heileron_Attack" ID="{5A0C4CF4-2622-41BD-BC3C-D62906CAB799}">
+							<ChildrenList>
+								<Action Name="" ID="{3C541214-1DD3-458E-8AD3-1F8949B21AE8}" ShortID="835644456">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Heileroi_Attack" ID="{4B81E4C4-72AB-45FF-94F7-B5AB81FAEF57}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Schruder_Attack" ID="{51021B5C-96F1-47AD-8788-2BBA94C7140D}">
+							<ChildrenList>
+								<Action Name="" ID="{B040A9E6-0FCB-45BB-B5AA-57B1BC06BC11}" ShortID="829685312">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shruder_Melee_Attack" ID="{12E24BDA-AE55-493D-80B8-5BEA1EBE51CA}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E7136571-E2D4-469C-B4A7-0E3B2219FD23}" ShortID="106929134">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shlurker_Melee_Attack_Delay" ID="{67658FFD-A8D7-494D-B3D3-5D33C9FC0EA6}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Gunner_Res" ID="{6B32337E-26D8-46E0-9877-CB9C23D2C5D5}">
+							<ChildrenList>
+								<Action Name="" ID="{57352D0B-6F02-4F0D-BA86-77FA5A4BF979}" ShortID="637016697">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gunner_Res" ID="{67A15650-BB4E-45E7-8DDE-AEEFBC12C90F}" WorkUnitID="{873DD7C0-522D-4B41-B1F3-BACAE64818E8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
