@@ -5,6 +5,8 @@ using UnityEngine;
 namespace Audio {
     public class MusicManager : MonoBehaviour {
 
+        private static bool musicInitialized = false;
+
         public Player Player1;
         public Player Player2;
         public float BattleMusicDistance;
@@ -19,7 +21,12 @@ namespace Audio {
         private bool playingBattleMusic = false;
 
         private void Start() {
-            MusicStartEvent.Post(gameObject);
+
+            if (!musicInitialized) {
+                MusicStartEvent.Post(gameObject);
+                musicInitialized = true;
+            }
+
             EventManager.AddListener<PlayerDiedEvent>(HandlePlayerDiedEvent);
             EventManager.AddListener<GameStartedEvent>(HandleGameStartedEvent);
         }
