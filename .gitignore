@@ -65,9 +65,7 @@ crashlytics-build.properties
 /Game Jam_WwiseProject/Originals/SFX/*.akd
 /Game Jam_WwiseProject/.cache/
 /Game Jam_WwiseProject/GeneratedSoundBanks/
-/Game Jam_WwiseProject/*.validationcache
-*/ProjectData/AkWwiseProjectData.asset
 /Assets/WwiseSettings.xml
 /Assets/WwiseSettings.xml.meta
-
-*/GeneratedSoundBanks/
+**/ProjectData/AkWwiseProjectData.asset
+**/Audio/GeneratedSoundBanks/

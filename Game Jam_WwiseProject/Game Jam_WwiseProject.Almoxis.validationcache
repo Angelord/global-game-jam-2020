@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="97">
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1590689884" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1590689884" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1590689884" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\States\Scrapyard_States.wwu" DateLow="1590855713" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\States\Default Work Unit.wwu" DateLow="1590689884" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Soundcaster Sessions\Scrapyard_Soundcaster.wwu" DateLow="1591207135" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1590689884" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1590689884" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Queries\Factory Queries.wwu" DateLow="1590689884" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1590689884" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1590689884" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1590689884" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Interactive Music Hierarchy\Scrapyard_Music.wwu" DateLow="1591207135" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Game Parameters\Scrapyard_Parameters.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Game Jam_WwiseProject.wproj" DateLow="1590860965" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Game Jam_WwiseProject.Almoxis.wsettings" DateLow="1591207104" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Events\Scrapyard.wwu" DateLow="1591207135" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Events\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Effects\Factory Effects.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Actor-Mixer Hierarchy\Scrapyard.wwu" DateLow="1591207135" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Projects\Games\global-game-jam-2020\Game Jam_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1590689881" DateHigh="0"/>
+</ValidationCache>
