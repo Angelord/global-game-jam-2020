@@ -26,6 +26,9 @@ namespace Audio {
                 MusicStartEvent.Post(gameObject);
                 musicInitialized = true;
             }
+            else { 
+                ExploreMusicState.SetValue();
+            }
 
             EventManager.AddListener<PlayerDiedEvent>(HandlePlayerDiedEvent);
             EventManager.AddListener<GameStartedEvent>(HandleGameStartedEvent);
